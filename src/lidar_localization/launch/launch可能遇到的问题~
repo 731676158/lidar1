@@ -1,0 +1,2 @@
+Required 'op' field missing
+需要改为rosbag reindex xxx.bag

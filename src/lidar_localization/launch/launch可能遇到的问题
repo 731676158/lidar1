@@ -1,0 +1,2 @@
+Required 'op' field missing
+这是因为包损坏了，需要先rosbag reindex xxx.bag将包修复，才能正常地rosbag play
