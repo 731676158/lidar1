@@ -50,6 +50,8 @@ int main(int argc, char *argv[]) {
         imu_sub_ptr->ParseData(imu_data_buff);
         gnss_sub_ptr->ParseData(gnss_data_buff);
 
+        std::cout << "ROS SPINING." << std::endl;
+
         if (!transform_received) {
             if (lidar_to_imu_ptr->LookupData(lidar_to_imu)) {
                 transform_received = true;
@@ -92,7 +94,7 @@ int main(int argc, char *argv[]) {
                     cloud_pub_ptr->Publish(cloud_data.cloud_ptr);
 ///////////修改save_pcd_count来获得想要保存的帧数
                     save_pcd_count++;
-                    if(save_pcd_count >=20 && save_pcd_count <= 40)
+                    if(save_pcd_count >=20 && save_pcd_count < 40)
                     {
                         //通过此函数来给点云制造偏移
                         pcl::transformPointCloud(*cloud_data.cloud_ptr, *cloud_data.cloud_ptr, lidar_to_imu*lidar_to_imu*lidar_to_imu*lidar_to_imu*lidar_to_imu*lidar_to_imu);

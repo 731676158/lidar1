@@ -209,12 +209,12 @@ bool FrontEndFlow::SaveTrajectory() {
     static std::ofstream ground_truth, laser_odom;
     static bool is_file_created = false;
     if (!is_file_created) {
-        //std::string WORK_SPACE_PATH = "/home/gaowenxiang/work/Sensor-Fusion-master/workspace/assignments/01-lidar-odometry/src/lidar_localization";
-        if (!FileManager::CreateDirectory("/home/gaowenxiang/work/Sensor-Fusion-master/workspace/assignments/01-lidar-odometry/src/lidar_localization/slam_data/trajectory"))
+        //std::string WORK_SPACE_PATH = "/home/jeff/lidar1/src/lidar_localization";
+        if (!FileManager::CreateDirectory("/home/jeff/lidar1/src/lidar_localization/slam_data/trajectory"))
             return false;
-        if (!FileManager::CreateFile(ground_truth, "/home/gaowenxiang/work/Sensor-Fusion-master/workspace/assignments/01-lidar-odometry/src/lidar_localization/slam_data/trajectory/ground_truth.txt"))
+        if (!FileManager::CreateFile(ground_truth, "/home/jeff/lidar1/src/lidar_localization/slam_data/trajectory/ground_truth.txt"))
             return false;
-        if (!FileManager::CreateFile(laser_odom, "/home/gaowenxiang/work/Sensor-Fusion-master/workspace/assignments/01-lidar-odometry/src/lidar_localization/slam_data/trajectory/laser_odom.txt"))
+        if (!FileManager::CreateFile(laser_odom, "/home/jeff/lidar1/src/lidar_localization/slam_data/trajectory/laser_odom.txt"))
             return false;
         is_file_created = true;
     }
