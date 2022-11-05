@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
         imu_sub_ptr->ParseData(imu_data_buff);
         gnss_sub_ptr->ParseData(gnss_data_buff);
 
-        std::cout << "ROS SPINING." << std::endl;
+        ROS_INFO("ROS SPINING.");
 
         if (!transform_received) {
             if (lidar_to_imu_ptr->LookupData(lidar_to_imu)) {
