@@ -50,9 +50,6 @@ int main(int argc, char *argv[]) {
         imu_sub_ptr->ParseData(imu_data_buff);
         gnss_sub_ptr->ParseData(gnss_data_buff);
 
-        ROS_INFO("ROS SPINING.");
-        LOG(INFO) << "ROS SPINING (BY GLOG).";
-
         if (!transform_received) {
             if (lidar_to_imu_ptr->LookupData(lidar_to_imu)) {
                 transform_received = true;

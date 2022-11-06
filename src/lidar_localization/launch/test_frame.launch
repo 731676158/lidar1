@@ -1,6 +1,6 @@
 <launch>
 <node pkg="rosbag" type="play" name="playe" output="screen" args="--pause --clock /home/jeff/kitti_2011_10_03_drive_0027_synced.bag"></node>
 <node pkg="rviz"  type="rviz"  name="rviz"  args="-d $(find lidar_localization)/rviz/test_frame.rviz"></node>
-<node pkg="lidar_localization"  type="test_frame_node"  name="test_frame_node"  output="screen"></node>
-<node pkg="rqt_graph" type="rqt_graph" name="rqt_graph" output="screen"></node>
+<node pkg="lidar_localization"  type="test_frame_node"  name="test_frame_node"  output="screen" launch-prefix="xterm -e gdb -ex run --args "></node>
+<!--node pkg="rqt_graph" type="rqt_graph" name="rqt_graph" output="screen"></node-->
 </launch>
