@@ -6,11 +6,15 @@ SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 add_compile_options(-std=c++11)
 add_definitions(-std=c++11)
 
+# 要求PCL 1.7的环境！！！ 1.8的PCL和c++11不兼容，否则会出现不明原因的段错误，是在节点运行前出现的段错误，因此在此处需要对PCL库的版本进行限定】
+# set(PCL_DIR "/usr/lib/x86_64-linux-gnu/cmake/pcl")   #该路径中存放*.cmake文件
+find_package(PCL 1.7 REQUIRED)
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
-  pcl_ros
+  # pcl_ros
   geometry_msgs
   tf
   eigen_conversions

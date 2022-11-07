@@ -22,6 +22,7 @@ FrontEnd::FrontEnd()
     InitWithConfig();
 }
 
+// Read config parameters.
 bool FrontEnd::InitWithConfig() {
     std::string config_file_path = WORK_SPACE_PATH + "/config/front_end/config.yaml";
     YAML::Node config_node = YAML::LoadFile(config_file_path);
@@ -35,6 +36,13 @@ bool FrontEnd::InitWithConfig() {
     return true;
 }
 
+/*
+* Initialize parameters.
+* key_frame_distance_ : frames between neighboring keyframes are abandoned.
+* local_frame_num_ : Local map are combined by local_frame_num_ of frames dynamically.
+*       Everytime a new frame of scan arrives, the local map buffer pushes it and pop one out, 
+*       then combile all these scans into a local map.
+*/
 bool FrontEnd::InitParam(const YAML::Node& config_node) {
     key_frame_distance_ = config_node["key_frame_distance"].as<float>();
     local_frame_num_ = config_node["local_frame_num"].as<int>();

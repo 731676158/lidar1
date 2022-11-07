@@ -6,14 +6,15 @@
                 "limitSymbolsToIncludedHeaders": true
             },
             "includePath": [
-                "/opt/ros/kinetic/include",
-                "/usr/include"
+                "/opt/ros/indigo/include",
+                "/usr/include",
+                "/home/jeff/lidar1/src/lidar_localization/include"
             ],
             "name": "Linux",
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++11"
         }
     ],
     "version": 4
