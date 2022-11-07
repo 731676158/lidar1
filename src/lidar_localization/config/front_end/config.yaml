@@ -5,7 +5,7 @@ registration_method: ICP_SVD   # 选择点云匹配方法，目前支持：ICP, 
 
 # 局部地图
 key_frame_distance: 2.0 # 关键帧距离
-local_frame_num: 20
+local_frame_num: 20 # 滑窗的尺寸，window size
 local_map_filter: voxel_filter # 选择滑窗地图点云滤波方法，目前支持：voxel_filter
 
 # rviz显示

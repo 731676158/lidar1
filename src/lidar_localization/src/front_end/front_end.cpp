@@ -50,6 +50,7 @@ bool FrontEnd::InitParam(const YAML::Node& config_node) {
     return true;
 }
 
+// Initialize data_path_.
 bool FrontEnd::InitDataPath(const YAML::Node& config_node) {
     data_path_ = config_node["data_path"].as<std::string>();
     if (data_path_ == "./") {
@@ -81,6 +82,7 @@ bool FrontEnd::InitDataPath(const YAML::Node& config_node) {
     return true;
 }
 
+// Initialize registration_ptr.
 bool FrontEnd::InitRegistration(std::shared_ptr<RegistrationInterface>& registration_ptr, const YAML::Node& config_node) {
     std::string registration_method = config_node["registration_method"].as<std::string>();
     LOG(INFO) << "Point Cloud Registration Method: " << registration_method;
@@ -99,6 +101,7 @@ bool FrontEnd::InitRegistration(std::shared_ptr<RegistrationInterface>& registra
     return true;
 }
 
+// Initialize filter_ptr_.
 bool FrontEnd::InitFilter(std::string filter_user, std::shared_ptr<CloudFilterInterface>& filter_ptr, const YAML::Node& config_node) {
     std::string filter_mothod = config_node[filter_user + "_filter"].as<std::string>();
     LOG(INFO) << filter_user << "Point Cloud Filter Method: " << filter_mothod;
@@ -113,6 +116,9 @@ bool FrontEnd::InitFilter(std::string filter_user, std::shared_ptr<CloudFilterIn
     return true;
 }
 
+/* Update pose messages.
+* 本函数最核心的作用是通过非关键帧和局部子地图的匹配来更新位姿
+*/
 bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) {
     current_frame_.cloud_data.time = cloud_data.time;
     std::vector<int> indices;
@@ -121,9 +127,10 @@ bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) 
     CloudData::CLOUD_PTR filtered_cloud_ptr(new CloudData::CLOUD());
     frame_filter_ptr_->Filter(current_frame_.cloud_data.cloud_ptr, filtered_cloud_ptr);
 
+    // 静态变量，只有第一次的时候会初始化
     static Eigen::Matrix4f step_pose = Eigen::Matrix4f::Identity();
     static Eigen::Matrix4f last_pose = init_pose_;
-    static Eigen::Matrix4f predict_pose = init_pose_;
+    static Eigen::Matrix4f predict_pose = init_pose_;  // pose estimation
     static Eigen::Matrix4f last_key_frame_pose = init_pose_;
 
     // 局部地图容器中没有关键帧，代表是第一帧数据
@@ -141,13 +148,23 @@ bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) 
 
     // 更新相邻两帧的相对运动
     step_pose = last_pose.inverse() * current_frame_.pose;
-    predict_pose = current_frame_.pose * step_pose;
+    predict_pose = current_frame_.pose * step_pose;  // 估计下一帧的初始位姿
     last_pose = current_frame_.pose;
 
     // 匹配之后根据距离判断是否需要生成新的关键帧，如果需要，则做相应更新
-    if (fabs(last_key_frame_pose(0,3) - current_frame_.pose(0,3)) + 
-        fabs(last_key_frame_pose(1,3) - current_frame_.pose(1,3)) +
-        fabs(last_key_frame_pose(2,3) - current_frame_.pose(2,3)) > key_frame_distance_) {
+
+    // 采用曼哈顿距离，直接就是distance = |x1 - x2| + |y1 - y2| + |z1 - z2|, 为了方便
+    // if (fabs(last_key_frame_pose(0,3) - current_frame_.pose(0,3)) + 
+    //     fabs(last_key_frame_pose(1,3) - current_frame_.pose(1,3)) +
+    //     fabs(last_key_frame_pose(2,3) - current_frame_.pose(2,3)) > key_frame_distance_) {
+    //     UpdateWithNewFrame(current_frame_);
+    //     last_key_frame_pose = current_frame_.pose;
+    // }
+
+    // 采用常规距离
+    if(hypot(last_key_frame_pose(0,3) - current_frame_.pose(0,3),
+             hypot(last_key_frame_pose(1,3) - current_frame_.pose(1,3),
+                   last_key_frame_pose(2,3) - current_frame_.pose(2,3))) > key_frame_distance_) {
         UpdateWithNewFrame(current_frame_);
         last_key_frame_pose = current_frame_.pose;
     }
@@ -155,11 +172,21 @@ bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) 
     return true;
 }
 
+// Initialize initial pose status for first scan.
 bool FrontEnd::SetInitPose(const Eigen::Matrix4f& init_pose) {
     init_pose_ = init_pose;
     return true;
 }
 
+/*
+* 更新过程：
+*   1. 以这个new_key_frame作为新的关键帧，并存到硬盘里；
+*   2. 更新local_map，包括新一帧的加入和旧一帧的剔除，以及新位置的局部地图的合成；
+*      （tips: 局部地图是由local_map_ptr_缓冲区内的点云拼接而成，每更新一次关键帧会重新拼接一幅对应关键帧附近的局部子地图，
+*              这部分或许可以加速）
+*   3. 将新的局部地图设置为配准的target；
+*   4. 将新的关键帧存入全局地图容器中供全局地图的合成。
+*/
 bool FrontEnd::UpdateWithNewFrame(const Frame& new_key_frame) {
     // 把关键帧点云存储到硬盘里，节省内存
     std::string file_path = data_path_ + "/key_frames/key_frame_" + std::to_string(global_map_frames_.size()) + ".pcd";
@@ -204,6 +231,7 @@ bool FrontEnd::UpdateWithNewFrame(const Frame& new_key_frame) {
     return true;
 }
 
+// Combine saved keyframes into a global map.
 bool FrontEnd::SaveMap() {
     global_map_ptr_.reset(new CloudData::CLOUD());
 
