@@ -117,6 +117,9 @@ bool ICPSVDRegistration::ScanMatch(
     return true;
 }
 
+// Collect corresponded points.
+// Source points into ys, target points into xs,
+// Return correspond count.
 size_t ICPSVDRegistration::GetCorrespondence(
     const CloudData::CLOUD_PTR &input_source, 
     std::vector<Eigen::Vector3f> &xs,
@@ -159,6 +162,7 @@ size_t ICPSVDRegistration::GetCorrespondence(
     return num_corr;
 }
 
+// Obtain transformation via correspondences.
 void ICPSVDRegistration::GetTransform(
     const std::vector<Eigen::Vector3f> &xs,
     const std::vector<Eigen::Vector3f> &ys,
