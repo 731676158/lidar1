@@ -13,8 +13,8 @@
 #include <pcl/search/kdtree.h>
 #include <pcl/registration/registration.h>
 
-#include "so3/so3.hpp"
-#include "fast_vgicp.hpp"
+#include "lidar_localization/models/registration/tools/so3.hpp"
+#include "lidar_localization/models/registration/tools/fast_vgicp.hpp"
 
 namespace fast_gicp {
 
@@ -23,8 +23,8 @@ FastVGICP<PointSource, PointTarget>::FastVGICP() : FastGICP<PointSource, PointTa
   this->reg_name_ = "FastVGICP";
 
   voxel_resolution_ = 1.0;
-  search_method_ = NeighborSearchMethod::DIRECT1;
-  voxel_mode_ = VoxelAccumulationMode::ADDITIVE;
+  search_method_ = settings::NeighborSearchMethod::DIRECT1;
+  voxel_mode_ = settings::VoxelAccumulationMode::ADDITIVE;
 }
 
 template <typename PointSource, typename PointTarget>
@@ -36,12 +36,12 @@ void FastVGICP<PointSource, PointTarget>::setResolution(double resolution) {
 }
 
 template <typename PointSource, typename PointTarget>
-void FastVGICP<PointSource, PointTarget>::setNeighborSearchMethod(NeighborSearchMethod method) {
+void FastVGICP<PointSource, PointTarget>::setNeighborSearchMethod(settings::NeighborSearchMethod method) {
   search_method_ = method;
 }
 
 template <typename PointSource, typename PointTarget>
-void FastVGICP<PointSource, PointTarget>::setVoxelAccumulationMode(VoxelAccumulationMode mode) {
+void FastVGICP<PointSource, PointTarget>::setVoxelAccumulationMode(settings::VoxelAccumulationMode mode) {
   voxel_mode_ = mode;
 }
 

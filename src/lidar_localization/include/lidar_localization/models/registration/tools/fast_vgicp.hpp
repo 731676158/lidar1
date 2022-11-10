@@ -11,12 +11,8 @@
 #include <pcl/search/kdtree.h>
 #include <pcl/registration/registration.h>
 
-//#include <fast_gicp/gicp/gicp_settings.hpp>
-//#include <fast_gicp/gicp/fast_gicp.hpp>
-//#include <fast_gicp/gicp/fast_vgicp_voxel.hpp>
-#include "gicp_settings.hpp"
-#include "fast_gicp.hpp"
-#include "fast_vgicp_voxel.hpp"
+#include "lidar_localization/models/registration/tools/fast_gicp.hpp"
+#include "lidar_localization/models/registration/tools/fast_vgicp_voxel.hpp"
 
 namespace fast_gicp {
 

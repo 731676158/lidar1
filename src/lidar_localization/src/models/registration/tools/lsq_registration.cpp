@@ -1,7 +1,7 @@
-#include "lsq_registration.hpp"
+#include "lidar_localization/models/registration/tools/lsq_registration.hpp"
 
 #include <boost/format.hpp>
-#include "so3/so3.hpp"
+#include "lidar_localization/models/registration/tools/so3.hpp"
 
 namespace fast_gicp {
 
