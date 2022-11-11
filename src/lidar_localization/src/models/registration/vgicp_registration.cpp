@@ -1,60 +1,69 @@
 /*
- * @Description: NDT 匹配模块
+ * @Description: VGICP 匹配模块
  * @Author: Ren Qian
  * @Date: 2020-02-08 21:46:45
  */
-#include "lidar_localization/models/registration/ndt_registration.hpp"
+#include "lidar_localization/models/registration/tools/vgicp_registration.hpp"
 
 #include "glog/logging.h"
+#include <string>
 
 namespace lidar_localization {
 
-NDTRegistration::NDTRegistration(const YAML::Node& node)
-    :ndt_ptr_(new pcl::NormalDistributionsTransform<CloudData::POINT, CloudData::POINT>()) {
+VGICPRegistration::VGICPRegistration(const YAML::Node& node)
+    :vgicp_ptr_(new fast_gicp::FastVGICP<CloudData::POINT, CloudData::POINT>()) {
     
     float res = node["res"].as<float>();
-    float step_size = node["step_size"].as<float>();
+    float num_threads = node["num_threads"].as<float>();
     float trans_eps = node["trans_eps"].as<float>();
-    int max_iter = node["max_iter"].as<int>();
+    int num_neighbors = node["num_neighbors"].as<int>();
 
-    SetRegistrationParam(res, step_size, trans_eps, max_iter);
+    SetRegistrationParam(res, num_threads, trans_eps, num_neighbors);
 }
 
-NDTRegistration::NDTRegistration(float res, float step_size, float trans_eps, int max_iter)
-    :ndt_ptr_(new pcl::NormalDistributionsTransform<CloudData::POINT, CloudData::POINT>()) {
+VGICPRegistration::VGICPRegistration(float res, float step_size, int num_threads, float trans_eps, int num_neighbors)
+    :vgicp_ptr_(new fast_gicp::FastVGICP<CloudData::POINT, CloudData::POINT>()) {
 
-    SetRegistrationParam(res, step_size, trans_eps, max_iter);
+    SetRegistrationParam(res, num_threads, trans_eps, num_neighbors);
 }
 
-bool NDTRegistration::SetRegistrationParam(float res, float step_size, float trans_eps, int max_iter) {
-    ndt_ptr_->setResolution(res);
-    ndt_ptr_->setStepSize(step_size);
-    ndt_ptr_->setTransformationEpsilon(trans_eps);
-    ndt_ptr_->setMaximumIterations(max_iter);
+bool VGICPRegistration::SetRegistrationParam(float res, int num_threads, float trans_eps, int num_neighbors) {
+    vgicp_ptr_->setResolution(res);
+    vgicp_ptr_->setNumThreads(num_threads);//
+    vgicp_ptr_->setTransformationEpsilon(trans_eps);
+    if (num_neighbors != 1 && num_neighbors != 7 && num_neighbors != 27) {
+        LOG(ERROR) << "number of neighbors is incorrect! Please recheck!"
+                   << std::endl
+                   << "number can only in 1, 7 and 27." << std::endl;
+        return false;
+    }
+    vgicp_ptr_->setNeighborSearchMethod(
+        (num_neighbors == 1) ? settings::NeighborSearchMethod::DIRECT1 :
+        (num_neighbors == 7) ? settings::NeighborSearchMethod::DIRECT7 :
+        settings::NeighborSearchMethod::DIRECT27);
 
-    LOG(INFO) << "NDT params:" << std::endl
+    LOG(INFO) << "VGICP params: " << std::endl
               << "res: " << res << ", "
-              << "step_size: " << step_size << ", "
               << "trans_eps: " << trans_eps << ", "
-              << "max_iter: " << max_iter 
+              << "num_neighbors: "<< num_neighbors
               << std::endl << std::endl;
 
     return true;
 }
 
-bool NDTRegistration::SetInputTarget(const CloudData::CLOUD_PTR& input_target) {
-    ndt_ptr_->setInputTarget(input_target);
+bool VGICPRegistration::SetInputTarget(const CloudData::CLOUD_PTR& input_target) {
+    vgicp_ptr_->setInputTarget(input_target);
 
     return true;
 }
 
-bool NDTRegistration::ScanMatch(const CloudData::CLOUD_PTR& input_source, 
+bool VGICPRegistration::ScanMatch(const CloudData::CLOUD_PTR& input_source, 
                                 const Eigen::Matrix4f& predict_pose, 
                                 CloudData::CLOUD_PTR& result_cloud_ptr,
                                 Eigen::Matrix4f& result_pose) {
-    ndt_ptr_->setInputSource(input_source);
-    ndt_ptr_->align(*result_cloud_ptr, predict_pose);
-    result_pose = ndt_ptr_->getFinalTransformation();
+    vgicp_ptr_->setInputSource(input_source);
+    vgicp_ptr_->align(*result_cloud_ptr, predict_pose);
+    result_pose = vgicp_ptr_->getFinalTransformation();
 
     return true;
 }

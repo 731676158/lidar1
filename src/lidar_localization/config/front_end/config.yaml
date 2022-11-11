@@ -31,6 +31,11 @@ ICP_SVD:
     trans_eps : 0.01
     euc_fitness_eps : 0.36
     max_iter : 10
+VGICP:
+    res : 1.0
+    num_threads : 8
+    trans_eps : 0.01
+    num_neighbors : 7
 ## 滤波相关参数
 voxel_filter:
     local_map:
