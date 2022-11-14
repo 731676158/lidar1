@@ -1,5 +1,3 @@
-#ifndef FAST_GICP_FAST_VGICP_IMPL_HPP
-#define FAST_GICP_FAST_VGICP_IMPL_HPP
 
 #include <omp.h>
 
@@ -207,5 +205,3 @@ double FastVGICP<PointSource, PointTarget>::compute_error(const Eigen::Isometry3
 }
 
 }  // namespace fast_gicp
-
-#endif

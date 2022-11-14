@@ -3,7 +3,8 @@
  * @Author: Ren Qian
  * @Date: 2020-02-08 21:46:45
  */
-#include "lidar_localization/models/registration/tools/vgicp_registration.hpp"
+#include "lidar_localization/models/registration/vgicp_registration.hpp"
+#include "models/registration/tools/fast_vgicp.cpp"
 
 #include "glog/logging.h"
 #include <string>
@@ -21,7 +22,7 @@ VGICPRegistration::VGICPRegistration(const YAML::Node& node)
     SetRegistrationParam(res, num_threads, trans_eps, num_neighbors);
 }
 
-VGICPRegistration::VGICPRegistration(float res, float step_size, int num_threads, float trans_eps, int num_neighbors)
+VGICPRegistration::VGICPRegistration(float res, int num_threads, float trans_eps, int num_neighbors)
     :vgicp_ptr_(new fast_gicp::FastVGICP<CloudData::POINT, CloudData::POINT>()) {
 
     SetRegistrationParam(res, num_threads, trans_eps, num_neighbors);

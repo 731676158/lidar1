@@ -13,7 +13,7 @@ namespace lidar_localization {
 class VGICPRegistration: public RegistrationInterface {
   public:
     VGICPRegistration(const YAML::Node& node);
-    VGICPRegistration(float res, float step_size, int num_threads, float trans_eps, int num_neighbors);
+    VGICPRegistration(float res, int num_threads, float trans_eps, int num_neighbors);
 
     bool SetInputTarget(const CloudData::CLOUD_PTR& input_target) override;
     bool ScanMatch(const CloudData::CLOUD_PTR& input_source, 
@@ -22,7 +22,7 @@ class VGICPRegistration: public RegistrationInterface {
                    Eigen::Matrix4f& result_pose) override;
   
   private:
-    bool SetRegistrationParam(float res, float step_size, int num_threads, float trans_eps, int num_neighbors);
+    bool SetRegistrationParam(float res, int num_threads, float trans_eps, int num_neighbors);
 
   private:
     fast_gicp::FastVGICP<CloudData::POINT, CloudData::POINT>::Ptr vgicp_ptr_;

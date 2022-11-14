@@ -4,6 +4,7 @@ project(lidar_localization)
 SET(CMAKE_BUILD_TYPE "Release")
 SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 add_compile_options(-std=c++11)
+add_definitions(-w -Wunknown-pragmas -Wunused-function -Wdeprecated-declarations)
 add_definitions(-std=c++11)
 
 # 要求PCL 1.7的环境！！！ 1.8的PCL和c++11不兼容，否则会出现不明原因的段错误，是在节点运行前出现的段错误，因此在此处需要对PCL库的版本进行限定】
@@ -50,6 +51,8 @@ file(GLOB_RECURSE NODE_SRCS "src/nodes/*_node.cpp")
 file(GLOB_RECURSE THIRD_PARTY_SRCS "third_party/*.cpp")
 list(REMOVE_ITEM ALL_SRCS ${NODE_SRCS})
 list(REMOVE_ITEM ALL_SRCS ${THIRD_PARTY_SRCS})
+
+message("include = ${PROJECT_INCLUDE_DIRS}")
 
 add_executable(test_frame_node src/nodes/test_frame_node.cpp ${ALL_SRCS})
 target_link_libraries(test_frame_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})

@@ -1,5 +1,3 @@
-#ifndef FAST_GICP_FAST_GICP_IMPL_HPP
-#define FAST_GICP_FAST_GICP_IMPL_HPP
 
 #include "lidar_localization/models/registration/tools/so3.hpp"
 #include "lidar_localization/models/registration/tools/fast_gicp.hpp"
@@ -19,7 +17,7 @@ FastGICP<PointSource, PointTarget>::FastGICP() {
   reg_name_ = "FastGICP";
   corr_dist_threshold_ = std::numeric_limits<float>::max();
 
-  regularization_method_ = RegularizationMethod::PLANE;
+  regularization_method_ = settings::RegularizationMethod::PLANE;
   source_kdtree_.reset(new pcl::search::KdTree<PointSource>);
   target_kdtree_.reset(new pcl::search::KdTree<PointTarget>);
 }
@@ -44,7 +42,7 @@ void FastGICP<PointSource, PointTarget>::setCorrespondenceRandomness(int k) {
 }
 
 template <typename PointSource, typename PointTarget>
-void FastGICP<PointSource, PointTarget>::setRegularizationMethod(RegularizationMethod method) {
+void FastGICP<PointSource, PointTarget>::setRegularizationMethod(settings::RegularizationMethod method) {
   regularization_method_ = method;
 }
 
@@ -263,9 +261,9 @@ bool FastGICP<PointSource, PointTarget>::calculate_covariances(
     neighbors.colwise() -= neighbors.rowwise().mean().eval();
     Eigen::Matrix4d cov = neighbors * neighbors.transpose() / k_correspondences_;
 
-    if (regularization_method_ == RegularizationMethod::NONE) {
+    if (regularization_method_ == settings::RegularizationMethod::NONE) {
       covariances[i] = cov;
-    } else if (regularization_method_ == RegularizationMethod::FROBENIUS) {
+    } else if (regularization_method_ == settings::RegularizationMethod::FROBENIUS) {
       double lambda = 1e-3;
       Eigen::Matrix3d C = cov.block<3, 3>(0, 0).cast<double>() + lambda * Eigen::Matrix3d::Identity();
       Eigen::Matrix3d C_inv = C.inverse();
@@ -279,13 +277,13 @@ bool FastGICP<PointSource, PointTarget>::calculate_covariances(
         default:
           std::cerr << "here must not be reached" << std::endl;
           abort();
-        case RegularizationMethod::PLANE:
+        case settings::RegularizationMethod::PLANE:
           values = Eigen::Vector3d(1, 1, 1e-3);
           break;
-        case RegularizationMethod::MIN_EIG:
+        case settings::RegularizationMethod::MIN_EIG:
           values = svd.singularValues().array().max(1e-3);
           break;
-        case RegularizationMethod::NORMALIZED_MIN_EIG:
+        case settings::RegularizationMethod::NORMALIZED_MIN_EIG:
           values = svd.singularValues() / svd.singularValues().maxCoeff();
           values = values.array().max(1e-3);
           break;
@@ -301,4 +299,3 @@ bool FastGICP<PointSource, PointTarget>::calculate_covariances(
 
 }  // namespace fast_gicp
 
-#endif
