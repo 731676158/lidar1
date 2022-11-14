@@ -12,7 +12,7 @@ enum class VoxelAccumulationMode { ADDITIVE, ADDITIVE_WEIGHTED, MULTIPLICATIVE }
 
 namespace fast_gicp {
 
-static std::vector<Eigen::Vector3i, Eigen::aligned_allocator<Eigen::Vector3i>> neighbor_offsets(NeighborSearchMethod search_method) {
+static std::vector<Eigen::Vector3i, Eigen::aligned_allocator<Eigen::Vector3i>> neighbor_offsets(settings::NeighborSearchMethod search_method) {
   switch(search_method) {
       // clang-format off
     default:
@@ -131,7 +131,7 @@ public:
 template<typename PointT>
 class GaussianVoxelMap {
 public:
-  GaussianVoxelMap(double resolution, VoxelAccumulationMode mode) : voxel_resolution_(resolution), voxel_mode_(mode) {}
+  GaussianVoxelMap(double resolution, settings::VoxelAccumulationMode mode) : voxel_resolution_(resolution), voxel_mode_(mode) {}
 
   void create_voxelmap(const pcl::PointCloud<PointT>& cloud, const std::vector<Eigen::Matrix4d, Eigen::aligned_allocator<Eigen::Matrix4d>>& covs) {
     voxels_.clear();
@@ -142,11 +142,11 @@ public:
       if(found == voxels_.end()) {
         GaussianVoxel::Ptr voxel;
         switch(voxel_mode_) {
-          case VoxelAccumulationMode::ADDITIVE:
-          case VoxelAccumulationMode::ADDITIVE_WEIGHTED:
+          case settings::VoxelAccumulationMode::ADDITIVE:
+          case settings::VoxelAccumulationMode::ADDITIVE_WEIGHTED:
             voxel = std::shared_ptr<AdditiveGaussianVoxel>(new AdditiveGaussianVoxel);
             break;
-          case VoxelAccumulationMode::MULTIPLICATIVE:
+          case settings::VoxelAccumulationMode::MULTIPLICATIVE:
             voxel = std::shared_ptr<MultiplicativeGaussianVoxel>(new MultiplicativeGaussianVoxel);
             break;
         }
@@ -182,7 +182,7 @@ public:
 
 private:
   double voxel_resolution_;
-  VoxelAccumulationMode voxel_mode_;
+  settings::VoxelAccumulationMode voxel_mode_;
 
   using VoxelMap = std::unordered_map<Eigen::Vector3i, GaussianVoxel::Ptr, Vector3iHash, std::equal_to<Eigen::Vector3i>, 
 										Eigen::aligned_allocator<std::pair<const Eigen::Vector3i, GaussianVoxel::Ptr>>>;

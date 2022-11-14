@@ -10,6 +10,7 @@
 #include <pcl/registration/registration.h>
 
 #include "lidar_localization/models/registration/tools/lsq_registration.hpp"
+#include "lidar_localization/models/registration/tools/fast_vgicp_voxel.hpp"
 
 namespace fast_gicp {
 
@@ -50,7 +51,7 @@ public:
 
   void setNumThreads(int n);
   void setCorrespondenceRandomness(int k);
-  void setRegularizationMethod(RegularizationMethod method);
+  void setRegularizationMethod(settings::RegularizationMethod method);
 
   virtual void swapSourceAndTarget() override;
   virtual void clearSource() override;
@@ -85,7 +86,7 @@ protected:
   int num_threads_;
   int k_correspondences_;
 
-  RegularizationMethod regularization_method_;
+  settings::RegularizationMethod regularization_method_;
 
   std::shared_ptr<pcl::search::KdTree<PointSource>> source_kdtree_;
   std::shared_ptr<pcl::search::KdTree<PointTarget>> target_kdtree_;

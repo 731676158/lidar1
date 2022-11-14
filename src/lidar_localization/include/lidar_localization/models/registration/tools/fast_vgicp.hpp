@@ -56,8 +56,8 @@ public:
   virtual ~FastVGICP() override;
 
   void setResolution(double resolution);
-  void setVoxelAccumulationMode(VoxelAccumulationMode mode);
-  void setNeighborSearchMethod(NeighborSearchMethod method);
+  void setVoxelAccumulationMode(settings::VoxelAccumulationMode mode);
+  void setNeighborSearchMethod(settings::NeighborSearchMethod method);
 
   virtual void swapSourceAndTarget() override;
   virtual void setInputTarget(const PointCloudTargetConstPtr& cloud) override;
@@ -70,8 +70,8 @@ protected:
 
 protected:
   double voxel_resolution_;
-  NeighborSearchMethod search_method_;
-  VoxelAccumulationMode voxel_mode_;
+  settings::NeighborSearchMethod search_method_;
+  settings::VoxelAccumulationMode voxel_mode_;
 
   std::unique_ptr<GaussianVoxelMap<PointTarget>> voxelmap_;
 

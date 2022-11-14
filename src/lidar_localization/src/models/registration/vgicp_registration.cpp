@@ -14,7 +14,7 @@ VGICPRegistration::VGICPRegistration(const YAML::Node& node)
     :vgicp_ptr_(new fast_gicp::FastVGICP<CloudData::POINT, CloudData::POINT>()) {
     
     float res = node["res"].as<float>();
-    float num_threads = node["num_threads"].as<float>();
+    int num_threads = node["num_threads"].as<int>();
     float trans_eps = node["trans_eps"].as<float>();
     int num_neighbors = node["num_neighbors"].as<int>();
 

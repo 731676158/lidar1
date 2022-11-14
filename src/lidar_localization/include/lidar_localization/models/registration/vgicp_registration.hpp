@@ -25,7 +25,7 @@ class VGICPRegistration: public RegistrationInterface {
     bool SetRegistrationParam(float res, float step_size, int num_threads, float trans_eps, int num_neighbors);
 
   private:
-    pcl::FastVGICP<CloudData::POINT, CloudData::POINT>::Ptr vgicp_ptr_;
+    fast_gicp::FastVGICP<CloudData::POINT, CloudData::POINT>::Ptr vgicp_ptr_;
 };
 }
 
