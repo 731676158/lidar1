@@ -23,6 +23,12 @@ find_package(catkin REQUIRED COMPONENTS
   std_srvs
 )
 
+find_package(OpenMP)
+if (OPENMP_FOUND)
+  set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+  set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+endif()
+
 add_service_files(
    FILES
    saveMap.srv
@@ -51,8 +57,6 @@ file(GLOB_RECURSE NODE_SRCS "src/nodes/*_node.cpp")
 file(GLOB_RECURSE THIRD_PARTY_SRCS "third_party/*.cpp")
 list(REMOVE_ITEM ALL_SRCS ${NODE_SRCS})
 list(REMOVE_ITEM ALL_SRCS ${THIRD_PARTY_SRCS})
-
-message("include = ${PROJECT_INCLUDE_DIRS}")
 
 add_executable(test_frame_node src/nodes/test_frame_node.cpp ${ALL_SRCS})
 target_link_libraries(test_frame_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})

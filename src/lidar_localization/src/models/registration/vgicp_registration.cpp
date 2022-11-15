@@ -4,7 +4,7 @@
  * @Date: 2020-02-08 21:46:45
  */
 #include "lidar_localization/models/registration/vgicp_registration.hpp"
-#include "models/registration/tools/fast_vgicp.cpp"
+//#include "models/registration/tools/fast_vgicp.cpp"
 
 #include "glog/logging.h"
 #include <string>

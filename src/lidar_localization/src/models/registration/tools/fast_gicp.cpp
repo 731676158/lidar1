@@ -299,3 +299,6 @@ bool FastGICP<PointSource, PointTarget>::calculate_covariances(
 
 }  // namespace fast_gicp
 
+template class fast_gicp::FastGICP<pcl::PointXYZ, pcl::PointXYZ>;
+template class fast_gicp::FastGICP<pcl::PointXYZI, pcl::PointXYZI>;
+

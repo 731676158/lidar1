@@ -205,3 +205,7 @@ double FastVGICP<PointSource, PointTarget>::compute_error(const Eigen::Isometry3
 }
 
 }  // namespace fast_gicp
+
+
+template class fast_gicp::FastVGICP<pcl::PointXYZ, pcl::PointXYZ>;
+template class fast_gicp::FastVGICP<pcl::PointXYZI, pcl::PointXYZI>;

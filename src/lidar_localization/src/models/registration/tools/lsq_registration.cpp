@@ -188,3 +188,6 @@ std::pair<float, float> LsqRegistration<PointTarget, PointSource>::get_converged
 }
 
 }  // namespace fast_gicp
+
+template class fast_gicp::LsqRegistration<pcl::PointXYZ, pcl::PointXYZ>;
+template class fast_gicp::LsqRegistration<pcl::PointXYZI, pcl::PointXYZI>;
