@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkKdTreeSelector.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkLinearSelector.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkCellDistanceSelector.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkKdTreeSelector.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkLinearSelector.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkCellDistanceSelector.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Filters/Selection/vtkFiltersSelectionModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkFiltersSelection"
+		],
+		"name" : "vtkFiltersSelection"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIIElementBlock.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIIInSituReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIINodalCoordinatesTemplate.txx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIIResultsArrayTemplate.txx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIICache.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIReaderParser.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIReaderVariableCheck.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkModelMetadata.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIINodalCoordinatesTemplate.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIIResultsArrayTemplate.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIIElementBlock.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkCPExodusIIInSituReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIICache.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIReaderParser.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIReaderVariableCheck.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkExodusIIWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Exodus/vtkModelMetadata.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/Exodus/vtkIOExodusModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkIOExodus"
+		],
+		"name" : "vtkIOExodus"
+	}
+}

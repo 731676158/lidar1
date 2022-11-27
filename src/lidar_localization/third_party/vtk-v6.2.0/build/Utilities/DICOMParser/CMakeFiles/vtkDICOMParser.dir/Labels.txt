@@ -1,0 +1,6 @@
+# Target labels
+ vtkDICOMParser
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/Utilities/DICOMParser/DICOMFile.cxx
+/home/jeff/codes/vtk-v6.2.0/Utilities/DICOMParser/DICOMParser.cxx
+/home/jeff/codes/vtk-v6.2.0/Utilities/DICOMParser/DICOMAppHelper.cxx

@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Import/vtk3DSImporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Import/vtkImporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Import/vtkVRMLImporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Import/vtk3DSImporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Import/vtkImporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Import/vtkVRMLImporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/Import/vtkIOImportModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkIOImport"
+		],
+		"name" : "vtkIOImport"
+	}
+}

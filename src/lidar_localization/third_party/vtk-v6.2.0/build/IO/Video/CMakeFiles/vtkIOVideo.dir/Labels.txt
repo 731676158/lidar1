@@ -1,0 +1,6 @@
+# Target labels
+ vtkIOVideo
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/IO/Video/vtkVideoSource.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Video/vtkVideoSource.h
+/home/jeff/codes/vtk-v6.2.0/build/IO/Video/vtkIOVideoModule.h

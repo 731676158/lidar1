@@ -1,0 +1,4 @@
+# Target labels
+ vtksqlite
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/sqlite/vtksqlite/vtk_sqlite3.c

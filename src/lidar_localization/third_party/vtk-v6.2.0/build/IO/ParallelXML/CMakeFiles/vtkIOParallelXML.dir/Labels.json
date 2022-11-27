@@ -1,0 +1,88 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPDataSetWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPDataWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPImageDataWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPPolyDataWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPRectilinearGridWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPStructuredDataWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPStructuredGridWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPDataSetWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPDataWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPImageDataWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPPolyDataWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPRectilinearGridWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPStructuredDataWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPStructuredGridWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/ParallelXML/vtkIOParallelXMLModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkIOParallelXML"
+		],
+		"name" : "vtkIOParallelXML"
+	}
+}

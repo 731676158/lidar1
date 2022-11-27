@@ -1,0 +1,88 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskData.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskDataParser.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkCMLMoleculeReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeAlgorithm.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToAtomBallFilter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToBondStickFilter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToPolyDataFilter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkPeriodicTable.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProgrammableElectronicData.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProteinRibbonFilter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkSimpleBondPerceiver.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskData.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskDataParser.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkCMLMoleculeReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeAlgorithm.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToAtomBallFilter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToBondStickFilter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToPolyDataFilter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkPeriodicTable.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProgrammableElectronicData.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProteinRibbonFilter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkSimpleBondPerceiver.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Domains/Chemistry/vtkDomainsChemistryModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkDomainsChemistry"
+		],
+		"name" : "vtkDomainsChemistry"
+	}
+}

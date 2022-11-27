@@ -1,0 +1,38 @@
+# Target labels
+ vtkFiltersStatistics
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkAutoCorrelativeStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkBivariateLinearTableThreshold.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkComputeQuartiles.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkContingencyStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkCorrelativeStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkDescriptiveStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkHighestDensityRegionsStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkExtractFunctionalBagPlot.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkKMeansDistanceFunctorCalculator.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkKMeansDistanceFunctor.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkKMeansStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkMultiCorrelativeStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkOrderStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkPCAStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkStatisticsAlgorithm.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkStrahlerMetric.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkStreamingStatistics.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkAutoCorrelativeStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkBivariateLinearTableThreshold.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkComputeQuartiles.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkContingencyStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkCorrelativeStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkDescriptiveStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkHighestDensityRegionsStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkExtractFunctionalBagPlot.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkKMeansDistanceFunctorCalculator.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkKMeansDistanceFunctor.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkKMeansStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkMultiCorrelativeStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkOrderStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkPCAStatistics.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkStatisticsAlgorithm.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkStrahlerMetric.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Statistics/vtkStreamingStatistics.h
+/home/jeff/codes/vtk-v6.2.0/build/Filters/Statistics/vtkFiltersStatisticsModule.h

@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageResliceMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageSliceCollection.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageStack.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageResliceMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageSliceCollection.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageStack.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/Image/vtkRenderingImageModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkRenderingImage"
+		],
+		"name" : "vtkRenderingImage"
+	}
+}

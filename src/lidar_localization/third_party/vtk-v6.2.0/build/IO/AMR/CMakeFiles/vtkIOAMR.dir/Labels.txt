@@ -1,0 +1,22 @@
+# Target labels
+ vtkIOAMR
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRDataSetCache.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseParticlesReader.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseReader.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoParticlesReader.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReader.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReaderInternal.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashParticlesReader.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReader.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReaderInternal.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRDataSetCache.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseParticlesReader.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseReader.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoParticlesReader.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReader.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReaderInternal.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashParticlesReader.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReader.h
+/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReaderInternal.h
+/home/jeff/codes/vtk-v6.2.0/build/IO/AMR/vtkIOAMRModule.h

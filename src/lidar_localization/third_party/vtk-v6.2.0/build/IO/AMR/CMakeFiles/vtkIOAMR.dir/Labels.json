@@ -1,0 +1,70 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRDataSetCache.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseParticlesReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoParticlesReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReaderInternal.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashParticlesReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReaderInternal.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRDataSetCache.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseParticlesReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRBaseReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoParticlesReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMREnzoReaderInternal.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashParticlesReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/AMR/vtkAMRFlashReaderInternal.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/AMR/vtkIOAMRModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkIOAMR"
+		],
+		"name" : "vtkIOAMR"
+	}
+}

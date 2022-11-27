@@ -1,0 +1,28 @@
+# Target labels
+ vtkDomainsChemistry
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskData.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskDataParser.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkCMLMoleculeReader.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeAlgorithm.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeMapper.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToAtomBallFilter.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToBondStickFilter.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToPolyDataFilter.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkPeriodicTable.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProgrammableElectronicData.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProteinRibbonFilter.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkSimpleBondPerceiver.cxx
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskData.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkBlueObeliskDataParser.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkCMLMoleculeReader.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeAlgorithm.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeMapper.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToAtomBallFilter.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToBondStickFilter.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkMoleculeToPolyDataFilter.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkPeriodicTable.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProgrammableElectronicData.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkProteinRibbonFilter.h
+/home/jeff/codes/vtk-v6.2.0/Domains/Chemistry/vtkSimpleBondPerceiver.h
+/home/jeff/codes/vtk-v6.2.0/build/Domains/Chemistry/vtkDomainsChemistryModule.h

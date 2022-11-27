@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/tiff/vtktiff/mkg3states.c"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtktiff"
+		],
+		"name" : "vtkmkg3states"
+	}
+}

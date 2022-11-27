@@ -1,0 +1,19 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Utilities/ParseOGLExt/Tokenizer.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Utilities/ParseOGLExt/ParseOGLExt.cxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkParseOGLExt"
+		],
+		"name" : "vtkParseOGLExt"
+	}
+}

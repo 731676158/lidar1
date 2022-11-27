@@ -1,0 +1,58 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPContourGrid.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPContourGridManyPieces.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPMergePoints.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPMergePolyDataHelper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkThreadedSynchronizedTemplates3D.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPTransform.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPWarpVector.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPContourGrid.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPContourGridManyPieces.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPMergePoints.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPMergePolyDataHelper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkThreadedSynchronizedTemplates3D.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPTransform.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/SMP/vtkSMPWarpVector.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Filters/SMP/vtkFiltersSMPModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkFiltersSMP"
+		],
+		"name" : "vtkFiltersSMP"
+	}
+}

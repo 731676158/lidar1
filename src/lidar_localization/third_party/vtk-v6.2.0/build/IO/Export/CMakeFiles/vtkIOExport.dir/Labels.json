@@ -1,0 +1,106 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkIVExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOBJExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOOGLExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkPOVExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBLight.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBProperty.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkVRMLExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3D.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterFIWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterXMLWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkGL2PSExporter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkIVExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOBJExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOOGLExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkPOVExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBLight.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBProperty.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkVRMLExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3D.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterFIWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterXMLWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkGL2PSExporter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/Export/vtkIOExportModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkIOExport"
+		],
+		"name" : "vtkIOExport"
+	}
+}

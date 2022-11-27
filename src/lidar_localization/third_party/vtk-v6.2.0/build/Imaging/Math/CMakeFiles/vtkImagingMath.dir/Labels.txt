@@ -1,0 +1,20 @@
+# Target labels
+ vtkImagingMath
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDivergence.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDotProduct.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogarithmicScale.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogic.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMagnitude.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMaskBits.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMathematics.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageWeightedSum.cxx
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDivergence.h
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDotProduct.h
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogarithmicScale.h
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogic.h
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMagnitude.h
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMaskBits.h
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMathematics.h
+/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageWeightedSum.h
+/home/jeff/codes/vtk-v6.2.0/build/Imaging/Math/vtkImagingMathModule.h

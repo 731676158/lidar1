@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Utilities/HashSource/vtkHashSource.cxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkUtilitiesHashSource"
+		],
+		"name" : "vtkHashSource"
+	}
+}

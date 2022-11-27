@@ -1,0 +1,58 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkEnSightWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPChacoReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPDataSetReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPDataSetWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPImageWriter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPOpenFOAMReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPSLACReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkEnSightWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPChacoReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPDataSetReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPDataSetWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPImageWriter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPOpenFOAMReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Parallel/vtkPSLACReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/Parallel/vtkIOParallelModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkIOParallel"
+		],
+		"name" : "vtkIOParallel"
+	}
+}

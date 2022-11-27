@@ -1,0 +1,58 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSight6BinaryReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSight6Reader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightGoldBinaryReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightGoldReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightMasterServerReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkGenericEnSightReader.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSight6BinaryReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSight6Reader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightGoldBinaryReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightGoldReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightMasterServerReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkEnSightReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/EnSight/vtkGenericEnSightReader.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/EnSight/vtkIOEnSightModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkIOEnSight"
+		],
+		"name" : "vtkIOEnSight"
+	}
+}

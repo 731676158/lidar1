@@ -1,0 +1,70 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageButterworthHighPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageButterworthLowPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageFFT.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageFourierCenter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageFourierFilter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageIdealHighPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageIdealLowPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageRFFT.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkTableFFT.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageButterworthHighPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageButterworthLowPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageFFT.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageFourierCenter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageFourierFilter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageIdealHighPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageIdealLowPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkImageRFFT.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Fourier/vtkTableFFT.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Fourier/vtkImagingFourierModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkImagingFourier"
+		],
+		"name" : "vtkImagingFourier"
+	}
+}

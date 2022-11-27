@@ -1,0 +1,18 @@
+# Target labels
+ vtkftgl
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTBitmapGlyph.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTBitmapGlyphRenderOpenGL.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTCharmap.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTFace.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTFont.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTGLBitmapFont.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTGLBitmapFontRenderOpenGL.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTGLPixmapFont.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTGLPixmapFontRenderOpenGL.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTGlyph.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTGlyphContainer.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTLibrary.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTPixmapGlyph.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTPixmapGlyphRenderOpenGL.cpp
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/ftgl/src/FTSize.cpp

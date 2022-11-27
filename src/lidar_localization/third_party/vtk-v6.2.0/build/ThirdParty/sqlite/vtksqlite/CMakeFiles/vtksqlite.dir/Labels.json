@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/sqlite/vtksqlite/vtk_sqlite3.c"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtksqlite"
+		],
+		"name" : "vtksqlite"
+	}
+}

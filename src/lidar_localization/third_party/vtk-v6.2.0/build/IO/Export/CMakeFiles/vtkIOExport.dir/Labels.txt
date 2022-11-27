@@ -1,0 +1,34 @@
+# Target labels
+ vtkIOExport
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkIVExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOBJExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOOGLExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkPOVExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBLight.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBProperty.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkVRMLExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3D.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterFIWriter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterWriter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterXMLWriter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkGL2PSExporter.cxx
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkIVExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOBJExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkOOGLExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkPOVExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBLight.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkRIBProperty.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkVRMLExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3D.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterFIWriter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterWriter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkX3DExporterXMLWriter.h
+/home/jeff/codes/vtk-v6.2.0/IO/Export/vtkGL2PSExporter.h
+/home/jeff/codes/vtk-v6.2.0/build/IO/Export/vtkIOExportModule.h

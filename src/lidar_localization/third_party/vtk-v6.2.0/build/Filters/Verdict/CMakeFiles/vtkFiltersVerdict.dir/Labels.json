@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Verdict/vtkCellQuality.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Verdict/vtkMatrixMathFilter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Verdict/vtkMeshQuality.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Verdict/vtkCellQuality.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Verdict/vtkMatrixMathFilter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Verdict/vtkMeshQuality.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Filters/Verdict/vtkFiltersVerdictModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkFiltersVerdict"
+		],
+		"name" : "vtkFiltersVerdict"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Context2D/vtkContextView.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Context2D/vtkContextInteractorStyle.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Context2D/vtkContextView.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Context2D/vtkContextInteractorStyle.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Views/Context2D/vtkViewsContext2DModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkViewsContext2D"
+		],
+		"name" : "vtkViewsContext2D"
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkConvertSelectionDomain.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkDataRepresentation.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkEmptyRepresentation.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkRenderViewBase.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkView.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkViewTheme.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkConvertSelectionDomain.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkDataRepresentation.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkEmptyRepresentation.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkRenderViewBase.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkView.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Views/Core/vtkViewTheme.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Views/Core/vtkViewsCoreModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkViewsCore"
+		],
+		"name" : "vtkViewsCore"
+	}
+}

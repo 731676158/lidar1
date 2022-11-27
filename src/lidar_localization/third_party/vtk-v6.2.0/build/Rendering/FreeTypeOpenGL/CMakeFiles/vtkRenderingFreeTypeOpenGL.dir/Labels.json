@@ -1,0 +1,28 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkRenderingFreeTypeOpenGL"
+		],
+		"name" : "vtkRenderingFreeTypeOpenGL"
+	}
+}

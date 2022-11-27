@@ -1,0 +1,46 @@
+# Target labels
+ vtklibxml2
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/DOCBparser.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/HTMLparser.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/HTMLtree.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/SAX.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/SAX2.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/c14n.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/catalog.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/chvalid.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/debugXML.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/dict.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/encoding.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/entities.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/error.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/globals.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/hash.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/legacy.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/list.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/nanoftp.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/nanohttp.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/parser.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/parserInternals.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/pattern.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/relaxng.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/schematron.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/threads.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/tree.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/uri.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/valid.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xinclude.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xlink.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlIO.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlmemory.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlmodule.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlreader.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlregexp.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlsave.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlschemas.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlschemastypes.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlstring.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlunicode.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlwriter.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xpath.c
+/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xpointer.c

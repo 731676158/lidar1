@@ -1,0 +1,178 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkCompassRepresentation.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkCompassWidget.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAdaptiveArcs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAlignedImageSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoArcs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAssignCoordinates.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoCamera.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoFileImageSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoFileTerrainSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoGlobeSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoGraticule.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoImageNode.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoInteractorStyle.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoProjection.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoProjectionSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoRandomGraphSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoSampleArcs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoSphereTransform.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTerrain.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTerrain2D.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTerrainNode.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTransform.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTreeNode.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTreeNodeCache.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGlobeSource.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAlignedImageRepresentation.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkCompassRepresentation.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkCompassWidget.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAdaptiveArcs.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAlignedImageSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoArcs.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAssignCoordinates.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoCamera.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoFileImageSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoFileTerrainSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoGlobeSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoGraticule.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoImageNode.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoInteractorStyle.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoProjection.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoProjectionSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoRandomGraphSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoSampleArcs.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoSphereTransform.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTerrain.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTerrain2D.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTerrainNode.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTransform.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTreeNode.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoTreeNodeCache.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGlobeSource.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Geovis/Core/vtkGeoAlignedImageRepresentation.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Geovis/Core/vtkGeovisCoreModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkGeovisCore"
+		],
+		"name" : "vtkGeovisCore"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/LOD/vtkLODActor.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/LOD/vtkQuadricLODActor.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/LOD/vtkLODActor.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/LOD/vtkQuadricLODActor.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/LOD/vtkRenderingLODModule.h"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkRenderingLOD"
+		],
+		"name" : "vtkRenderingLOD"
+	}
+}

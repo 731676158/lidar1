@@ -1,0 +1,10 @@
+# Target labels
+ vtkFiltersSelection
+# Source files and their labels
+/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkKdTreeSelector.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkLinearSelector.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkCellDistanceSelector.cxx
+/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkKdTreeSelector.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkLinearSelector.h
+/home/jeff/codes/vtk-v6.2.0/Filters/Selection/vtkCellDistanceSelector.h
+/home/jeff/codes/vtk-v6.2.0/build/Filters/Selection/vtkFiltersSelectionModule.h

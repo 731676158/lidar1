@@ -1,0 +1,658 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCameraPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkChooserPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkClearRGBPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkClearZPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkClipPlanesPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCoincidentTopologyResolutionPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkColorMaterialHelper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCompositePainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCompositePolyDataMapper2.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDataTransferHelper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDefaultPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDefaultPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDepthPeelingPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDisplayListPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkFrameBufferObject.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkFrameBufferObject2.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkGLSLShaderDeviceAdapter2.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkGaussianBlurPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkGenericOpenGLRenderWindow.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkHardwareSelectionPolyDataPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkImageProcessingPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLightingHelper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLightingPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLightsPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLinesPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpaquePass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLActor.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLCamera.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLClipPlanesPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLCoincidentTopologyResolutionPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLCompositePainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLDisplayListPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLExtensionManager.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLGL2PSHelper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLGlyph3DMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLHardwareSelector.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLHardwareSupport.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLImageMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLImageSliceMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLabeledContourMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLight.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLightMonitor.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLightingPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLModelViewProjectionMonitor.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPainterDeviceAdapter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPolyDataMapper2D.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLProperty.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRenderWindow.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRenderer.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRepresentationPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLScalarsToColorsPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLState.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLTexture.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOverlayPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPainterPolyDataMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPixelBufferObject.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPointsPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPolyDataPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPolygonsPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPrimitivePainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderPassCollection.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderState.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderbuffer.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRepresentationPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkScalarsToColorsPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkSequencePass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShader2.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShader2Collection.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShaderProgram2.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShadowMapBakerPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShadowMapPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkSobelGradientMagnitudePass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkStandardPolyDataPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTStripsPainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTextureObject.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTextureUnitManager.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTranslucentPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkUniformVariables.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkValuePainter.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkValuePass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkValuePasses.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkVolumetricPass.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkgl.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkRenderingOpenGLObjectFactory.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPolyDataMapper.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkColorMaterialHelper_vs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkDepthPeeling_fs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkGaussianBlurPassShader_fs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkLighting_s.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkLightingHelper_s.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLRenderer_PeelingFS.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultPropFunc_fs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultPropFunc_vs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultMain_fs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultMain_vs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkSobelGradientMagnitudePassShader1_fs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkSobelGradientMagnitudePassShader2_fs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkShadowMapPassShader_fs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkShadowMapPassShader_vs.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkXRenderWindowInteractor.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkXOpenGLRenderWindow.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDummyGPUInfoList.cxx"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkgluPickMatrix.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGL.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkTDxConfigure.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkRenderingOpenGLConfigure.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkgl.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLError.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCameraPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkChooserPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkClearRGBPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkClearZPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkClipPlanesPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCoincidentTopologyResolutionPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkColorMaterialHelper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCompositePainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkCompositePolyDataMapper2.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDataTransferHelper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDefaultPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDefaultPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDepthPeelingPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDisplayListPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkFrameBufferObject.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkFrameBufferObject2.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkGLSLShaderDeviceAdapter2.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkGaussianBlurPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkGenericOpenGLRenderWindow.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkHardwareSelectionPolyDataPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkImageProcessingPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLightingHelper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLightingPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLightsPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLinesPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpaquePass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLActor.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLCamera.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLClipPlanesPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLCoincidentTopologyResolutionPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLCompositePainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLDisplayListPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLExtensionManager.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLGL2PSHelper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLGlyph3DMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLHardwareSelector.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLHardwareSupport.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLImageMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLImageSliceMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLabeledContourMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLight.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLightMonitor.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLLightingPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLModelViewProjectionMonitor.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPainterDeviceAdapter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPolyDataMapper2D.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLProperty.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRenderWindow.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRenderer.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRepresentationPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLScalarsToColorsPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLState.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLTexture.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOverlayPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPainterPolyDataMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPixelBufferObject.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPointsPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPolyDataPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPolygonsPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkPrimitivePainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderPassCollection.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderState.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRenderbuffer.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkRepresentationPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkScalarsToColorsPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkSequencePass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShader2.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShader2Collection.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShaderProgram2.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShadowMapBakerPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShadowMapPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkSobelGradientMagnitudePass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkStandardPolyDataPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTStripsPainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTextureObject.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTextureUnitManager.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkTranslucentPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkUniformVariables.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkValuePainter.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkValuePass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkValuePasses.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkVolumetricPass.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkRenderingOpenGLObjectFactory.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPolyDataMapper.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkXRenderWindowInteractor.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkXOpenGLRenderWindow.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDummyGPUInfoList.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkRenderingOpenGLModule.h"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkgl.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkColorMaterialHelper_vs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkDepthPeeling_fs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkGaussianBlurPassShader_fs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkLighting_s.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkLightingHelper_s.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLRenderer_PeelingFS.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultPropFunc_fs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultPropFunc_vs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultMain_fs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkOpenGLPropertyDefaultMain_vs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkSobelGradientMagnitudePassShader1_fs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkSobelGradientMagnitudePassShader2_fs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkShadowMapPassShader_fs.cxx.rule"
+		},
+		{
+			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/OpenGL/vtkShadowMapPassShader_vs.cxx.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vtkRenderingOpenGL"
+		],
+		"name" : "vtkRenderingOpenGL"
+	}
+}
