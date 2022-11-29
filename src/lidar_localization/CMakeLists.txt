@@ -7,8 +7,11 @@ add_compile_options(-std=c++11)
 add_definitions(-w -Wunknown-pragmas -Wunused-function -Wdeprecated-declarations)
 add_definitions(-std=c++11)
 
+message(STATUS "cmake PREFIX paths : ${CMAKE_PREFIX_PATH}")
+
+
 # 要求PCL 1.7的环境！！！ 1.8的PCL和c++11不兼容，否则会出现不明原因的段错误，是在节点运行前出现的段错误，因此在此处需要对PCL库的版本进行限定】
-# set(PCL_DIR "/usr/lib/x86_64-linux-gnu/cmake/pcl")   #该路径中存放*.cmake文件
+# set(PCL_DIR "${PROJECT_SOURCE_DIR}/third_party/PCL")   #该路径中存放*.cmake文件
 find_package(PCL 1.7 REQUIRED)
 
 find_package(catkin REQUIRED COMPONENTS

@@ -61,7 +61,7 @@
 
   <depend>sensor_msgs</depend>
   <!--depend>pcl_ros</depend-->
-  <!--该PCL是为了配合cmake中的pcl版本，用indigo自带的pcl会出问题-->>
+  <!--该PCL是为了配合cmake中的pcl版本，用ROS自带的pcl会出问题-->>
   <depend>PCL</depend>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
