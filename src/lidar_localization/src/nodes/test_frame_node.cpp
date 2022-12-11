@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
                     if(save_pcd_count ==40)
                     {
                         //此路径要根据自己的电脑路径修改
-                        pcl::io::savePCDFileASCII ("/home/jeff/lidar1/pcds/save/test2_noise.pcd", *cloud_data_sum.cloud_ptr);
+                        pcl::io::savePCDFileASCII ("/home/jeff/codes/lidar1/pcds/save/test2_noise.pcd", *cloud_data_sum.cloud_ptr);
                     }
 //////////////
                     //cloud_pub_ptr->Publish(cloud_data_sum.cloud_ptr);

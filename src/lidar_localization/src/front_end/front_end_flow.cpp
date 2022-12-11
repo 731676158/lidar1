@@ -53,7 +53,6 @@ bool FrontEndFlow::Run() {
             // LOG(INFO) << "Invalid data!" << std::endl;
             continue;
         }
-            
         UpdateGNSSOdometry();
         if (UpdateLaserOdometry()) {
             PublishData();
@@ -210,11 +209,11 @@ bool FrontEndFlow::SaveTrajectory() {
     static bool is_file_created = false;
     if (!is_file_created) {
         //std::string WORK_SPACE_PATH = "/home/jeff/lidar1/src/lidar_localization";
-        if (!FileManager::CreateDirectory("/home/jeff/lidar1/src/lidar_localization/slam_data/trajectory"))
+        if (!FileManager::CreateDirectory("/home/jeff/codes/lidar1/src/lidar_localization/slam_data/trajectory"))
             return false;
-        if (!FileManager::CreateFile(ground_truth, "/home/jeff/lidar1/src/lidar_localization/slam_data/trajectory/ground_truth.txt"))
+        if (!FileManager::CreateFile(ground_truth, "/home/jeff/codes/lidar1/src/lidar_localization/slam_data/trajectory/ground_truth.txt"))
             return false;
-        if (!FileManager::CreateFile(laser_odom, "/home/jeff/lidar1/src/lidar_localization/slam_data/trajectory/laser_odom.txt"))
+        if (!FileManager::CreateFile(laser_odom, "/home/jeff/codes/lidar1/src/lidar_localization/slam_data/trajectory/laser_odom.txt"))
             return false;
         is_file_created = true;
     }

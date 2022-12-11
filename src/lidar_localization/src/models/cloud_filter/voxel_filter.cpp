@@ -4,7 +4,7 @@
  * @Date: 2020-02-09 19:53:20
  */
 #include "lidar_localization/models/cloud_filter/voxel_filter.hpp"
-
+#include <ros/ros.h>
 #include "glog/logging.h"
 
 namespace lidar_localization {
@@ -36,7 +36,6 @@ bool VoxelFilter::SetFilterParam(float leaf_size_x, float leaf_size_y, float lea
 bool VoxelFilter::Filter(const CloudData::CLOUD_PTR& input_cloud_ptr, CloudData::CLOUD_PTR& filtered_cloud_ptr) {
     voxel_filter_.setInputCloud(input_cloud_ptr);
     voxel_filter_.filter(*filtered_cloud_ptr);
-
     return true;
 }
 } 

@@ -6,6 +6,7 @@
 #include "lidar_localization/front_end/front_end.hpp"
 
 #include <fstream>
+#include <ros/ros.h>
 #include <boost/filesystem.hpp>
 #include <pcl/common/transforms.h>
 #include <pcl/io/pcd_io.h>
@@ -125,16 +126,14 @@ bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) 
     current_frame_.cloud_data.time = cloud_data.time;
     std::vector<int> indices;
     pcl::removeNaNFromPointCloud(*cloud_data.cloud_ptr, *current_frame_.cloud_data.cloud_ptr, indices);
-
+    
     CloudData::CLOUD_PTR filtered_cloud_ptr(new CloudData::CLOUD());
     frame_filter_ptr_->Filter(current_frame_.cloud_data.cloud_ptr, filtered_cloud_ptr);
-
     // 静态变量，只有第一次的时候会初始化
     static Eigen::Matrix4f step_pose = Eigen::Matrix4f::Identity();
     static Eigen::Matrix4f last_pose = init_pose_;
     static Eigen::Matrix4f predict_pose = init_pose_;  // pose estimation
     static Eigen::Matrix4f last_key_frame_pose = init_pose_;
-
     // 局部地图容器中没有关键帧，代表是第一帧数据
     // 此时把当前帧数据作为第一个关键帧，并更新局部地图容器和全局地图容器
     if (local_map_frames_.size() == 0) {
@@ -143,7 +142,6 @@ bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) 
         cloud_pose = current_frame_.pose;
         return true;
     }
-
     // 不是第一帧，就正常匹配
     registration_ptr_->ScanMatch(filtered_cloud_ptr, predict_pose, result_cloud_ptr_, current_frame_.pose);
     cloud_pose = current_frame_.pose;
@@ -156,20 +154,20 @@ bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) 
     // 匹配之后根据距离判断是否需要生成新的关键帧，如果需要，则做相应更新
 
     // 采用曼哈顿距离，直接就是distance = |x1 - x2| + |y1 - y2| + |z1 - z2|, 为了方便
-    // if (fabs(last_key_frame_pose(0,3) - current_frame_.pose(0,3)) + 
-    //     fabs(last_key_frame_pose(1,3) - current_frame_.pose(1,3)) +
-    //     fabs(last_key_frame_pose(2,3) - current_frame_.pose(2,3)) > key_frame_distance_) {
-    //     UpdateWithNewFrame(current_frame_);
-    //     last_key_frame_pose = current_frame_.pose;
-    // }
-
-    // 采用常规距离
-    if(hypot(last_key_frame_pose(0,3) - current_frame_.pose(0,3),
-             hypot(last_key_frame_pose(1,3) - current_frame_.pose(1,3),
-                   last_key_frame_pose(2,3) - current_frame_.pose(2,3))) > key_frame_distance_) {
+    if (fabs(last_key_frame_pose(0,3) - current_frame_.pose(0,3)) + 
+        fabs(last_key_frame_pose(1,3) - current_frame_.pose(1,3)) +
+        fabs(last_key_frame_pose(2,3) - current_frame_.pose(2,3)) > key_frame_distance_) {
         UpdateWithNewFrame(current_frame_);
         last_key_frame_pose = current_frame_.pose;
     }
+
+    // 采用常规距离
+    // if(hypot(last_key_frame_pose(0,3) - current_frame_.pose(0,3),
+    //          hypot(last_key_frame_pose(1,3) - current_frame_.pose(1,3),
+    //                last_key_frame_pose(2,3) - current_frame_.pose(2,3))) > key_frame_distance_) {
+    //     UpdateWithNewFrame(current_frame_);
+    //     last_key_frame_pose = current_frame_.pose;
+    // }
 
     return true;
 }
@@ -241,6 +239,7 @@ bool FrontEnd::SaveMap() {
     CloudData::CLOUD_PTR key_frame_cloud_ptr(new CloudData::CLOUD());
     CloudData::CLOUD_PTR transformed_cloud_ptr(new CloudData::CLOUD());
 
+    ROS_INFO("\n--Global map combined with : %d key frames.--", global_map_frames_.size());
     for (size_t i = 0; i < global_map_frames_.size(); ++i) {
         key_frame_path = data_path_ + "/key_frames/key_frame_" + std::to_string(i) + ".pcd";
         pcl::io::loadPCDFile(key_frame_path, *key_frame_cloud_ptr);
