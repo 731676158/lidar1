@@ -12,6 +12,7 @@
 #include <pcl/io/pcd_io.h>
 #include "glog/logging.h"
 
+#include "lidar_localization/tools/file_manager.hpp"
 #include "lidar_localization/global_defination/global_defination.h"
 
 namespace lidar_localization {
@@ -78,6 +79,15 @@ bool FrontEnd::InitDataPath(const YAML::Node& config_node) {
         return false;
     } else {
         LOG(INFO) << "Key Frames Output Path: " << key_frame_path << std::endl << std::endl;
+    }
+
+    std::string local_map_path = data_path_ + "/local_maps";
+    boost::filesystem::create_directory(data_path_ + "/local_maps");
+    if (!boost::filesystem::is_directory(local_map_path)) {
+        LOG(WARNING) << "Cannot create directory " << local_map_path << "!";
+        return false;
+    } else {
+        LOG(INFO) << "Local Map Output Path: " << local_map_path << std::endl << std::endl;
     }
 
     return true;
@@ -211,6 +221,11 @@ bool FrontEnd::UpdateWithNewFrame(const Frame& new_key_frame) {
                                  local_map_frames_.at(i).pose);
         *local_map_ptr_ += *transformed_cloud_ptr;
     }
+    ++local_frame_idx;
+    if (!SaveLocalMap()) {
+        ROS_INFO("ERROR SAVING LOCAL MAP!");
+        return false;
+    }
     has_new_local_map_ = true;
 
     // 更新ndt匹配的目标点云
@@ -228,6 +243,13 @@ bool FrontEnd::UpdateWithNewFrame(const Frame& new_key_frame) {
     key_frame.cloud_data.cloud_ptr.reset(new CloudData::CLOUD());
     global_map_frames_.push_back(key_frame);
 
+    return true;
+}
+
+// Combine saved keyframes into a global map.
+bool FrontEnd::SaveLocalMap() {
+    std::string local_map_path = data_path_ + "/local_maps/local_map_" + std::to_string(local_frame_idx) + ".pcd";
+    pcl::io::savePCDFileBinary(local_map_path, *local_map_ptr_);
     return true;
 }
 

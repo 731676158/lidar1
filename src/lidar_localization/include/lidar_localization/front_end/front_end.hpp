@@ -52,6 +52,7 @@ class FrontEnd {
     bool InitRegistration(std::shared_ptr<RegistrationInterface>& registration_ptr, const YAML::Node& config_node);
     bool InitFilter(std::string filter_user, std::shared_ptr<CloudFilterInterface>& filter_ptr, const YAML::Node& config_node);
     bool UpdateWithNewFrame(const Frame& new_key_frame);
+    bool SaveLocalMap();
 
   private:
     std::string data_path_ = "";
@@ -75,6 +76,7 @@ class FrontEnd {
 
     float key_frame_distance_ = 2.0;
     int local_frame_num_ = 20;
+    size_t local_frame_idx = 0;
 };
 }
 
