@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeff/codes/vtk-v6.2.0/Imaging/Core
+# Install script for directory: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,92 +38,85 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingCore-6.2.so.1")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1")
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
     endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingCore-6.2.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so")
+  endforeach()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingCore-6.2.so.1"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingCore-6.2.so"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingCore-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib:"
+           NEW_RPATH "")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
+      endif()
     endif()
-  endif()
+  endforeach()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Core/CMakeFiles/vtkImagingCore.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Core/CMakeFiles/vtkImagingCore.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vtk-6.2" TYPE FILE FILES
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageStencilIterator.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkExtractVOI.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageAppendComponents.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageBlend.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageCacheFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageCast.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageChangeInformation.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageClip.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageConstantPad.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageDataStreamer.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageDecomposeFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageDifference.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageExtractComponents.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageFlip.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageIterateFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageMagnify.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageMapToColors.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageMask.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageMirrorPad.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImagePadFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImagePermute.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageResample.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageReslice.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageResliceToColors.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageShiftScale.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageShrink3D.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageThreshold.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageTranslateExtent.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageWrapPad.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkRTAnalyticSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageResize.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageBSplineCoefficients.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageStencilData.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageStencilAlgorithm.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkAbstractImageInterpolator.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageBSplineInternals.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageBSplineInterpolator.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageSincInterpolator.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageInterpolator.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Core/vtkImageStencilSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Core/vtkImagingCoreModule.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageStencilIterator.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkExtractVOI.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageAppendComponents.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageBlend.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageCacheFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageCast.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageChangeInformation.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageClip.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageConstantPad.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageDataStreamer.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageDecomposeFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageDifference.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageExtractComponents.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageFlip.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageIterateFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageMagnify.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageMapToColors.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageMask.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageMirrorPad.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImagePadFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImagePermute.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageResample.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageReslice.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageResliceToColors.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageShiftScale.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageShrink3D.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageThreshold.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageTranslateExtent.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageWrapPad.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkRTAnalyticSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageResize.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageBSplineCoefficients.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageStencilData.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageStencilAlgorithm.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkAbstractImageInterpolator.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageBSplineInternals.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageBSplineInterpolator.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageSincInterpolator.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageInterpolator.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Core/vtkImageStencilSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Core/vtkImagingCoreModule.h"
     )
 endif()
 

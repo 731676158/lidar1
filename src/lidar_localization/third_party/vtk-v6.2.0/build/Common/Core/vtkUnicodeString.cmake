@@ -1,12 +1,12 @@
 # Generate data for folding Unicode strings
-SET(CASE_FOLD_DATA_FILE "/home/jeff/codes/vtk-v6.2.0/build/Common/Core/vtkUnicodeCaseFoldData.h")
+SET(CASE_FOLD_DATA_FILE "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Common/Core/vtkUnicodeCaseFoldData.h")
 FILE(WRITE ${CASE_FOLD_DATA_FILE} "// Generated file, do not edit by hand!\n")
 FILE(APPEND ${CASE_FOLD_DATA_FILE} "\n")
 FILE(APPEND ${CASE_FOLD_DATA_FILE} "static vtkUnicodeString::value_type vtkUnicodeCaseFoldData[] = {\n")
 
 # The following line relies on CMake 2.6, so for now we'll do it the old way
-#FILE(STRINGS "/home/jeff/codes/vtk-v6.2.0/Common/Core/CaseFolding.txt" FOLDING)
-FILE(READ "/home/jeff/codes/vtk-v6.2.0/Common/Core/CaseFolding.txt" FOLDING)
+#FILE(STRINGS "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Core/CaseFolding.txt" FOLDING)
+FILE(READ "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Core/CaseFolding.txt" FOLDING)
 STRING(REGEX REPLACE ";" "\\\\;" FOLDING "${FOLDING}")
 STRING(REGEX REPLACE "\n" ";" FOLDING "${FOLDING}")
 

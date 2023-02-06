@@ -1,9 +1,5 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOExport-6.2.pdb"
-  "../../lib/libvtkIOExport-6.2.so"
-  "../../lib/libvtkIOExport-6.2.so.1"
   "CMakeFiles/vtkIOExport.dir/vtkExporter.cxx.o"
-  "CMakeFiles/vtkIOExport.dir/vtkGL2PSExporter.cxx.o"
   "CMakeFiles/vtkIOExport.dir/vtkIVExporter.cxx.o"
   "CMakeFiles/vtkIOExport.dir/vtkOBJExporter.cxx.o"
   "CMakeFiles/vtkIOExport.dir/vtkOOGLExporter.cxx.o"
@@ -17,6 +13,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOExport.dir/vtkX3DExporterFIWriter.cxx.o"
   "CMakeFiles/vtkIOExport.dir/vtkX3DExporterWriter.cxx.o"
   "CMakeFiles/vtkIOExport.dir/vtkX3DExporterXMLWriter.cxx.o"
+  "CMakeFiles/vtkIOExport.dir/vtkGL2PSExporter.cxx.o"
+  "../../lib/libvtkIOExport-6.2.pdb"
+  "../../lib/libvtkIOExport-6.2.so.1"
+  "../../lib/libvtkIOExport-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

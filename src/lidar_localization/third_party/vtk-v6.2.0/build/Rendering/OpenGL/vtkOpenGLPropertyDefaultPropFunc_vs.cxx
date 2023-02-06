@@ -3,7 +3,7 @@
  * 
  * Define the vtkOpenGLPropertyDefaultPropFunc_vs string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPropertyDefaultPropFunc_vs.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLPropertyDefaultPropFunc_vs.glsl
  */
 #include "vtkOpenGLPropertyDefaultPropFunc_vs.h"
 const char *vtkOpenGLPropertyDefaultPropFunc_vs =

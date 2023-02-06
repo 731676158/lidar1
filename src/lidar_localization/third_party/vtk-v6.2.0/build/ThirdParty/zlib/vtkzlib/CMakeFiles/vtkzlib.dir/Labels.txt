@@ -1,14 +1,14 @@
 # Target labels
  vtkzlib
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/adler32.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/compress.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/crc32.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/deflate.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/gzio.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inffast.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inflate.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inftrees.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/trees.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/uncompr.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/zutil.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/adler32.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/compress.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/crc32.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/deflate.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/gzio.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inffast.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inflate.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inftrees.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/trees.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/uncompr.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/zutil.c

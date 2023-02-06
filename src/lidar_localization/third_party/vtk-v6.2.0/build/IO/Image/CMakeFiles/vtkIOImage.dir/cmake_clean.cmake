@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOImage-6.2.pdb"
-  "../../lib/libvtkIOImage-6.2.so"
-  "../../lib/libvtkIOImage-6.2.so.1"
   "CMakeFiles/vtkIOImage.dir/vtkBMPReader.cxx.o"
   "CMakeFiles/vtkIOImage.dir/vtkBMPWriter.cxx.o"
   "CMakeFiles/vtkIOImage.dir/vtkDEMReader.cxx.o"
@@ -36,6 +33,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOImage.dir/vtkTIFFWriter.cxx.o"
   "CMakeFiles/vtkIOImage.dir/vtkVolume16Reader.cxx.o"
   "CMakeFiles/vtkIOImage.dir/vtkVolumeReader.cxx.o"
+  "../../lib/libvtkIOImage-6.2.pdb"
+  "../../lib/libvtkIOImage-6.2.so.1"
+  "../../lib/libvtkIOImage-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -17,8 +17,8 @@
  * access to either file, you may request a copy from help@hdfgroup.org.     *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
- * Created:		Nov 26, 2022
- *			jeff <jeff@jeff-Pineapple>
+ * Created:		Feb  6, 2023
+ *			root <root@jeff-ZHENGJIUZHE-REN9000-34IMZ>
  *
  * Purpose:		This machine-generated source code contains
  *			information about the library build configuration
@@ -40,8 +40,8 @@ char vtk__H5libhdf5_settings[]=
 	"                   HDF5 Version: 1.8.13\n"
 	"                  Configured on: \n"
 	"                  Configured by: Unix Makefiles\n"
-	"                 Configure mode: CMAKE 3.16.3\n"
-	"                    Host system: Linux-5.15.0-53-generic\n"
+	"                 Configure mode: CMAKE 3.10.2\n"
+	"                    Host system: Linux-5.4.0-131-generic\n"
 	"              Uname information: Linux\n"
 	"                       Byte sex: little-endian\n"
 	"                      Libraries: \n"

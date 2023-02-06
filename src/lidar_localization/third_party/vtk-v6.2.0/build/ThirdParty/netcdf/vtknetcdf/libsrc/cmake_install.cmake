@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeff/codes/vtk-v6.2.0/ThirdParty/netcdf/vtknetcdf/libsrc
+# Install script for directory: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/netcdf/vtknetcdf/libsrc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

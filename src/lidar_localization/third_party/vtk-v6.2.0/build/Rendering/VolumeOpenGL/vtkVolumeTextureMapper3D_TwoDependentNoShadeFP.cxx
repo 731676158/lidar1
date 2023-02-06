@@ -3,7 +3,7 @@
  * 
  * Define the vtkVolumeTextureMapper3D_TwoDependentNoShadeFP string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkVolumeTextureMapper3D_TwoDependentNoShadeFP.asm
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkVolumeTextureMapper3D_TwoDependentNoShadeFP.asm
  */
 #include "vtkVolumeTextureMapper3D_TwoDependentNoShadeFP.h"
 const char *vtkVolumeTextureMapper3D_TwoDependentNoShadeFP =

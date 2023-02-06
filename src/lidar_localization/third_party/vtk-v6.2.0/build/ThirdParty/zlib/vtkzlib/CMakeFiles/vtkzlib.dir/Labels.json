@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/adler32.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/adler32.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/compress.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/compress.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/crc32.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/crc32.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/deflate.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/deflate.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/gzio.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/gzio.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inffast.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inffast.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inflate.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inflate.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inftrees.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/inftrees.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/trees.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/trees.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/uncompr.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/uncompr.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/zutil.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/zlib/vtkzlib/zutil.c"
 		}
 	],
 	"target" : 

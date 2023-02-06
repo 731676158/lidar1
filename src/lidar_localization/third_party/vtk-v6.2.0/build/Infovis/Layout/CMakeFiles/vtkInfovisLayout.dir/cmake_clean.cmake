@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkInfovisLayout-6.2.pdb"
-  "../../lib/libvtkInfovisLayout-6.2.so"
-  "../../lib/libvtkInfovisLayout-6.2.so.1"
   "CMakeFiles/vtkInfovisLayout.dir/vtkArcParallelEdgeStrategy.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkAreaLayout.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkAreaLayoutStrategy.cxx.o"
@@ -28,7 +25,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkInfovisLayout.dir/vtkGraphLayout.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkGraphLayoutStrategy.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkIncrementalForceLayout.cxx.o"
-  "CMakeFiles/vtkInfovisLayout.dir/vtkKCoreLayout.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkPassThroughEdgeStrategy.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkPassThroughLayoutStrategy.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkPerturbCoincidentVertices.cxx.o"
@@ -46,6 +42,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkInfovisLayout.dir/vtkTreeMapToPolyData.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkTreeOrbitLayoutStrategy.cxx.o"
   "CMakeFiles/vtkInfovisLayout.dir/vtkTreeRingToPolyData.cxx.o"
+  "CMakeFiles/vtkInfovisLayout.dir/vtkKCoreLayout.cxx.o"
+  "../../lib/libvtkInfovisLayout-6.2.pdb"
+  "../../lib/libvtkInfovisLayout-6.2.so.1"
+  "../../lib/libvtkInfovisLayout-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

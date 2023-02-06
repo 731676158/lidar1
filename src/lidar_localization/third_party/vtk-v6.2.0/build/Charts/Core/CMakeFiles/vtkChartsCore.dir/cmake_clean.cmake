@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkChartsCore-6.2.pdb"
-  "../../lib/libvtkChartsCore-6.2.so"
-  "../../lib/libvtkChartsCore-6.2.so.1"
   "CMakeFiles/vtkChartsCore.dir/vtkAxis.cxx.o"
   "CMakeFiles/vtkChartsCore.dir/vtkAxisExtended.cxx.o"
   "CMakeFiles/vtkChartsCore.dir/vtkCategoryLegend.cxx.o"
@@ -43,6 +40,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkChartsCore.dir/vtkPlotSurface.cxx.o"
   "CMakeFiles/vtkChartsCore.dir/vtkScalarsToColorsItem.cxx.o"
   "CMakeFiles/vtkChartsCore.dir/vtkScatterPlotMatrix.cxx.o"
+  "../../lib/libvtkChartsCore-6.2.pdb"
+  "../../lib/libvtkChartsCore-6.2.so.1"
+  "../../lib/libvtkChartsCore-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

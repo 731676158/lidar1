@@ -3,7 +3,7 @@
  * 
  * Define the vtkSurfaceLICPainter_CE string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/LIC/vtkSurfaceLICPainter_CE.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/LIC/vtkSurfaceLICPainter_CE.glsl
  */
 #include "vtkSurfaceLICPainter_CE.h"
 const char *vtkSurfaceLICPainter_CE =

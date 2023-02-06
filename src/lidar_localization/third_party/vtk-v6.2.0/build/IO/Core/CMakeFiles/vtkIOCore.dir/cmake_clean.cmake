@@ -1,13 +1,8 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOCore-6.2.pdb"
-  "../../lib/libvtkIOCore-6.2.so"
-  "../../lib/libvtkIOCore-6.2.so.1"
-  "CMakeFiles/vtkIOCore.dir/vtkASCIITextCodec.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkAbstractParticleWriter.cxx.o"
-  "CMakeFiles/vtkIOCore.dir/vtkArrayDataReader.cxx.o"
-  "CMakeFiles/vtkIOCore.dir/vtkArrayDataWriter.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkArrayReader.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkArrayWriter.cxx.o"
+  "CMakeFiles/vtkIOCore.dir/vtkASCIITextCodec.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkBase64InputStream.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkBase64OutputStream.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkBase64Utilities.cxx.o"
@@ -24,6 +19,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOCore.dir/vtkUTF8TextCodec.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkWriter.cxx.o"
   "CMakeFiles/vtkIOCore.dir/vtkZLibDataCompressor.cxx.o"
+  "CMakeFiles/vtkIOCore.dir/vtkArrayDataReader.cxx.o"
+  "CMakeFiles/vtkIOCore.dir/vtkArrayDataWriter.cxx.o"
+  "../../lib/libvtkIOCore-6.2.pdb"
+  "../../lib/libvtkIOCore-6.2.so.1"
+  "../../lib/libvtkIOCore-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

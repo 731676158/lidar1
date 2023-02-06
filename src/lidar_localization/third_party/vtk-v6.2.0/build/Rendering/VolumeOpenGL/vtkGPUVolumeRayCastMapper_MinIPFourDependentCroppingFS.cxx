@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_MinIPFourDependentCroppingFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MinIPFourDependentCroppingFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MinIPFourDependentCroppingFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_MinIPFourDependentCroppingFS.h"
 const char *vtkGPUVolumeRayCastMapper_MinIPFourDependentCroppingFS =

@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersGeneric-6.2.pdb"
-  "../../lib/libvtkFiltersGeneric-6.2.so"
-  "../../lib/libvtkFiltersGeneric-6.2.so.1"
   "CMakeFiles/vtkFiltersGeneric.dir/vtkGenericClip.cxx.o"
   "CMakeFiles/vtkFiltersGeneric.dir/vtkGenericContourFilter.cxx.o"
   "CMakeFiles/vtkFiltersGeneric.dir/vtkGenericCutter.cxx.o"
@@ -11,6 +8,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkFiltersGeneric.dir/vtkGenericOutlineFilter.cxx.o"
   "CMakeFiles/vtkFiltersGeneric.dir/vtkGenericProbeFilter.cxx.o"
   "CMakeFiles/vtkFiltersGeneric.dir/vtkGenericStreamTracer.cxx.o"
+  "../../lib/libvtkFiltersGeneric-6.2.pdb"
+  "../../lib/libvtkFiltersGeneric-6.2.so.1"
+  "../../lib/libvtkFiltersGeneric-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

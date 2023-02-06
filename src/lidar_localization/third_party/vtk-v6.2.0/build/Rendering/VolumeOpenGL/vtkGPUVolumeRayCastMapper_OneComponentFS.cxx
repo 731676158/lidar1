@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_OneComponentFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_OneComponentFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_OneComponentFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_OneComponentFS.h"
 const char *vtkGPUVolumeRayCastMapper_OneComponentFS =

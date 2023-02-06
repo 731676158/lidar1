@@ -1,13 +1,10 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOGeometry-6.2.pdb"
-  "../../lib/libvtkIOGeometry-6.2.so"
-  "../../lib/libvtkIOGeometry-6.2.so.1"
   "CMakeFiles/vtkIOGeometry.dir/vtkAVSucdReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkBYUReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkBYUWriter.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkChacoReader.cxx.o"
-  "CMakeFiles/vtkIOGeometry.dir/vtkFLUENTReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkFacetWriter.cxx.o"
+  "CMakeFiles/vtkIOGeometry.dir/vtkFLUENTReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkGAMBITReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkGaussianCubeReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkIVWriter.cxx.o"
@@ -19,8 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOGeometry.dir/vtkMultiBlockPLOT3DReaderInternals.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkOBJReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkOpenFOAMReader.cxx.o"
-  "CMakeFiles/vtkIOGeometry.dir/vtkPDBReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkParticleReader.cxx.o"
+  "CMakeFiles/vtkIOGeometry.dir/vtkPDBReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkPlot3DMetaReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkProStarReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkSTLReader.cxx.o"
@@ -29,6 +26,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOGeometry.dir/vtkUGFacetReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkWindBladeReader.cxx.o"
   "CMakeFiles/vtkIOGeometry.dir/vtkXYZMolReader.cxx.o"
+  "../../lib/libvtkIOGeometry-6.2.pdb"
+  "../../lib/libvtkIOGeometry-6.2.so.1"
+  "../../lib/libvtkIOGeometry-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

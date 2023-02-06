@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/B.dir/B.cxx.o  -o B  libA.a 
+/usr/bin/c++    -rdynamic CMakeFiles/B.dir/B.cxx.o  -o B libA.a 

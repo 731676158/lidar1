@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../../bin/vtkHashSource-6.2"
-  "../../bin/vtkHashSource-6.2.pdb"
   "CMakeFiles/vtkHashSource.dir/vtkHashSource.cxx.o"
+  "../../bin/vtkHashSource-6.2.pdb"
+  "../../bin/vtkHashSource-6.2"
 )
 
 # Per-language clean rules from dependency scanning.

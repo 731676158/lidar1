@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkCommonComputationalGeometry-6.2.pdb"
-  "../../lib/libvtkCommonComputationalGeometry-6.2.so"
-  "../../lib/libvtkCommonComputationalGeometry-6.2.so.1"
   "CMakeFiles/vtkCommonComputationalGeometry.dir/vtkCardinalSpline.cxx.o"
   "CMakeFiles/vtkCommonComputationalGeometry.dir/vtkKochanekSpline.cxx.o"
   "CMakeFiles/vtkCommonComputationalGeometry.dir/vtkParametricBoy.cxx.o"
@@ -20,6 +17,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkCommonComputationalGeometry.dir/vtkParametricSuperEllipsoid.cxx.o"
   "CMakeFiles/vtkCommonComputationalGeometry.dir/vtkParametricSuperToroid.cxx.o"
   "CMakeFiles/vtkCommonComputationalGeometry.dir/vtkParametricTorus.cxx.o"
+  "../../lib/libvtkCommonComputationalGeometry-6.2.pdb"
+  "../../lib/libvtkCommonComputationalGeometry-6.2.so.1"
+  "../../lib/libvtkCommonComputationalGeometry-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

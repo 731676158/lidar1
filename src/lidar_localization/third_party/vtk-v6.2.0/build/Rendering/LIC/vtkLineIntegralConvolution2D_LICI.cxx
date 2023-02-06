@@ -3,7 +3,7 @@
  * 
  * Define the vtkLineIntegralConvolution2D_LICI string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/LIC/vtkLineIntegralConvolution2D_LICI.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/LIC/vtkLineIntegralConvolution2D_LICI.glsl
  */
 #include "vtkLineIntegralConvolution2D_LICI.h"
 const char *vtkLineIntegralConvolution2D_LICI =

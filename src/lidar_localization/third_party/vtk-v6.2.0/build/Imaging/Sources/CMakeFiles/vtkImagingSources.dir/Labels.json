@@ -2,49 +2,49 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Sources/vtkImagingSourcesModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Sources/vtkImagingSourcesModule.h"
 		}
 	],
 	"target" : 

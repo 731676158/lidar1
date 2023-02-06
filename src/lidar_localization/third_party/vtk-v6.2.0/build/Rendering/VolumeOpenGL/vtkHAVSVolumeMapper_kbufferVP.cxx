@@ -3,7 +3,7 @@
  * 
  * Define the vtkHAVSVolumeMapper_kbufferVP string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkHAVSVolumeMapper_kbufferVP.asm
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkHAVSVolumeMapper_kbufferVP.asm
  */
 #include "vtkHAVSVolumeMapper_kbufferVP.h"
 const char *vtkHAVSVolumeMapper_kbufferVP =

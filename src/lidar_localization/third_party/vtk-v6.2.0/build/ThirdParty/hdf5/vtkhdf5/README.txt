@@ -3,7 +3,7 @@ HDF5 version 1.8.13
 
 This directory contains the binary (release) distribution of 
 HDF5 1.8 that was compiled on;
-    Linux 5.15.0-53-generic x86_64, using GNU C 9.4.0. 
+    Linux 5.4.0-131-generic x86_64, using GNU C 7.5.0. 
 
 It was built with the following options: 
     -- SHARED C/C++/Fortran libraries

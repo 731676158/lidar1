@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersImaging-6.2.pdb"
-  "../../lib/libvtkFiltersImaging-6.2.so"
-  "../../lib/libvtkFiltersImaging-6.2.so.1"
-  "CMakeFiles/vtkFiltersImaging.dir/vtkComputeHistogram2DOutliers.cxx.o"
-  "CMakeFiles/vtkFiltersImaging.dir/vtkExtractHistogram2D.cxx.o"
   "CMakeFiles/vtkFiltersImaging.dir/vtkPairwiseExtractHistogram2D.cxx.o"
+  "CMakeFiles/vtkFiltersImaging.dir/vtkExtractHistogram2D.cxx.o"
+  "CMakeFiles/vtkFiltersImaging.dir/vtkComputeHistogram2DOutliers.cxx.o"
+  "../../lib/libvtkFiltersImaging-6.2.pdb"
+  "../../lib/libvtkFiltersImaging-6.2.so.1"
+  "../../lib/libvtkFiltersImaging-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -2,25 +2,25 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageResliceMapper.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/Image/vtkImageResliceMapper.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageSliceCollection.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/Image/vtkImageSliceCollection.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageStack.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/Image/vtkImageStack.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageResliceMapper.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/Image/vtkImageResliceMapper.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageSliceCollection.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/Image/vtkImageSliceCollection.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/Image/vtkImageStack.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/Image/vtkImageStack.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/Image/vtkRenderingImageModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Rendering/Image/vtkRenderingImageModule.h"
 		}
 	],
 	"target" : 

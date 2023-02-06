@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersParallel-6.2.pdb"
-  "../../lib/libvtkFiltersParallel-6.2.so"
-  "../../lib/libvtkFiltersParallel-6.2.so.1"
   "CMakeFiles/vtkFiltersParallel.dir/vtkCollectGraph.cxx.o"
   "CMakeFiles/vtkFiltersParallel.dir/vtkCollectPolyData.cxx.o"
   "CMakeFiles/vtkFiltersParallel.dir/vtkCollectTable.cxx.o"
@@ -33,10 +30,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkFiltersParallel.dir/vtkProcessIdScalars.cxx.o"
   "CMakeFiles/vtkFiltersParallel.dir/vtkRectilinearGridOutlineFilter.cxx.o"
   "CMakeFiles/vtkFiltersParallel.dir/vtkTransmitPolyDataPiece.cxx.o"
-  "CMakeFiles/vtkFiltersParallel.dir/vtkTransmitRectilinearGridPiece.cxx.o"
   "CMakeFiles/vtkFiltersParallel.dir/vtkTransmitStructuredDataPiece.cxx.o"
+  "CMakeFiles/vtkFiltersParallel.dir/vtkTransmitRectilinearGridPiece.cxx.o"
   "CMakeFiles/vtkFiltersParallel.dir/vtkTransmitStructuredGridPiece.cxx.o"
   "CMakeFiles/vtkFiltersParallel.dir/vtkTransmitUnstructuredGridPiece.cxx.o"
+  "../../lib/libvtkFiltersParallel-6.2.pdb"
+  "../../lib/libvtkFiltersParallel-6.2.so.1"
+  "../../lib/libvtkFiltersParallel-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

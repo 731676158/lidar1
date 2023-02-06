@@ -1,8 +1,8 @@
 # Target labels
  vtkCommonColor
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkColorSeries.cxx
-/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkNamedColors.cxx
-/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkColorSeries.h
-/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkNamedColors.h
-/home/jeff/codes/vtk-v6.2.0/build/Common/Color/vtkCommonColorModule.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkColorSeries.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkNamedColors.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkColorSeries.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkNamedColors.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Common/Color/vtkCommonColorModule.h

@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_AdditiveCroppingFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_AdditiveCroppingFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_AdditiveCroppingFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_AdditiveCroppingFS.h"
 const char *vtkGPUVolumeRayCastMapper_AdditiveCroppingFS =

@@ -3,7 +3,7 @@
  * 
  * Define the vtkHAVSVolumeMapper_k2EndFP string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkHAVSVolumeMapper_k2EndFP.asm
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkHAVSVolumeMapper_k2EndFP.asm
  */
 #include "vtkHAVSVolumeMapper_k2EndFP.h"
 const char *vtkHAVSVolumeMapper_k2EndFP =

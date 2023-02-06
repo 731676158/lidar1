@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOXML-6.2.pdb"
-  "../../lib/libvtkIOXML-6.2.so"
-  "../../lib/libvtkIOXML-6.2.so.1"
   "CMakeFiles/vtkIOXML.dir/vtkRTXMLPolyDataReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLCompositeDataReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLCompositeDataWriter.cxx.o"
@@ -22,14 +19,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOXML.dir/vtkXMLMultiGroupDataReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPDataReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPImageDataReader.cxx.o"
+  "CMakeFiles/vtkIOXML.dir/vtkXMLPolyDataReader.cxx.o"
+  "CMakeFiles/vtkIOXML.dir/vtkXMLPolyDataWriter.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPPolyDataReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPRectilinearGridReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPStructuredDataReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPStructuredGridReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPUnstructuredDataReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLPUnstructuredGridReader.cxx.o"
-  "CMakeFiles/vtkIOXML.dir/vtkXMLPolyDataReader.cxx.o"
-  "CMakeFiles/vtkIOXML.dir/vtkXMLPolyDataWriter.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLRectilinearGridReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLRectilinearGridWriter.cxx.o"
@@ -43,8 +40,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOXML.dir/vtkXMLUnstructuredDataWriter.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLUnstructuredGridReader.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLUnstructuredGridWriter.cxx.o"
-  "CMakeFiles/vtkIOXML.dir/vtkXMLWriter.cxx.o"
   "CMakeFiles/vtkIOXML.dir/vtkXMLWriterC.cxx.o"
+  "CMakeFiles/vtkIOXML.dir/vtkXMLWriter.cxx.o"
+  "../../lib/libvtkIOXML-6.2.pdb"
+  "../../lib/libvtkIOXML-6.2.so.1"
+  "../../lib/libvtkIOXML-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

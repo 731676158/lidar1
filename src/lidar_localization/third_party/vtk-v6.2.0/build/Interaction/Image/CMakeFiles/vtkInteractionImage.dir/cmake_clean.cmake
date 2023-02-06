@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkInteractionImage-6.2.pdb"
-  "../../lib/libvtkInteractionImage-6.2.so"
-  "../../lib/libvtkInteractionImage-6.2.so.1"
-  "CMakeFiles/vtkInteractionImage.dir/vtkImageViewer.cxx.o"
   "CMakeFiles/vtkInteractionImage.dir/vtkImageViewer2.cxx.o"
+  "CMakeFiles/vtkInteractionImage.dir/vtkImageViewer.cxx.o"
   "CMakeFiles/vtkInteractionImage.dir/vtkResliceImageViewer.cxx.o"
   "CMakeFiles/vtkInteractionImage.dir/vtkResliceImageViewerMeasurements.cxx.o"
+  "../../lib/libvtkInteractionImage-6.2.pdb"
+  "../../lib/libvtkInteractionImage-6.2.so.1"
+  "../../lib/libvtkInteractionImage-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

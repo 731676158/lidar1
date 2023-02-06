@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkRenderingLOD-6.2.pdb"
-  "../../lib/libvtkRenderingLOD-6.2.so"
-  "../../lib/libvtkRenderingLOD-6.2.so.1"
   "CMakeFiles/vtkRenderingLOD.dir/vtkLODActor.cxx.o"
   "CMakeFiles/vtkRenderingLOD.dir/vtkQuadricLODActor.cxx.o"
+  "../../lib/libvtkRenderingLOD-6.2.pdb"
+  "../../lib/libvtkRenderingLOD-6.2.so.1"
+  "../../lib/libvtkRenderingLOD-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

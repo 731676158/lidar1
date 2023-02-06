@@ -56,25 +56,25 @@ add_executable(vtkEncodeString IMPORTED)
 # Import target "vtkHashSource" for configuration "Debug"
 set_property(TARGET vtkHashSource APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkHashSource PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkHashSource-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkHashSource-6.2"
   )
 
 # Import target "vtkmkg3states" for configuration "Debug"
 set_property(TARGET vtkmkg3states APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkmkg3states PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkmkg3states-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkmkg3states-6.2"
   )
 
 # Import target "vtkParseOGLExt" for configuration "Debug"
 set_property(TARGET vtkParseOGLExt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkParseOGLExt PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkParseOGLExt-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkParseOGLExt-6.2"
   )
 
 # Import target "vtkEncodeString" for configuration "Debug"
 set_property(TARGET vtkEncodeString APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkEncodeString PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkEncodeString-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkEncodeString-6.2"
   )
 
 # This file does not depend on other imported targets which have

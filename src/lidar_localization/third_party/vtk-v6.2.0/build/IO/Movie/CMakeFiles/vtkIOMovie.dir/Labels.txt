@@ -1,9 +1,9 @@
 # Target labels
  vtkIOMovie
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/IO/Movie/vtkGenericMovieWriter.cxx
-/home/jeff/codes/vtk-v6.2.0/IO/Movie/vtkOggTheoraWriter.cxx
-/home/jeff/codes/vtk-v6.2.0/build/IO/Movie/vtkIOMovieConfigure.h
-/home/jeff/codes/vtk-v6.2.0/IO/Movie/vtkGenericMovieWriter.h
-/home/jeff/codes/vtk-v6.2.0/IO/Movie/vtkOggTheoraWriter.h
-/home/jeff/codes/vtk-v6.2.0/build/IO/Movie/vtkIOMovieModule.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Movie/vtkGenericMovieWriter.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Movie/vtkOggTheoraWriter.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/Movie/vtkIOMovieConfigure.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Movie/vtkGenericMovieWriter.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Movie/vtkOggTheoraWriter.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/Movie/vtkIOMovieModule.h

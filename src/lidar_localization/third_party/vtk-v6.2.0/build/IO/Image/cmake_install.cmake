@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeff/codes/vtk-v6.2.0/IO/Image
+# Install script for directory: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,86 +38,79 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOImage-6.2.so.1")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1")
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
     endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOImage-6.2.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so")
+  endforeach()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOImage-6.2.so.1"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOImage-6.2.so"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOImage-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib:"
+           NEW_RPATH "")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
+      endif()
     endif()
-  endif()
+  endforeach()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/codes/vtk-v6.2.0/build/IO/Image/CMakeFiles/vtkIOImage.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/Image/CMakeFiles/vtkIOImage.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vtk-6.2" TYPE FILE FILES
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkBMPReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkBMPWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkDEMReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkDICOMImageReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkGESignaReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageExport.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageImport.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageImportExecutive.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageReader2.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageReader2Collection.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageReader2Factory.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkImageWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkJPEGReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkJPEGWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkJSONImageWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkMedicalImageProperties.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkMedicalImageReader2.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkMetaImageReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkMetaImageWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkNIFTIImageHeader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkNIFTIImageReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkNIFTIImageWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkNrrdReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkPNGReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkPNGWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkPNMReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkPNMWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkPostScriptWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkSLCReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkTIFFReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkTIFFWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkVolume16Reader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/Image/vtkVolumeReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/build/IO/Image/vtkIOImageModule.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkBMPReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkBMPWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkDEMReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkDICOMImageReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkGESignaReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageExport.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageImport.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageImportExecutive.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageReader2.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageReader2Collection.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageReader2Factory.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkImageWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkJPEGReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkJPEGWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkJSONImageWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkMedicalImageProperties.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkMedicalImageReader2.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkMetaImageReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkMetaImageWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkNIFTIImageHeader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkNIFTIImageReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkNIFTIImageWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkNrrdReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkPNGReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkPNGWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkPNMReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkPNMWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkPostScriptWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkSLCReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkTIFFReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkTIFFWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkVolume16Reader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Image/vtkVolumeReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/Image/vtkIOImageModule.h"
     )
 endif()
 

@@ -19,7 +19,6 @@ list(APPEND _IMPORT_CHECK_FILES_FOR_vtksys "${_IMPORT_PREFIX}/lib/libvtksys-6.2.
 # Import target "vtkCommonCore" for configuration "Debug"
 set_property(TARGET vtkCommonCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonCore PROPERTIES
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
   IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/libvtkCommonCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonCore-6.2.so.1"
   )

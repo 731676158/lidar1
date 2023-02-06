@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_CompositeNoCroppingFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_CompositeNoCroppingFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_CompositeNoCroppingFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_CompositeNoCroppingFS.h"
 const char *vtkGPUVolumeRayCastMapper_CompositeNoCroppingFS =

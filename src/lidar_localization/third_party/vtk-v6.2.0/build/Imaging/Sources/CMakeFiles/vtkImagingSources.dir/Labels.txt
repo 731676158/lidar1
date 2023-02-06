@@ -1,18 +1,18 @@
 # Target labels
  vtkImagingSources
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.h
-/home/jeff/codes/vtk-v6.2.0/build/Imaging/Sources/vtkImagingSourcesModule.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageCanvasSource2D.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageEllipsoidSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGaussianSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageGridSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageMandelbrotSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageNoiseSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Sources/vtkImageSinusoidSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Sources/vtkImagingSourcesModule.h

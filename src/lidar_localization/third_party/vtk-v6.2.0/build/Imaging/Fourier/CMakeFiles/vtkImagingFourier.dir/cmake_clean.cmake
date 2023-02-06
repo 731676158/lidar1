@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkImagingFourier-6.2.pdb"
-  "../../lib/libvtkImagingFourier-6.2.so"
-  "../../lib/libvtkImagingFourier-6.2.so.1"
   "CMakeFiles/vtkImagingFourier.dir/vtkImageButterworthHighPass.cxx.o"
   "CMakeFiles/vtkImagingFourier.dir/vtkImageButterworthLowPass.cxx.o"
   "CMakeFiles/vtkImagingFourier.dir/vtkImageFFT.cxx.o"
@@ -11,6 +8,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkImagingFourier.dir/vtkImageIdealLowPass.cxx.o"
   "CMakeFiles/vtkImagingFourier.dir/vtkImageRFFT.cxx.o"
   "CMakeFiles/vtkImagingFourier.dir/vtkTableFFT.cxx.o"
+  "../../lib/libvtkImagingFourier-6.2.pdb"
+  "../../lib/libvtkImagingFourier-6.2.so.1"
+  "../../lib/libvtkImagingFourier-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

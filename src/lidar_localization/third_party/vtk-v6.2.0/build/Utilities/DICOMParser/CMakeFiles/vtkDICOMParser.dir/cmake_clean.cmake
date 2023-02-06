@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkDICOMParser-6.2.pdb"
-  "../../lib/libvtkDICOMParser-6.2.so"
-  "../../lib/libvtkDICOMParser-6.2.so.1"
-  "CMakeFiles/vtkDICOMParser.dir/DICOMAppHelper.cxx.o"
   "CMakeFiles/vtkDICOMParser.dir/DICOMFile.cxx.o"
   "CMakeFiles/vtkDICOMParser.dir/DICOMParser.cxx.o"
+  "CMakeFiles/vtkDICOMParser.dir/DICOMAppHelper.cxx.o"
+  "../../lib/libvtkDICOMParser-6.2.pdb"
+  "../../lib/libvtkDICOMParser-6.2.so.1"
+  "../../lib/libvtkDICOMParser-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

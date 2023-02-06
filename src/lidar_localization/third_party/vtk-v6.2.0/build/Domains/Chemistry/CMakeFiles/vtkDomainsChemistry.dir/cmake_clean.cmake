@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkDomainsChemistry-6.2.pdb"
-  "../../lib/libvtkDomainsChemistry-6.2.so"
-  "../../lib/libvtkDomainsChemistry-6.2.so.1"
   "CMakeFiles/vtkDomainsChemistry.dir/vtkBlueObeliskData.cxx.o"
   "CMakeFiles/vtkDomainsChemistry.dir/vtkBlueObeliskDataParser.cxx.o"
   "CMakeFiles/vtkDomainsChemistry.dir/vtkCMLMoleculeReader.cxx.o"
@@ -14,6 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkDomainsChemistry.dir/vtkProgrammableElectronicData.cxx.o"
   "CMakeFiles/vtkDomainsChemistry.dir/vtkProteinRibbonFilter.cxx.o"
   "CMakeFiles/vtkDomainsChemistry.dir/vtkSimpleBondPerceiver.cxx.o"
+  "../../lib/libvtkDomainsChemistry-6.2.pdb"
+  "../../lib/libvtkDomainsChemistry-6.2.so.1"
+  "../../lib/libvtkDomainsChemistry-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

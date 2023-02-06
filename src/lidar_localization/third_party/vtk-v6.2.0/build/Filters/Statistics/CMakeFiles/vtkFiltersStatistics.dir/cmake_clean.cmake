@@ -1,17 +1,14 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersStatistics-6.2.pdb"
-  "../../lib/libvtkFiltersStatistics-6.2.so"
-  "../../lib/libvtkFiltersStatistics-6.2.so.1"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkAutoCorrelativeStatistics.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkBivariateLinearTableThreshold.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkComputeQuartiles.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkContingencyStatistics.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkCorrelativeStatistics.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkDescriptiveStatistics.cxx.o"
-  "CMakeFiles/vtkFiltersStatistics.dir/vtkExtractFunctionalBagPlot.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkHighestDensityRegionsStatistics.cxx.o"
-  "CMakeFiles/vtkFiltersStatistics.dir/vtkKMeansDistanceFunctor.cxx.o"
+  "CMakeFiles/vtkFiltersStatistics.dir/vtkExtractFunctionalBagPlot.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkKMeansDistanceFunctorCalculator.cxx.o"
+  "CMakeFiles/vtkFiltersStatistics.dir/vtkKMeansDistanceFunctor.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkKMeansStatistics.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkMultiCorrelativeStatistics.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkOrderStatistics.cxx.o"
@@ -19,6 +16,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkFiltersStatistics.dir/vtkStatisticsAlgorithm.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkStrahlerMetric.cxx.o"
   "CMakeFiles/vtkFiltersStatistics.dir/vtkStreamingStatistics.cxx.o"
+  "../../lib/libvtkFiltersStatistics-6.2.pdb"
+  "../../lib/libvtkFiltersStatistics-6.2.so.1"
+  "../../lib/libvtkFiltersStatistics-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

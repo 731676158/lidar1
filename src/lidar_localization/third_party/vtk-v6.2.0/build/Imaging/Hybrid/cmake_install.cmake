@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid
+# Install script for directory: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,64 +38,57 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingHybrid-6.2.so.1")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1")
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
     endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingHybrid-6.2.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so")
+  endforeach()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingHybrid-6.2.so.1"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingHybrid-6.2.so"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkImagingHybrid-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib:"
+           NEW_RPATH "")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
+      endif()
     endif()
-  endif()
+  endforeach()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Hybrid/CMakeFiles/vtkImagingHybrid.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Hybrid/CMakeFiles/vtkImagingHybrid.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vtk-6.2" TYPE FILE FILES
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkBooleanTexture.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkShepardMethod.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkVoxelModeller.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkSurfaceReconstructionFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkFastSplatter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkGaussianSplatter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkSampleFunction.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkPointLoad.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkImageCursor3D.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkImageRectilinearWipe.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkTriangularTexture.h"
-    "/home/jeff/codes/vtk-v6.2.0/Imaging/Hybrid/vtkSliceCubes.h"
-    "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Hybrid/vtkImagingHybridModule.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkBooleanTexture.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkShepardMethod.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkVoxelModeller.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkSurfaceReconstructionFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkFastSplatter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkGaussianSplatter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkSampleFunction.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkPointLoad.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkImageCursor3D.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkImageRectilinearWipe.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkTriangularTexture.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Hybrid/vtkSliceCubes.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Hybrid/vtkImagingHybridModule.h"
     )
 endif()
 

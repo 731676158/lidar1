@@ -2,19 +2,19 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/FreeTypeOpenGL/vtkOpenGLFreeTypeTextMapper.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLObjectFactory.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Rendering/FreeTypeOpenGL/vtkRenderingFreeTypeOpenGLModule.h"
 		}
 	],
 	"target" : 

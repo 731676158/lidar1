@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkImagingMorphological-6.2.pdb"
-  "../../lib/libvtkImagingMorphological-6.2.so"
-  "../../lib/libvtkImagingMorphological-6.2.so.1"
   "CMakeFiles/vtkImagingMorphological.dir/vtkImageConnector.cxx.o"
   "CMakeFiles/vtkImagingMorphological.dir/vtkImageContinuousDilate3D.cxx.o"
   "CMakeFiles/vtkImagingMorphological.dir/vtkImageContinuousErode3D.cxx.o"
@@ -12,6 +9,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkImagingMorphological.dir/vtkImageSeedConnectivity.cxx.o"
   "CMakeFiles/vtkImagingMorphological.dir/vtkImageSkeleton2D.cxx.o"
   "CMakeFiles/vtkImagingMorphological.dir/vtkImageThresholdConnectivity.cxx.o"
+  "../../lib/libvtkImagingMorphological-6.2.pdb"
+  "../../lib/libvtkImagingMorphological-6.2.so.1"
+  "../../lib/libvtkImagingMorphological-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -3,7 +3,7 @@
  * 
  * Define the vtkSurfaceLICPainter_GeomVs string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/LIC/vtkSurfaceLICPainter_GeomVs.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/LIC/vtkSurfaceLICPainter_GeomVs.glsl
  */
 #include "vtkSurfaceLICPainter_GeomVs.h"
 const char *vtkSurfaceLICPainter_GeomVs =

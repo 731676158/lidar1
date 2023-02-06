@@ -1,5 +1,5 @@
 # Target labels
  vtkParseOGLExt
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/Utilities/ParseOGLExt/Tokenizer.cxx
-/home/jeff/codes/vtk-v6.2.0/Utilities/ParseOGLExt/ParseOGLExt.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/ParseOGLExt/Tokenizer.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/ParseOGLExt/ParseOGLExt.cxx

@@ -3,7 +3,7 @@
  * 
  * Define the vtkDepthPeeling_fs string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkDepthPeeling_fs.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/vtkDepthPeeling_fs.glsl
  */
 #include "vtkDepthPeeling_fs.h"
 const char *vtkDepthPeeling_fs =

@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_MinIPFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MinIPFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MinIPFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_MinIPFS.h"
 const char *vtkGPUVolumeRayCastMapper_MinIPFS =

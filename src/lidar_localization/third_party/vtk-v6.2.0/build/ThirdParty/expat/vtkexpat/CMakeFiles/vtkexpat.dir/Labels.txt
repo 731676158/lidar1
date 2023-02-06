@@ -1,6 +1,6 @@
 # Target labels
  vtkexpat
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/expat/vtkexpat/xmlparse.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/expat/vtkexpat/xmltok.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/expat/vtkexpat/xmlrole.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/expat/vtkexpat/xmlparse.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/expat/vtkexpat/xmltok.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/expat/vtkexpat/xmlrole.c

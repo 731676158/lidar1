@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../../../bin/lproj"
-  "../../../bin/lproj.pdb"
   "CMakeFiles/lproj.dir/lproj.c.o"
+  "../../../bin/lproj.pdb"
+  "../../../bin/lproj"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkalglib-6.2.pdb"
-  "../../lib/libvtkalglib-6.2.so"
-  "../../lib/libvtkalglib-6.2.so.1"
   "CMakeFiles/vtkalglib.dir/ap.cpp.o"
   "CMakeFiles/vtkalglib.dir/bdsvd.cpp.o"
   "CMakeFiles/vtkalglib.dir/bidiagonal.cpp.o"
@@ -11,6 +8,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkalglib.dir/reflections.cpp.o"
   "CMakeFiles/vtkalglib.dir/rotations.cpp.o"
   "CMakeFiles/vtkalglib.dir/svd.cpp.o"
+  "../../lib/libvtkalglib-6.2.pdb"
+  "../../lib/libvtkalglib-6.2.so.1"
+  "../../lib/libvtkalglib-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

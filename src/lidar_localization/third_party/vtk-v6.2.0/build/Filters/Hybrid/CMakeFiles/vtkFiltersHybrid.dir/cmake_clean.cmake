@@ -1,11 +1,8 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersHybrid-6.2.pdb"
-  "../../lib/libvtkFiltersHybrid-6.2.so"
-  "../../lib/libvtkFiltersHybrid-6.2.so.1"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkBSplineTransform.cxx.o"
+  "CMakeFiles/vtkFiltersHybrid.dir/vtkDepthSortPolyData.cxx.o"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkDSPFilterDefinition.cxx.o"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkDSPFilterGroup.cxx.o"
-  "CMakeFiles/vtkFiltersHybrid.dir/vtkDepthSortPolyData.cxx.o"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkEarthSource.cxx.o"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkFacetReader.cxx.o"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkGreedyTerrainDecimation.cxx.o"
@@ -24,6 +21,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkFiltersHybrid.dir/vtkTemporalSnapToTimeStep.cxx.o"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkTransformToGrid.cxx.o"
   "CMakeFiles/vtkFiltersHybrid.dir/vtkWeightedTransformFilter.cxx.o"
+  "../../lib/libvtkFiltersHybrid-6.2.pdb"
+  "../../lib/libvtkFiltersHybrid-6.2.so.1"
+  "../../lib/libvtkFiltersHybrid-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOLegacy-6.2.pdb"
-  "../../lib/libvtkIOLegacy-6.2.so"
-  "../../lib/libvtkIOLegacy-6.2.so.1"
   "CMakeFiles/vtkIOLegacy.dir/vtkCompositeDataReader.cxx.o"
   "CMakeFiles/vtkIOLegacy.dir/vtkCompositeDataWriter.cxx.o"
   "CMakeFiles/vtkIOLegacy.dir/vtkDataObjectReader.cxx.o"
@@ -31,6 +28,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOLegacy.dir/vtkTreeWriter.cxx.o"
   "CMakeFiles/vtkIOLegacy.dir/vtkUnstructuredGridReader.cxx.o"
   "CMakeFiles/vtkIOLegacy.dir/vtkUnstructuredGridWriter.cxx.o"
+  "../../lib/libvtkIOLegacy-6.2.pdb"
+  "../../lib/libvtkIOLegacy-6.2.so.1"
+  "../../lib/libvtkIOLegacy-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

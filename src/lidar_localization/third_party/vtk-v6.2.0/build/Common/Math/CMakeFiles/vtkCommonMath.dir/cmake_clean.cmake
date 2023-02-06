@@ -1,9 +1,5 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkCommonMath-6.2.pdb"
-  "../../lib/libvtkCommonMath-6.2.so"
-  "../../lib/libvtkCommonMath-6.2.so.1"
   "CMakeFiles/vtkCommonMath.dir/vtkAmoebaMinimizer.cxx.o"
-  "CMakeFiles/vtkCommonMath.dir/vtkFastNumericConversion.cxx.o"
   "CMakeFiles/vtkCommonMath.dir/vtkFunctionSet.cxx.o"
   "CMakeFiles/vtkCommonMath.dir/vtkInitialValueProblemSolver.cxx.o"
   "CMakeFiles/vtkCommonMath.dir/vtkMatrix3x3.cxx.o"
@@ -13,6 +9,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkCommonMath.dir/vtkRungeKutta2.cxx.o"
   "CMakeFiles/vtkCommonMath.dir/vtkRungeKutta4.cxx.o"
   "CMakeFiles/vtkCommonMath.dir/vtkRungeKutta45.cxx.o"
+  "CMakeFiles/vtkCommonMath.dir/vtkFastNumericConversion.cxx.o"
+  "../../lib/libvtkCommonMath-6.2.pdb"
+  "../../lib/libvtkCommonMath-6.2.so.1"
+  "../../lib/libvtkCommonMath-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

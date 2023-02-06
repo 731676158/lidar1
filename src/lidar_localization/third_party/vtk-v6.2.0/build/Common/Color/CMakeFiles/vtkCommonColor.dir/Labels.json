@@ -2,19 +2,19 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkColorSeries.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkColorSeries.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkNamedColors.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkNamedColors.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkColorSeries.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkColorSeries.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/Color/vtkNamedColors.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/Color/vtkNamedColors.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Common/Color/vtkCommonColorModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Common/Color/vtkCommonColorModule.h"
 		}
 	],
 	"target" : 

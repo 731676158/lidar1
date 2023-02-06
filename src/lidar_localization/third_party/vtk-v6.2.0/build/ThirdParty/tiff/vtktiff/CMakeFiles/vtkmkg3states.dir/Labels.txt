@@ -1,4 +1,4 @@
 # Target labels
  vtktiff
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/tiff/vtktiff/mkg3states.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/tiff/vtktiff/mkg3states.c

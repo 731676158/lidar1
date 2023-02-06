@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_MIPNoCroppingFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MIPNoCroppingFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MIPNoCroppingFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_MIPNoCroppingFS.h"
 const char *vtkGPUVolumeRayCastMapper_MIPNoCroppingFS =

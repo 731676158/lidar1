@@ -2,25 +2,25 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/XMLParser/vtkIOXMLParserModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/XMLParser/vtkIOXMLParserModule.h"
 		}
 	],
 	"target" : 

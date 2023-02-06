@@ -3,7 +3,7 @@
  * 
  * Define the vtkSurfaceLICPainter_DCpy string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/LIC/vtkSurfaceLICPainter_DCpy.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/LIC/vtkSurfaceLICPainter_DCpy.glsl
  */
 #include "vtkSurfaceLICPainter_DCpy.h"
 const char *vtkSurfaceLICPainter_DCpy =

@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_MIPFourDependentNoCroppingFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MIPFourDependentNoCroppingFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MIPFourDependentNoCroppingFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_MIPFourDependentNoCroppingFS.h"
 const char *vtkGPUVolumeRayCastMapper_MIPFourDependentNoCroppingFS =

@@ -2,25 +2,25 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Imaging/vtkPairwiseExtractHistogram2D.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Imaging/vtkPairwiseExtractHistogram2D.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Imaging/vtkExtractHistogram2D.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Imaging/vtkExtractHistogram2D.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Imaging/vtkComputeHistogram2DOutliers.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Imaging/vtkComputeHistogram2DOutliers.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Imaging/vtkPairwiseExtractHistogram2D.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Imaging/vtkPairwiseExtractHistogram2D.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Imaging/vtkExtractHistogram2D.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Imaging/vtkExtractHistogram2D.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/Imaging/vtkComputeHistogram2DOutliers.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Imaging/vtkComputeHistogram2DOutliers.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Filters/Imaging/vtkFiltersImagingModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Filters/Imaging/vtkFiltersImagingModule.h"
 		}
 	],
 	"target" : 

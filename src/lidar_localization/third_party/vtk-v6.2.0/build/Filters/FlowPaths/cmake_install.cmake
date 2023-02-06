@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths
+# Install script for directory: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,70 +38,63 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersFlowPaths-6.2.so.1")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1")
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
     endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersFlowPaths-6.2.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so")
+  endforeach()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersFlowPaths-6.2.so.1"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersFlowPaths-6.2.so"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersFlowPaths-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib:"
+           NEW_RPATH "")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
+      endif()
     endif()
-  endif()
+  endforeach()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/codes/vtk-v6.2.0/build/Filters/FlowPaths/CMakeFiles/vtkFiltersFlowPaths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Filters/FlowPaths/CMakeFiles/vtkFiltersFlowPaths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vtk-6.2" TYPE FILE FILES
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkAbstractInterpolatedVelocityField.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkAMRInterpolatedVelocityField.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkCompositeInterpolatedVelocityField.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkDashedStreamLine.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkInterpolatedVelocityField.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkStreamer.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkStreamLine.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkStreamPoints.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkStreamTracer.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkModifiedBSPTree.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkCellLocatorInterpolatedVelocityField.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkTemporalStreamTracer.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkParticleTracerBase.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkParticleTracer.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkStreaklineFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkParticlePathFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkTemporalInterpolatedVelocityField.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/FlowPaths/vtkCachingInterpolatedVelocityField.h"
-    "/home/jeff/codes/vtk-v6.2.0/build/Filters/FlowPaths/vtkFiltersFlowPathsModule.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkAbstractInterpolatedVelocityField.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkAMRInterpolatedVelocityField.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkCompositeInterpolatedVelocityField.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkDashedStreamLine.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkInterpolatedVelocityField.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkStreamer.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkStreamLine.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkStreamPoints.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkStreamTracer.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkModifiedBSPTree.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkCellLocatorInterpolatedVelocityField.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkTemporalStreamTracer.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkParticleTracerBase.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkParticleTracer.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkStreaklineFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkParticlePathFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkTemporalInterpolatedVelocityField.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/FlowPaths/vtkCachingInterpolatedVelocityField.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Filters/FlowPaths/vtkFiltersFlowPathsModule.h"
     )
 endif()
 

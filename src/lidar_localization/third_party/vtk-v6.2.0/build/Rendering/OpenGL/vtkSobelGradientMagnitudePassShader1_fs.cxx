@@ -3,7 +3,7 @@
  * 
  * Define the vtkSobelGradientMagnitudePassShader1_fs string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkSobelGradientMagnitudePassShader1_fs.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/vtkSobelGradientMagnitudePassShader1_fs.glsl
  */
 #include "vtkSobelGradientMagnitudePassShader1_fs.h"
 const char *vtkSobelGradientMagnitudePassShader1_fs =

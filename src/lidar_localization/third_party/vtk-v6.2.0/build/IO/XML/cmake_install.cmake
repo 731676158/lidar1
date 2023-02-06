@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeff/codes/vtk-v6.2.0/IO/XML
+# Install script for directory: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,95 +38,88 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOXML-6.2.so.1")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1")
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
     endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOXML-6.2.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so")
+  endforeach()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOXML-6.2.so.1"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOXML-6.2.so"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkIOXML-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib:"
+           NEW_RPATH "")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
+      endif()
     endif()
-  endif()
+  endforeach()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/codes/vtk-v6.2.0/build/IO/XML/CMakeFiles/vtkIOXML.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/XML/CMakeFiles/vtkIOXML.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vtk-6.2" TYPE FILE FILES
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkRTXMLPolyDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLCompositeDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLCompositeDataWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLDataSetWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLFileReadTester.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLGenericDataObjectReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalBoxDataFileConverter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalBoxDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalBoxDataWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLHyperOctreeReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLHyperOctreeWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLImageDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLImageDataWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLMultiBlockDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLMultiBlockDataWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLMultiGroupDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPImageDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPolyDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPolyDataWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPPolyDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPRectilinearGridReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPStructuredDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPStructuredGridReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPUnstructuredDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLPUnstructuredGridReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLRectilinearGridReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLRectilinearGridWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLStructuredDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLStructuredDataWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLStructuredGridReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLStructuredGridWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLUniformGridAMRReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLUniformGridAMRWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredDataReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredDataWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredGridReader.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredGridWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLWriterC.h"
-    "/home/jeff/codes/vtk-v6.2.0/IO/XML/vtkXMLWriter.h"
-    "/home/jeff/codes/vtk-v6.2.0/build/IO/XML/vtkIOXMLModule.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkRTXMLPolyDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLCompositeDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLCompositeDataWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLDataSetWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLFileReadTester.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLGenericDataObjectReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalBoxDataFileConverter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalBoxDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalBoxDataWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLHierarchicalDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLHyperOctreeReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLHyperOctreeWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLImageDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLImageDataWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLMultiBlockDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLMultiBlockDataWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLMultiGroupDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPImageDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPolyDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPolyDataWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPPolyDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPRectilinearGridReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPStructuredDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPStructuredGridReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPUnstructuredDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLPUnstructuredGridReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLRectilinearGridReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLRectilinearGridWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLStructuredDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLStructuredDataWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLStructuredGridReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLStructuredGridWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLUniformGridAMRReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLUniformGridAMRWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredDataReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredDataWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredGridReader.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLUnstructuredGridWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLWriterC.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XML/vtkXMLWriter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/XML/vtkIOXMLModule.h"
     )
 endif()
 

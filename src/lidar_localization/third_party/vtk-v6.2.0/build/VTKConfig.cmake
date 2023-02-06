@@ -5,7 +5,7 @@
 # This file is configured by VTK and used by the UseVTK.cmake module
 # to load VTK's settings for an external project.
 
-set(VTK_MODULES_DIR "/home/jeff/codes/vtk-v6.2.0/build/lib/cmake/vtk-6.2/Modules")
+set(VTK_MODULES_DIR "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/cmake/vtk-6.2/Modules")
 
 # The C and C++ flags added by VTK to the cmake-configured flags.
 SET(VTK_REQUIRED_C_FLAGS "")
@@ -20,7 +20,7 @@ SET(VTK_MINOR_VERSION "2")
 SET(VTK_BUILD_VERSION "0")
 
 # The location of the UseVTK.cmake file.
-SET(VTK_CMAKE_DIR "/home/jeff/codes/vtk-v6.2.0/CMake")
+SET(VTK_CMAKE_DIR "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/CMake")
 SET(VTK_USE_FILE "${VTK_CMAKE_DIR}/UseVTK.cmake")
 
 # The rendering backend VTK was configured to use.
@@ -42,13 +42,13 @@ foreach (_file ${config_files})
 endforeach()
 
 # Import VTK targets.
-set(VTK_CONFIG_TARGETS_FILE "/home/jeff/codes/vtk-v6.2.0/build/VTKTargets.cmake")
+set(VTK_CONFIG_TARGETS_FILE "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/VTKTargets.cmake")
 if(NOT TARGET vtkCommonCore)
   include("${VTK_CONFIG_TARGETS_FILE}")
 endif()
 
 # Load module interface macros.
-include("/home/jeff/codes/vtk-v6.2.0/CMake/vtkModuleAPI.cmake")
+include("/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/CMake/vtkModuleAPI.cmake")
 
 # Compute set of requested modules.
 if(VTK_FIND_COMPONENTS)

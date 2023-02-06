@@ -2,49 +2,49 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkMPASReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkMPASReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCAMReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCAMReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCFReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCFReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFPOPReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFPOPReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkSLACParticleReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkSLACParticleReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkSLACReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkSLACReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkMPASReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkMPASReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCAMReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCAMReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCFReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFCFReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFPOPReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFPOPReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkNetCDFReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkNetCDFReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkSLACParticleReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkSLACParticleReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/NetCDF/vtkSLACReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/NetCDF/vtkSLACReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/NetCDF/vtkIONetCDFModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/NetCDF/vtkIONetCDFModule.h"
 		}
 	],
 	"target" : 

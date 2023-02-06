@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "../../../lib/libvtkexpat-6.2.pdb"
-  "../../../lib/libvtkexpat-6.2.so"
-  "../../../lib/libvtkexpat-6.2.so.1"
   "CMakeFiles/vtkexpat.dir/xmlparse.c.o"
-  "CMakeFiles/vtkexpat.dir/xmlrole.c.o"
   "CMakeFiles/vtkexpat.dir/xmltok.c.o"
+  "CMakeFiles/vtkexpat.dir/xmlrole.c.o"
+  "../../../lib/libvtkexpat-6.2.pdb"
+  "../../../lib/libvtkexpat-6.2.so.1"
+  "../../../lib/libvtkexpat-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

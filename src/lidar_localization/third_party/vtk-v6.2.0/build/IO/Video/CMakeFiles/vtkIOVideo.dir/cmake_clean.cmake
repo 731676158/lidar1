@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOVideo-6.2.pdb"
-  "../../lib/libvtkIOVideo-6.2.so"
-  "../../lib/libvtkIOVideo-6.2.so.1"
   "CMakeFiles/vtkIOVideo.dir/vtkVideoSource.cxx.o"
+  "../../lib/libvtkIOVideo-6.2.pdb"
+  "../../lib/libvtkIOVideo-6.2.so.1"
+  "../../lib/libvtkIOVideo-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -3,7 +3,7 @@
  * 
  * Define the vtkGaussianBlurPassShader_fs string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkGaussianBlurPassShader_fs.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/vtkGaussianBlurPassShader_fs.glsl
  */
 #include "vtkGaussianBlurPassShader_fs.h"
 const char *vtkGaussianBlurPassShader_fs =

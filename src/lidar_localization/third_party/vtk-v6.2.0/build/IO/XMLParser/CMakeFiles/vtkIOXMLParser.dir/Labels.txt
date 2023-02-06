@@ -1,10 +1,10 @@
 # Target labels
  vtkIOXMLParser
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.cxx
-/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.cxx
-/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.cxx
-/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.h
-/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.h
-/home/jeff/codes/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.h
-/home/jeff/codes/vtk-v6.2.0/build/IO/XMLParser/vtkIOXMLParserModule.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLDataParser.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLParser.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/XMLParser/vtkXMLUtilities.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/XMLParser/vtkIOXMLParserModule.h

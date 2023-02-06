@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkRenderingContext2D-6.2.pdb"
-  "../../lib/libvtkRenderingContext2D-6.2.so"
-  "../../lib/libvtkRenderingContext2D-6.2.so.1"
   "CMakeFiles/vtkRenderingContext2D.dir/vtkAbstractContextBufferId.cxx.o"
   "CMakeFiles/vtkRenderingContext2D.dir/vtkAbstractContextItem.cxx.o"
   "CMakeFiles/vtkRenderingContext2D.dir/vtkBlockItem.cxx.o"
@@ -22,6 +19,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkRenderingContext2D.dir/vtkMarkerUtilities.cxx.o"
   "CMakeFiles/vtkRenderingContext2D.dir/vtkPen.cxx.o"
   "CMakeFiles/vtkRenderingContext2D.dir/vtkTooltipItem.cxx.o"
+  "../../lib/libvtkRenderingContext2D-6.2.pdb"
+  "../../lib/libvtkRenderingContext2D-6.2.so.1"
+  "../../lib/libvtkRenderingContext2D-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

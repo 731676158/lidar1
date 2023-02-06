@@ -2,22 +2,22 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_tool.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_tool.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_reader.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_reader.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_batchallocator.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_batchallocator.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_valueiterator.inl"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_valueiterator.inl"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_value.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_value.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_writer.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/jsoncpp/vtkjsoncpp/json_writer.cpp"
 		}
 	],
 	"target" : 

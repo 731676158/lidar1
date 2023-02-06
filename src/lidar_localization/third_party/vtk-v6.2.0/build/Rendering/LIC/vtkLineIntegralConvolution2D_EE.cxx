@@ -3,7 +3,7 @@
  * 
  * Define the vtkLineIntegralConvolution2D_EE string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/LIC/vtkLineIntegralConvolution2D_EE.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/LIC/vtkLineIntegralConvolution2D_EE.glsl
  */
 #include "vtkLineIntegralConvolution2D_EE.h"
 const char *vtkLineIntegralConvolution2D_EE =

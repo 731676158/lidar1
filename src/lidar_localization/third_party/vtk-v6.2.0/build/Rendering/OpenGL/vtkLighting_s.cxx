@@ -3,7 +3,7 @@
  * 
  * Define the vtkLighting_s string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkLighting_s.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/vtkLighting_s.glsl
  */
 #include "vtkLighting_s.h"
 const char *vtkLighting_s =

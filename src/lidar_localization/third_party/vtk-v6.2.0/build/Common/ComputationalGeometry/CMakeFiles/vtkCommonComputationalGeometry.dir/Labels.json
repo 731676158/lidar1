@@ -2,115 +2,115 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkCardinalSpline.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkCardinalSpline.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkKochanekSpline.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkKochanekSpline.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricBoy.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricBoy.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricConicSpiral.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricConicSpiral.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricCrossCap.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricCrossCap.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricDini.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricDini.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEllipsoid.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEllipsoid.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEnneper.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEnneper.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFigure8Klein.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFigure8Klein.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFunction.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFunction.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricKlein.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricKlein.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricMobius.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricMobius.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRandomHills.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRandomHills.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRoman.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRoman.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSpline.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSpline.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperEllipsoid.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperEllipsoid.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperToroid.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperToroid.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricTorus.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricTorus.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkCardinalSpline.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkCardinalSpline.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkKochanekSpline.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkKochanekSpline.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricBoy.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricBoy.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricConicSpiral.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricConicSpiral.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricCrossCap.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricCrossCap.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricDini.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricDini.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEllipsoid.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEllipsoid.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEnneper.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricEnneper.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFigure8Klein.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFigure8Klein.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFunction.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricFunction.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricKlein.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricKlein.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricMobius.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricMobius.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRandomHills.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRandomHills.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRoman.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricRoman.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSpline.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSpline.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperEllipsoid.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperEllipsoid.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperToroid.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricSuperToroid.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricTorus.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Common/ComputationalGeometry/vtkParametricTorus.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Common/ComputationalGeometry/vtkCommonComputationalGeometryModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Common/ComputationalGeometry/vtkCommonComputationalGeometryModule.h"
 		}
 	],
 	"target" : 

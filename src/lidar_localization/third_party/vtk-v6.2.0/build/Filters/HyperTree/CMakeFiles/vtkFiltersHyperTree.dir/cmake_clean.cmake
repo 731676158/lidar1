@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersHyperTree-6.2.pdb"
-  "../../lib/libvtkFiltersHyperTree-6.2.so"
-  "../../lib/libvtkFiltersHyperTree-6.2.so.1"
   "CMakeFiles/vtkFiltersHyperTree.dir/vtkClipHyperOctree.cxx.o"
+  "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperTreeGridAxisCut.cxx.o"
+  "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperTreeGridGeometry.cxx.o"
+  "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperTreeGridToUnstructuredGrid.cxx.o"
   "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperOctreeClipCutPointsGrabber.cxx.o"
   "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperOctreeContourFilter.cxx.o"
   "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperOctreeCutter.cxx.o"
@@ -12,9 +12,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperOctreeSampleFunction.cxx.o"
   "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperOctreeSurfaceFilter.cxx.o"
   "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperOctreeToUniformGridFilter.cxx.o"
-  "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperTreeGridAxisCut.cxx.o"
-  "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperTreeGridGeometry.cxx.o"
-  "CMakeFiles/vtkFiltersHyperTree.dir/vtkHyperTreeGridToUnstructuredGrid.cxx.o"
+  "../../lib/libvtkFiltersHyperTree-6.2.pdb"
+  "../../lib/libvtkFiltersHyperTree-6.2.so.1"
+  "../../lib/libvtkFiltersHyperTree-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

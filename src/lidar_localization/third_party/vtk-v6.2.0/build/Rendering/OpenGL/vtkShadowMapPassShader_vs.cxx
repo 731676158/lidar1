@@ -3,7 +3,7 @@
  * 
  * Define the vtkShadowMapPassShader_vs string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkShadowMapPassShader_vs.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/vtkShadowMapPassShader_vs.glsl
  */
 #include "vtkShadowMapPassShader_vs.h"
 const char *vtkShadowMapPassShader_vs =

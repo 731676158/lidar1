@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../../lib/libvtkverdict-6.2.pdb"
-  "../../../lib/libvtkverdict-6.2.so"
-  "../../../lib/libvtkverdict-6.2.so.1"
   "CMakeFiles/verdict.dir/V_EdgeMetric.cpp.o"
   "CMakeFiles/verdict.dir/V_GaussIntegration.cpp.o"
   "CMakeFiles/verdict.dir/V_HexMetric.cpp.o"
@@ -10,8 +7,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/verdict.dir/V_QuadMetric.cpp.o"
   "CMakeFiles/verdict.dir/V_TetMetric.cpp.o"
   "CMakeFiles/verdict.dir/V_TriMetric.cpp.o"
-  "CMakeFiles/verdict.dir/V_WedgeMetric.cpp.o"
   "CMakeFiles/verdict.dir/VerdictVector.cpp.o"
+  "CMakeFiles/verdict.dir/V_WedgeMetric.cpp.o"
+  "../../../lib/libvtkverdict-6.2.pdb"
+  "../../../lib/libvtkverdict-6.2.so.1"
+  "../../../lib/libvtkverdict-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

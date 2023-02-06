@@ -1,14 +1,14 @@
 Determining if glXGetProcAddressARB exists in GL/glx.h TRUE with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_9fea1/fast && /usr/bin/make -f CMakeFiles/cmTC_9fea1.dir/build.make CMakeFiles/cmTC_9fea1.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_9fea1.dir/CheckglXGetProcAddressARB.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_9fea1.dir/CheckglXGetProcAddressARB.cxx.o -c /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/CheckglXGetProcAddressARB.cxx
-Linking CXX executable cmTC_9fea1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fea1.dir/link.txt --verbose=1
-/usr/bin/c++        -rdynamic CMakeFiles/cmTC_9fea1.dir/CheckglXGetProcAddressARB.cxx.o  -o cmTC_9fea1  /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so -lpthread -lm 
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-
+Run Build Command:"/usr/bin/make" "cmTC_103e7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_103e7.dir/build.make CMakeFiles/cmTC_103e7.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_103e7.dir/CheckglXGetProcAddressARB.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_103e7.dir/CheckglXGetProcAddressARB.cxx.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/CheckglXGetProcAddressARB.cxx
+Linking CXX executable cmTC_103e7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_103e7.dir/link.txt --verbose=1
+/usr/bin/c++        -rdynamic CMakeFiles/cmTC_103e7.dir/CheckglXGetProcAddressARB.cxx.o  -o cmTC_103e7 /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so -lpthread -lm 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
 
 

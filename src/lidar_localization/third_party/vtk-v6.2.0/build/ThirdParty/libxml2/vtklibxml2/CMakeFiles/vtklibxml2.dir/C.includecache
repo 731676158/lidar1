@@ -26,19 +26,19 @@ unixio.h
 zconf.h
 ../ThirdParty/zlib/vtkzlib/zconf.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/DOCBparser.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/DOCBparser.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 libxml/xmlerror.h
 -
 libxml/DOCBparser.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/HTMLparser.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/HTMLparser.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 ctype.h
@@ -52,7 +52,7 @@ fcntl.h
 unistd.h
 -
 vtk_libxml2_zlib.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 libxml/xmlmemory.h
 -
 libxml/tree.h
@@ -80,11 +80,11 @@ libxml/globals.h
 libxml/uri.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/HTMLtree.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/HTMLtree.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 ctype.h
@@ -110,11 +110,11 @@ libxml/globals.h
 libxml/uri.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/SAX.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/SAX.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdlib.h
 -
 string.h
@@ -150,11 +150,11 @@ libxml/globals.h
 libxml/SAX2.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/SAX2.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/SAX2.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdlib.h
 -
 string.h
@@ -188,11 +188,11 @@ libxml/HTMLtree.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/c14n.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/c14n.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdlib.h
 -
 string.h
@@ -212,11 +212,11 @@ libxml/xpathInternals.h
 libxml/c14n.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/catalog.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/catalog.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 sys/types.h
 -
 sys/stat.h
@@ -246,19 +246,19 @@ libxml/threads.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/chvalid.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/chvalid.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 libxml/chvalid.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/debugXML.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/debugXML.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdlib.h
@@ -292,11 +292,11 @@ libxml/uri.h
 libxml/relaxng.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/dict.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/dict.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/tree.h
@@ -310,107 +310,107 @@ libxml/xmlerror.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 libxml/c14n.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/c14n.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/c14n.h
 libxml/catalog.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/catalog.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/catalog.h
 libxml/chvalid.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/chvalid.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/chvalid.h
 libxml/debugXML.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/debugXML.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/debugXML.h
 libxml/dict.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/dict.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/dict.h
 libxml/DOCBparser.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/DOCBparser.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/DOCBparser.h
 libxml/encoding.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/encoding.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/encoding.h
 libxml/entities.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/entities.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/entities.h
 libxml/globals.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/globals.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/globals.h
 libxml/hash.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/hash.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/hash.h
 libxml/HTMLparser.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/HTMLparser.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/HTMLparser.h
 libxml/HTMLtree.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/HTMLtree.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/HTMLtree.h
 libxml/list.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/list.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/list.h
 libxml/nanoftp.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/nanoftp.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/nanoftp.h
 libxml/nanohttp.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/nanohttp.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/nanohttp.h
 libxml/parser.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/parser.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/parser.h
 libxml/parserInternals.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/parserInternals.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/parserInternals.h
 libxml/pattern.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/pattern.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/pattern.h
 libxml/relaxng.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/relaxng.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/relaxng.h
 libxml/SAX2.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/SAX2.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/SAX2.h
 libxml/SAX.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/SAX.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/SAX.h
 libxml/schemasInternals.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/schemasInternals.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/schemasInternals.h
 libxml/schematron.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/schematron.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/schematron.h
 libxml/threads.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/threads.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/threads.h
 libxml/tree.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/tree.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/tree.h
 libxml/uri.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/uri.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/uri.h
 libxml/valid.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/valid.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/valid.h
 libxml/xinclude.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xinclude.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xinclude.h
 libxml/xlink.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xlink.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xlink.h
 libxml/xmlautomata.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlautomata.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlautomata.h
 libxml/xmlerror.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlerror.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlerror.h
 libxml/xmlexports.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlexports.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlexports.h
 libxml/xmlIO.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlIO.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlIO.h
 libxml/xmlmemory.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlmemory.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlmemory.h
 libxml/xmlreader.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlreader.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlreader.h
 libxml/xmlregexp.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlregexp.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlregexp.h
 libxml/xmlsave.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlsave.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlsave.h
 libxml/xmlschemas.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlschemas.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlschemas.h
 libxml/xmlschemastypes.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlschemastypes.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlschemastypes.h
 libxml/xmlstring.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlstring.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlstring.h
 libxml/xmlunicode.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlunicode.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlunicode.h
 libxml/xmlversion.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlversion.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlversion.h
 libxml/xmlwriter.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlwriter.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlwriter.h
 libxml/xpath.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xpath.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xpath.h
 libxml/xpathInternals.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xpathInternals.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xpathInternals.h
 libxml/xpointer.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xpointer.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xpointer.h
 libxml/xmlmodule.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlmodule.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml/xmlmodule.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/encoding.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/encoding.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 ctype.h
@@ -430,11 +430,11 @@ libxml/globals.h
 libxml/xmlerror.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/entities.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/entities.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdlib.h
@@ -456,11 +456,11 @@ libxml/globals.h
 libxml/dict.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/error.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/error.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdarg.h
@@ -474,11 +474,11 @@ libxml/xmlmemory.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/globals.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/globals.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdlib.h
 -
 string.h
@@ -496,11 +496,11 @@ libxml/globals.h
 libxml/SAX.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/hash.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/hash.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/parser.h
@@ -514,11 +514,11 @@ libxml/xmlerror.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/legacy.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/legacy.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/tree.h
@@ -532,13 +532,13 @@ libxml/parserInternals.h
 libxml/HTMLparser.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 config-mac.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/config-mac.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/config-mac.h
 config.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/config.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/config.h
 libxml/xmlversion.h
 -
 stdio.h
@@ -548,13 +548,13 @@ varargs.h
 stdio.h
 -
 trio.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trio.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trio.h
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/list.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/list.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdlib.h
 -
 string.h
@@ -566,11 +566,11 @@ libxml/list.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/nanoftp.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/nanoftp.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdlib.h
@@ -618,11 +618,11 @@ winsock2.h
 stdio.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/nanohttp.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/nanohttp.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdlib.h
@@ -656,7 +656,7 @@ strings.h
 resolv.h
 -
 vtk_libxml2_zlib.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 stropts
 -
 wsockcompat.h
@@ -680,11 +680,11 @@ libxml/uri.h
 stdio.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/parser.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/parser.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdlib.h
 -
 string.h
@@ -732,15 +732,15 @@ fcntl.h
 unistd.h
 -
 vtk_libxml2_zlib.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 libxml/xpath.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/parserInternals.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/parserInternals.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 ctype.h
@@ -754,7 +754,7 @@ fcntl.h
 unistd.h
 -
 vtk_libxml2_zlib.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 libxml/xmlmemory.h
 -
 libxml/tree.h
@@ -788,11 +788,11 @@ libxml/globals.h
 libxml/chvalid.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/pattern.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/pattern.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlmemory.h
@@ -810,11 +810,11 @@ libxml/parserInternals.h
 libxml/pattern.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/relaxng.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/relaxng.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdio.h
@@ -840,11 +840,11 @@ libxml/xmlregexp.h
 libxml/xmlschemastypes.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/schematron.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/schematron.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/parser.h
@@ -862,11 +862,11 @@ libxml/pattern.h
 libxml/schematron.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/threads.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/threads.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/threads.h
@@ -892,11 +892,11 @@ TLS.h
 note.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/tree.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/tree.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 ctype.h
@@ -904,7 +904,7 @@ ctype.h
 stdlib.h
 -
 vtk_libxml2_zlib.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 libxml/xmlmemory.h
 -
 libxml/tree.h
@@ -930,13 +930,13 @@ libxml/debugXML.h
 libxml/hash.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trio.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trio.h
 config.h
 -
 triodef.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
 stdio.h
 -
 stdlib.h
@@ -946,13 +946,13 @@ varargs.h
 stdarg.h
 -
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.c
 triodef.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
 trionan.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.h
 math.h
 -
 string.h
@@ -970,17 +970,17 @@ fp_class.h
 assert.h
 -
 doc/doc_nan.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/doc/doc_nan.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/doc/doc_nan.h
 stdio.h
 -
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.h
 triodef.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/triodef.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/uri.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/uri.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlmemory.h
@@ -992,11 +992,11 @@ libxml/globals.h
 libxml/xmlerror.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/valid.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/valid.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdlib.h
@@ -1020,17 +1020,17 @@ libxml/list.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 vtk_zlib.h
 -
 zlib.h
 -
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xinclude.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xinclude.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlmemory.h
@@ -1056,11 +1056,11 @@ libxml/xinclude.h
 libxml/debugXML.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xlink.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xlink.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 ctype.h
@@ -1074,7 +1074,7 @@ fcntl.h
 unistd.h
 -
 vtk_libxml2_zlib.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 libxml/xmlmemory.h
 -
 libxml/tree.h
@@ -1088,11 +1088,11 @@ libxml/xlink.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlIO.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlIO.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 errno.h
@@ -1108,7 +1108,7 @@ unistd.h
 stdlib.h
 -
 vtk_libxml2_zlib.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/vtk_libxml2_zlib.h
 windows.h
 -
 libxml/xmlmemory.h
@@ -1132,11 +1132,11 @@ libxml/catalog.h
 libxml/globals.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlmemory.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlmemory.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 sys/types.h
@@ -1158,11 +1158,11 @@ libxml/xmlerror.h
 libxml/threads.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlmodule.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlmodule.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlmemory.h
@@ -1184,11 +1184,11 @@ kernel/image.h
 os2.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlreader.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlreader.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 stdarg.h
@@ -1216,11 +1216,11 @@ libxml/xinclude.h
 libxml/pattern.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlregexp.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlregexp.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdio.h
 -
 string.h
@@ -1238,11 +1238,11 @@ libxml/xmlautomata.h
 libxml/xmlunicode.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlsave.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlsave.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlmemory.h
@@ -1256,11 +1256,11 @@ libxml/xmlsave.h
 libxml/HTMLtree.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlschemas.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlschemas.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlmemory.h
@@ -1294,11 +1294,11 @@ libxml/pattern.h
 libxml/xmlreader.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlschemastypes.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlschemastypes.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlmemory.h
@@ -1326,11 +1326,11 @@ math.h
 float.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlstring.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlstring.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 stdlib.h
 -
 string.h
@@ -1342,11 +1342,11 @@ libxml/parserInternals.h
 libxml/xmlstring.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlunicode.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlunicode.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xmlversion.h
@@ -1356,13 +1356,13 @@ libxml/xmlunicode.h
 libxml/chvalid.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlwriter.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xmlwriter.c
 string.h
 -
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 libxml/xmlmemory.h
 -
 libxml/parser.h
@@ -1374,11 +1374,11 @@ libxml/HTMLtree.h
 libxml/xmlwriter.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xpath.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xpath.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 sys/types.h
@@ -1418,13 +1418,13 @@ libxml/globals.h
 libxml/pattern.h
 -
 trionan.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/trionan.c
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xpointer.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/xpointer.c
 libxml.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/libxml.h
 string.h
 -
 libxml/xpointer.h
@@ -1446,7 +1446,7 @@ libxml/globals.h
 libxml/debugXML.h
 -
 elfgcchack.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/elfgcchack.h
 
 ThirdParty/libxml2/vtklibxml2/config.h
 

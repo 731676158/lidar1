@@ -1,18 +1,18 @@
 # Target labels
  vtkImagingStencil
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImageStencil.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImageStencilToImage.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImageToImageStencil.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImplicitFunctionToImageStencil.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkLassoStencilSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkPolyDataToImageStencil.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkROIStencilSource.cxx
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImageStencil.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImageStencilToImage.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImageToImageStencil.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkImplicitFunctionToImageStencil.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkLassoStencilSource.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkPolyDataToImageStencil.h
-/home/jeff/codes/vtk-v6.2.0/Imaging/Stencil/vtkROIStencilSource.h
-/home/jeff/codes/vtk-v6.2.0/build/Imaging/Stencil/vtkImagingStencilModule.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImageStencil.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImageStencilToImage.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImageToImageStencil.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImplicitFunctionToImageStencil.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkLassoStencilSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkPolyDataToImageStencil.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkROIStencilSource.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImageStencil.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImageStencilToImage.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImageToImageStencil.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkImplicitFunctionToImageStencil.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkLassoStencilSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkPolyDataToImageStencil.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Stencil/vtkROIStencilSource.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Stencil/vtkImagingStencilModule.h

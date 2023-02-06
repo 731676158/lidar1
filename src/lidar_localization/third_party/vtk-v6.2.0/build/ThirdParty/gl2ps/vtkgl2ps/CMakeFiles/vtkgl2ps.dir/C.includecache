@@ -74,9 +74,9 @@ unixio.h
 zconf.h
 ../ThirdParty/zlib/vtkzlib/zconf.h
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/gl2ps/vtkgl2ps/gl2ps.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/gl2ps/vtkgl2ps/gl2ps.c
 gl2ps.h
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/gl2ps/vtkgl2ps/gl2ps.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/gl2ps/vtkgl2ps/gl2ps.h
 math.h
 -
 string.h
@@ -94,7 +94,7 @@ vtk_zlib.h
 vtk_png.h
 -
 
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/gl2ps/vtkgl2ps/gl2ps.h
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/gl2ps/vtkgl2ps/gl2ps.h
 stdio.h
 -
 stdlib.h

@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersExtraction-6.2.pdb"
-  "../../lib/libvtkFiltersExtraction-6.2.so"
-  "../../lib/libvtkFiltersExtraction-6.2.so.1"
   "CMakeFiles/vtkFiltersExtraction.dir/vtkConvertSelection.cxx.o"
   "CMakeFiles/vtkFiltersExtraction.dir/vtkExtractArraysOverTime.cxx.o"
   "CMakeFiles/vtkFiltersExtraction.dir/vtkExtractBlock.cxx.o"
@@ -27,9 +24,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkFiltersExtraction.dir/vtkExtractTensorComponents.cxx.o"
   "CMakeFiles/vtkFiltersExtraction.dir/vtkExtractUnstructuredGrid.cxx.o"
   "CMakeFiles/vtkFiltersExtraction.dir/vtkExtractVectorComponents.cxx.o"
+  "CMakeFiles/vtkFiltersExtraction.dir/vtkProbeSelectedLocations.cxx.o"
   "CMakeFiles/vtkFiltersExtraction.dir/vtkHierarchicalDataExtractDataSets.cxx.o"
   "CMakeFiles/vtkFiltersExtraction.dir/vtkHierarchicalDataExtractLevel.cxx.o"
-  "CMakeFiles/vtkFiltersExtraction.dir/vtkProbeSelectedLocations.cxx.o"
+  "../../lib/libvtkFiltersExtraction-6.2.pdb"
+  "../../lib/libvtkFiltersExtraction-6.2.so.1"
+  "../../lib/libvtkFiltersExtraction-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

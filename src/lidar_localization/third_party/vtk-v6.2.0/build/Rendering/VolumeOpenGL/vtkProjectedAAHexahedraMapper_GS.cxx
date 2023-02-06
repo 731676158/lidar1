@@ -3,7 +3,7 @@
  * 
  * Define the vtkProjectedAAHexahedraMapper_GS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkProjectedAAHexahedraMapper_GS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkProjectedAAHexahedraMapper_GS.glsl
  */
 #include "vtkProjectedAAHexahedraMapper_GS.h"
 const char *vtkProjectedAAHexahedraMapper_GS =

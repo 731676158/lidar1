@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_MinIPBinaryMaskFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MinIPBinaryMaskFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_MinIPBinaryMaskFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_MinIPBinaryMaskFS.h"
 const char *vtkGPUVolumeRayCastMapper_MinIPBinaryMaskFS =

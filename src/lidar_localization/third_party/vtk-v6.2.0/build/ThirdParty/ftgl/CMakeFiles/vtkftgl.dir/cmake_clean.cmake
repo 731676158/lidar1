@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkftgl-6.2.pdb"
-  "../../lib/libvtkftgl-6.2.so"
-  "../../lib/libvtkftgl-6.2.so.1"
   "CMakeFiles/vtkftgl.dir/src/FTBitmapGlyph.cpp.o"
   "CMakeFiles/vtkftgl.dir/src/FTBitmapGlyphRenderOpenGL.cpp.o"
   "CMakeFiles/vtkftgl.dir/src/FTCharmap.cpp.o"
@@ -17,6 +14,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkftgl.dir/src/FTPixmapGlyph.cpp.o"
   "CMakeFiles/vtkftgl.dir/src/FTPixmapGlyphRenderOpenGL.cpp.o"
   "CMakeFiles/vtkftgl.dir/src/FTSize.cpp.o"
+  "../../lib/libvtkftgl-6.2.pdb"
+  "../../lib/libvtkftgl-6.2.so.1"
+  "../../lib/libvtkftgl-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

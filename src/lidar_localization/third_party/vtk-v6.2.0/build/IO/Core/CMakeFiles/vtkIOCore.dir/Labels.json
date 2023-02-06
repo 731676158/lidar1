@@ -2,139 +2,139 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkAbstractParticleWriter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkAbstractParticleWriter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayWriter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayWriter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkASCIITextCodec.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkASCIITextCodec.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkBase64InputStream.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkBase64InputStream.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkBase64OutputStream.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkBase64OutputStream.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkBase64Utilities.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkBase64Utilities.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkDataCompressor.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkDataCompressor.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkDelimitedTextWriter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkDelimitedTextWriter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkGlobFileNames.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkGlobFileNames.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkInputStream.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkInputStream.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkJavaScriptDataWriter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkJavaScriptDataWriter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkOutputStream.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkOutputStream.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkSortFileNames.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkSortFileNames.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkTextCodec.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkTextCodec.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkTextCodecFactory.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkTextCodecFactory.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkUTF16TextCodec.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkUTF16TextCodec.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkUTF8TextCodec.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkUTF8TextCodec.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkWriter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkWriter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkZLibDataCompressor.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkZLibDataCompressor.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayDataReader.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayDataReader.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayDataWriter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayDataWriter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkAbstractParticleWriter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkAbstractParticleWriter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayWriter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayWriter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkASCIITextCodec.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkASCIITextCodec.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkBase64InputStream.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkBase64InputStream.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkBase64OutputStream.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkBase64OutputStream.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkBase64Utilities.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkBase64Utilities.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkDataCompressor.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkDataCompressor.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkDelimitedTextWriter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkDelimitedTextWriter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkGlobFileNames.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkGlobFileNames.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkInputStream.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkInputStream.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkJavaScriptDataWriter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkJavaScriptDataWriter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkOutputStream.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkOutputStream.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkSortFileNames.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkSortFileNames.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkTextCodec.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkTextCodec.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkTextCodecFactory.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkTextCodecFactory.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkUTF16TextCodec.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkUTF16TextCodec.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkUTF8TextCodec.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkUTF8TextCodec.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkWriter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkWriter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkZLibDataCompressor.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkZLibDataCompressor.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayDataReader.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayDataReader.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/IO/Core/vtkArrayDataWriter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/IO/Core/vtkArrayDataWriter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/IO/Core/vtkIOCoreModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/IO/Core/vtkIOCoreModule.h"
 		}
 	],
 	"target" : 

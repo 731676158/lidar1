@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../../lib/libvtkzlib-6.2.pdb"
-  "../../../lib/libvtkzlib-6.2.so"
-  "../../../lib/libvtkzlib-6.2.so.1"
   "CMakeFiles/vtkzlib.dir/adler32.c.o"
   "CMakeFiles/vtkzlib.dir/compress.c.o"
   "CMakeFiles/vtkzlib.dir/crc32.c.o"
@@ -13,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkzlib.dir/trees.c.o"
   "CMakeFiles/vtkzlib.dir/uncompr.c.o"
   "CMakeFiles/vtkzlib.dir/zutil.c.o"
+  "../../../lib/libvtkzlib-6.2.pdb"
+  "../../../lib/libvtkzlib-6.2.so.1"
+  "../../../lib/libvtkzlib-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

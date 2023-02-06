@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkRenderingImage-6.2.pdb"
-  "../../lib/libvtkRenderingImage-6.2.so"
-  "../../lib/libvtkRenderingImage-6.2.so.1"
   "CMakeFiles/vtkRenderingImage.dir/vtkImageResliceMapper.cxx.o"
   "CMakeFiles/vtkRenderingImage.dir/vtkImageSliceCollection.cxx.o"
   "CMakeFiles/vtkRenderingImage.dir/vtkImageStack.cxx.o"
+  "../../lib/libvtkRenderingImage-6.2.pdb"
+  "../../lib/libvtkRenderingImage-6.2.so.1"
+  "../../lib/libvtkRenderingImage-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

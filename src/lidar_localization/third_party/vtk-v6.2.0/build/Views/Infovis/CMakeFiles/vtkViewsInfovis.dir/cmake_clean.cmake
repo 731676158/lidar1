@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkViewsInfovis-6.2.pdb"
-  "../../lib/libvtkViewsInfovis-6.2.so"
-  "../../lib/libvtkViewsInfovis-6.2.so.1"
   "CMakeFiles/vtkViewsInfovis.dir/vtkApplyColors.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkApplyIcons.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkDendrogramItem.cxx.o"
@@ -16,12 +13,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkViewsInfovis.dir/vtkParallelCoordinatesHistogramRepresentation.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkParallelCoordinatesRepresentation.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkParallelCoordinatesView.cxx.o"
-  "CMakeFiles/vtkViewsInfovis.dir/vtkRenderView.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkRenderedGraphRepresentation.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkRenderedHierarchyRepresentation.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkRenderedRepresentation.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkRenderedSurfaceRepresentation.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkRenderedTreeAreaRepresentation.cxx.o"
+  "CMakeFiles/vtkViewsInfovis.dir/vtkRenderView.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkSCurveSpline.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkTanglegramItem.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkTreeAreaView.cxx.o"
@@ -29,6 +26,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkViewsInfovis.dir/vtkTreeMapView.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkTreeRingView.cxx.o"
   "CMakeFiles/vtkViewsInfovis.dir/vtkViewUpdater.cxx.o"
+  "../../lib/libvtkViewsInfovis-6.2.pdb"
+  "../../lib/libvtkViewsInfovis-6.2.so.1"
+  "../../lib/libvtkViewsInfovis-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

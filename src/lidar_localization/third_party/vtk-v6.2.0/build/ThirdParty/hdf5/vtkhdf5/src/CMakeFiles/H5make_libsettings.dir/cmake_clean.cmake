@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../../../../bin/H5make_libsettings"
-  "../../../../bin/H5make_libsettings.pdb"
   "CMakeFiles/H5make_libsettings.dir/H5make_libsettings.c.o"
+  "../../../../bin/H5make_libsettings.pdb"
+  "../../../../bin/H5make_libsettings"
 )
 
 # Per-language clean rules from dependency scanning.

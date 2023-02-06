@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeff/codes/vtk-v6.2.0/Filters/Sources
+# Install script for directory: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,84 +38,77 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersSources-6.2.so.1")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1")
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
     endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimeLibrariesx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersSources-6.2.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so"
-         OLD_RPATH "/home/jeff/codes/vtk-v6.2.0/build/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so")
+  endforeach()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersSources-6.2.so.1"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersSources-6.2.so"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvtkFiltersSources-6.2.so"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib:"
+           NEW_RPATH "")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
+      endif()
     endif()
-  endif()
+  endforeach()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/codes/vtk-v6.2.0/build/Filters/Sources/CMakeFiles/vtkFiltersSources.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/vtk-6.2/Modules" TYPE FILE FILES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Filters/Sources/CMakeFiles/vtkFiltersSources.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelopmentx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vtk-6.2" TYPE FILE FILES
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkArcSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkArrowSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkButtonSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkConeSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkCubeSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkCylinderSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkDiskSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkEllipticalButtonSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkFrustumSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkGlyphSource2D.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkHyperOctreeFractalSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkHyperTreeGridSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkLineSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkOutlineCornerFilter.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkOutlineCornerSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkOutlineSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkParametricFunctionSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkPlaneSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkPlatonicSolidSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkPointSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkProgrammableDataObjectSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkProgrammableSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkRectangularButtonSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkRegularPolygonSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkSelectionSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkSphereSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkSuperquadricSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkTessellatedBoxSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkTextSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkTexturedSphereSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkGraphToPolyData.h"
-    "/home/jeff/codes/vtk-v6.2.0/Filters/Sources/vtkDiagonalMatrixSource.h"
-    "/home/jeff/codes/vtk-v6.2.0/build/Filters/Sources/vtkFiltersSourcesModule.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkArcSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkArrowSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkButtonSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkConeSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkCubeSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkCylinderSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkDiskSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkEllipticalButtonSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkFrustumSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkGlyphSource2D.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkHyperOctreeFractalSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkHyperTreeGridSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkLineSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkOutlineCornerFilter.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkOutlineCornerSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkOutlineSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkParametricFunctionSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkPlaneSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkPlatonicSolidSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkPointSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkProgrammableDataObjectSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkProgrammableSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkRectangularButtonSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkRegularPolygonSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkSelectionSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkSphereSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkSuperquadricSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkTessellatedBoxSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkTextSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkTexturedSphereSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkGraphToPolyData.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/Sources/vtkDiagonalMatrixSource.h"
+    "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Filters/Sources/vtkFiltersSourcesModule.h"
     )
 endif()
 

@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../../lib/libvtklibxml2-6.2.pdb"
-  "../../../lib/libvtklibxml2-6.2.so"
-  "../../../lib/libvtklibxml2-6.2.so.1"
   "CMakeFiles/vtklibxml2.dir/DOCBparser.c.o"
   "CMakeFiles/vtklibxml2.dir/HTMLparser.c.o"
   "CMakeFiles/vtklibxml2.dir/HTMLtree.c.o"
@@ -45,6 +42,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtklibxml2.dir/xmlwriter.c.o"
   "CMakeFiles/vtklibxml2.dir/xpath.c.o"
   "CMakeFiles/vtklibxml2.dir/xpointer.c.o"
+  "../../../lib/libvtklibxml2-6.2.pdb"
+  "../../../lib/libvtklibxml2-6.2.so.1"
+  "../../../lib/libvtklibxml2-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

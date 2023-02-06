@@ -2,55 +2,55 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDivergence.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageDivergence.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDotProduct.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageDotProduct.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogarithmicScale.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageLogarithmicScale.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogic.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageLogic.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMagnitude.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageMagnitude.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMaskBits.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageMaskBits.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMathematics.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageMathematics.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageWeightedSum.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageWeightedSum.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDivergence.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageDivergence.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageDotProduct.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageDotProduct.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogarithmicScale.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageLogarithmicScale.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageLogic.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageLogic.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMagnitude.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageMagnitude.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMaskBits.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageMaskBits.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageMathematics.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageMathematics.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Math/vtkImageWeightedSum.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Math/vtkImageWeightedSum.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Math/vtkImagingMathModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Math/vtkImagingMathModule.h"
 		}
 	],
 	"target" : 

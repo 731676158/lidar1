@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkImagingSources-6.2.pdb"
-  "../../lib/libvtkImagingSources-6.2.so"
-  "../../lib/libvtkImagingSources-6.2.so.1"
   "CMakeFiles/vtkImagingSources.dir/vtkImageCanvasSource2D.cxx.o"
   "CMakeFiles/vtkImagingSources.dir/vtkImageEllipsoidSource.cxx.o"
   "CMakeFiles/vtkImagingSources.dir/vtkImageGaussianSource.cxx.o"
@@ -9,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkImagingSources.dir/vtkImageMandelbrotSource.cxx.o"
   "CMakeFiles/vtkImagingSources.dir/vtkImageNoiseSource.cxx.o"
   "CMakeFiles/vtkImagingSources.dir/vtkImageSinusoidSource.cxx.o"
+  "../../lib/libvtkImagingSources-6.2.pdb"
+  "../../lib/libvtkImagingSources-6.2.so.1"
+  "../../lib/libvtkImagingSources-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

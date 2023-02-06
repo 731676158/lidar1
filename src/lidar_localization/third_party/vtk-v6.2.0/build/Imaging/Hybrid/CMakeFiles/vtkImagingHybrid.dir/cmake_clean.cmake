@@ -1,19 +1,19 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkImagingHybrid-6.2.pdb"
-  "../../lib/libvtkImagingHybrid-6.2.so"
-  "../../lib/libvtkImagingHybrid-6.2.so.1"
   "CMakeFiles/vtkImagingHybrid.dir/vtkBooleanTexture.cxx.o"
+  "CMakeFiles/vtkImagingHybrid.dir/vtkShepardMethod.cxx.o"
+  "CMakeFiles/vtkImagingHybrid.dir/vtkVoxelModeller.cxx.o"
+  "CMakeFiles/vtkImagingHybrid.dir/vtkSurfaceReconstructionFilter.cxx.o"
   "CMakeFiles/vtkImagingHybrid.dir/vtkFastSplatter.cxx.o"
   "CMakeFiles/vtkImagingHybrid.dir/vtkGaussianSplatter.cxx.o"
+  "CMakeFiles/vtkImagingHybrid.dir/vtkSampleFunction.cxx.o"
+  "CMakeFiles/vtkImagingHybrid.dir/vtkPointLoad.cxx.o"
   "CMakeFiles/vtkImagingHybrid.dir/vtkImageCursor3D.cxx.o"
   "CMakeFiles/vtkImagingHybrid.dir/vtkImageRectilinearWipe.cxx.o"
-  "CMakeFiles/vtkImagingHybrid.dir/vtkPointLoad.cxx.o"
-  "CMakeFiles/vtkImagingHybrid.dir/vtkSampleFunction.cxx.o"
-  "CMakeFiles/vtkImagingHybrid.dir/vtkShepardMethod.cxx.o"
-  "CMakeFiles/vtkImagingHybrid.dir/vtkSliceCubes.cxx.o"
-  "CMakeFiles/vtkImagingHybrid.dir/vtkSurfaceReconstructionFilter.cxx.o"
   "CMakeFiles/vtkImagingHybrid.dir/vtkTriangularTexture.cxx.o"
-  "CMakeFiles/vtkImagingHybrid.dir/vtkVoxelModeller.cxx.o"
+  "CMakeFiles/vtkImagingHybrid.dir/vtkSliceCubes.cxx.o"
+  "../../lib/libvtkImagingHybrid-6.2.pdb"
+  "../../lib/libvtkImagingHybrid-6.2.so.1"
+  "../../lib/libvtkImagingHybrid-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

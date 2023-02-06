@@ -1,80 +1,79 @@
-Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1c83c/fast && /usr/bin/make -f CMakeFiles/cmTC_1c83c.dir/build.make CMakeFiles/cmTC_1c83c.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1c83c.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1c83c.dir/src.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1c83c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c83c.dir/link.txt --verbose=1
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_1c83c.dir/src.c.o  -o cmTC_1c83c 
-/usr/bin/ld: CMakeFiles/cmTC_1c83c.dir/src.c.o: in function `main':
-src.c:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+Run Build Command:"/usr/bin/make" "cmTC_eb893/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb893.dir/build.make CMakeFiles/cmTC_eb893.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_eb893.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_eb893.dir/CheckSymbolExists.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_eb893
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb893.dir/link.txt --verbose=1
+/usr/bin/cc       -rdynamic CMakeFiles/cmTC_eb893.dir/CheckSymbolExists.c.o  -o cmTC_eb893 
+CMakeFiles/cmTC_eb893.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_1c83c.dir/build.make:87：cmTC_1c83c] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_1c83c/fast] 错误 2
+CMakeFiles/cmTC_eb893.dir/build.make:97: recipe for target 'cmTC_eb893' failed
+make[1]: *** [cmTC_eb893] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_eb893/fast' failed
+make: *** [cmTC_eb893/fast] Error 2
 
-
-Source file was:
+File /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
 #include <pthread.h>
 
-void* test_func(void* data)
+int main(int argc, char** argv)
 {
-  return data;
-}
-
-int main(void)
-{
-  pthread_t thread;
-  pthread_create(&thread, NULL, test_func, NULL);
-  pthread_detach(thread);
-  pthread_join(thread, NULL);
-  pthread_atfork(NULL, NULL, NULL);
-  pthread_exit(NULL);
-
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
   return 0;
+#endif
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_85267/fast && /usr/bin/make -f CMakeFiles/cmTC_85267.dir/build.make CMakeFiles/cmTC_85267.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_85267.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_85267.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_85267
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85267.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_85267.dir/CheckFunctionExists.c.o  -o cmTC_85267  -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_6f1a0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6f1a0.dir/build.make CMakeFiles/cmTC_6f1a0.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_6f1a0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6f1a0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6f1a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f1a0.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6f1a0.dir/CheckFunctionExists.c.o  -o cmTC_6f1a0 -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_85267.dir/build.make:87：cmTC_85267] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_85267/fast] 错误 2
-
+CMakeFiles/cmTC_6f1a0.dir/build.make:97: recipe for target 'cmTC_6f1a0' failed
+make[1]: *** [cmTC_6f1a0] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_6f1a0/fast' failed
+make: *** [cmTC_6f1a0/fast] Error 2
 
 
 Determining size of __int64 failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_17f61/fast && /usr/bin/make -f CMakeFiles/cmTC_17f61.dir/build.make CMakeFiles/cmTC_17f61.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_17f61.dir/VTK_SIZEOF___INT64.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_17f61.dir/VTK_SIZEOF___INT64.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
-   23 | #define SIZE (sizeof(__int64))
-      |                      ^~~~~~~
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
-   25 |   ('0' + ((SIZE / 10000)%10)),
-      |            ^~~~
-make[1]: *** [CMakeFiles/cmTC_17f61.dir/build.make:66：CMakeFiles/cmTC_17f61.dir/VTK_SIZEOF___INT64.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_17f61/fast] 错误 2
+Run Build Command:"/usr/bin/make" "cmTC_2e05f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e05f.dir/build.make CMakeFiles/cmTC_2e05f.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2e05f.dir/VTK_SIZEOF___INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2e05f.dir/VTK_SIZEOF___INT64.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_2e05f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2e05f.dir/VTK_SIZEOF___INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2e05f.dir/VTK_SIZEOF___INT64.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_2e05f/fast' failed
+make: *** [cmTC_2e05f/fast] Error 2
 
-
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:
 #include <sys/types.h>
 #include <stdint.h>
 #include <stddef.h>
@@ -98,7 +97,7 @@ make: *** [Makefile:121：cmTC_17f61/fast] 错误 2
 #endif
 
 #define SIZE (sizeof(__int64))
-static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
   ('0' + ((SIZE / 10000)%10)),
   ('0' + ((SIZE / 1000)%10)),
   ('0' + ((SIZE / 100)%10)),
@@ -124,118 +123,133 @@ int main(int argc, char *argv[])
 
 
 Determining if the function getsockname exists in the socket failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_97da0/fast && /usr/bin/make -f CMakeFiles/cmTC_97da0.dir/build.make CMakeFiles/cmTC_97da0.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_97da0.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getsockname   -o CMakeFiles/cmTC_97da0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_97da0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97da0.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getsockname    -rdynamic CMakeFiles/cmTC_97da0.dir/CheckFunctionExists.c.o  -o cmTC_97da0  -lsocket 
+Run Build Command:"/usr/bin/make" "cmTC_95a8f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95a8f.dir/build.make CMakeFiles/cmTC_95a8f.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_95a8f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getsockname   -o CMakeFiles/cmTC_95a8f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_95a8f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95a8f.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getsockname    -rdynamic CMakeFiles/cmTC_95a8f.dir/CheckFunctionExists.c.o  -o cmTC_95a8f -lsocket 
 /usr/bin/ld: 找不到 -lsocket
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_97da0.dir/build.make:87：cmTC_97da0] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_97da0/fast] 错误 2
-
+CMakeFiles/cmTC_95a8f.dir/build.make:97: recipe for target 'cmTC_95a8f' failed
+make[1]: *** [cmTC_95a8f] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_95a8f/fast' failed
+make: *** [cmTC_95a8f/fast] Error 2
 
 
 Checking for non-standard argument to stl allocator<>::max_size failed to compile with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ce948/fast && /usr/bin/make -f CMakeFiles/cmTC_ce948.dir/build.make CMakeFiles/cmTC_ce948.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_ce948.dir/kwsysPlatformTestsCXX.cxx.o
-/usr/bin/c++  -DKWSYS_STL_HAVE_STD=1 -DTEST_KWSYS_STL_HAS_ALLOCATOR_MAX_SIZE_ARGUMENT   -o CMakeFiles/cmTC_ce948.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘void f(const std::allocator<char>&)’:
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:256:25: error: no matching function for call to ‘std::allocator<char>::max_size(long unsigned int) const’
-  256 |   a.max_size(sizeof(int));
-      |                         ^
-In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
-                 from /usr/include/c++/9/bits/allocator.h:46,
-                 from /usr/include/c++/9/memory:63,
-                 from /home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:253:
-/usr/include/c++/9/ext/new_allocator.h:132:7: note: candidate: ‘__gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = char; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int]’
-  132 |       max_size() const _GLIBCXX_USE_NOEXCEPT
-      |       ^~~~~~~~
-/usr/include/c++/9/ext/new_allocator.h:132:7: note:   candidate expects 0 arguments, 1 provided
-make[1]: *** [CMakeFiles/cmTC_ce948.dir/build.make:66：CMakeFiles/cmTC_ce948.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_ce948/fast] 错误 2
-
+Run Build Command:"/usr/bin/make" "cmTC_95636/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95636.dir/build.make CMakeFiles/cmTC_95636.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_95636.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++  -DKWSYS_STL_HAVE_STD=1 -DTEST_KWSYS_STL_HAS_ALLOCATOR_MAX_SIZE_ARGUMENT   -o CMakeFiles/cmTC_95636.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘void f(const std::allocator<char>&)’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:256:25: error: no matching function for call to ‘std::allocator<char>::max_size(long unsigned int) const’
+   a.max_size(sizeof(int));
+                         ^
+In file included from /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/7/bits/allocator.h:46,
+                 from /usr/include/c++/7/memory:63,
+                 from /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:253:
+/usr/include/c++/7/ext/new_allocator.h:129:7: note: candidate: __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = char; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int]
+       max_size() const _GLIBCXX_USE_NOEXCEPT
+       ^~~~~~~~
+/usr/include/c++/7/ext/new_allocator.h:129:7: note:   candidate expects 0 arguments, 1 provided
+CMakeFiles/cmTC_95636.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_95636.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_95636.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_95636/fast' failed
+make: *** [cmTC_95636/fast] Error 2
 
 
 Checking whether "<>" is needed for template friends failed to compile with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7b753/fast && /usr/bin/make -f CMakeFiles/cmTC_7b753.dir/build.make CMakeFiles/cmTC_7b753.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_7b753.dir/kwsysPlatformTestsCXX.cxx.o
-/usr/bin/c++  -DTEST_KWSYS_CXX_HAS_NULL_TEMPLATE_ARGS   -o CMakeFiles/cmTC_7b753.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:141:21: warning: friend declaration ‘int f(A<T>&)’ declares a non-template function [-Wnon-template-friend]
-  141 |   friend int f(A<T>&);
-      |                     ^
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:141:21: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In instantiation of ‘int f(A<T>&) [with T = int]’:
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:147:23:   required from here
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:146:46: error: ‘int A<int>::x’ is private within this context
-  146 | template <class T> int f(A<T>& a) { return a.x = 0; }
-      |                                            ~~^
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:143:7: note: declared private here
-  143 |   int x;
-      |       ^
-make[1]: *** [CMakeFiles/cmTC_7b753.dir/build.make:66：CMakeFiles/cmTC_7b753.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_7b753/fast] 错误 2
-
+Run Build Command:"/usr/bin/make" "cmTC_6d99a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6d99a.dir/build.make CMakeFiles/cmTC_6d99a.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_6d99a.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++  -DTEST_KWSYS_CXX_HAS_NULL_TEMPLATE_ARGS   -o CMakeFiles/cmTC_6d99a.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:141:21: warning: friend declaration ‘int f(A<T>&)’ declares a non-template function [-Wnon-template-friend]
+   friend int f(A<T>&);
+                     ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:141:21: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In instantiation of ‘int f(A<T>&) [with T = int]’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:147:23:   required from here
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:146:46: error: ‘int A<int>::x’ is private within this context
+ template <class T> int f(A<T>& a) { return a.x = 0; }
+                                            ~~^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:143:7: note: declared private here
+   int x;
+       ^
+CMakeFiles/cmTC_6d99a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6d99a.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_6d99a.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_6d99a/fast' failed
+make: *** [cmTC_6d99a/fast] Error 2
 
 
 Checking whether C++ compiler has '__int64' failed to compile with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b5a65/fast && /usr/bin/make -f CMakeFiles/cmTC_b5a65.dir/build.make CMakeFiles/cmTC_b5a65.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_b5a65.dir/kwsysPlatformTestsCXX.cxx.o
-/usr/bin/c++  -DTEST_KWSYS_CXX_HAS___INT64   -o CMakeFiles/cmTC_b5a65.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:126:1: error: ‘__int64’ does not name a type
-  126 | __int64 f(__int64 n) { return n; }
-      | ^~~~~~~
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:129:3: error: ‘__int64’ was not declared in this scope
-  129 |   __int64 n = 0;
-      |   ^~~~~~~
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:130:29: error: ‘n’ was not declared in this scope
-  130 |   return static_cast<int>(f(n));
-      |                             ^
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:130:27: error: ‘f’ was not declared in this scope
-  130 |   return static_cast<int>(f(n));
-      |                           ^
-make[1]: *** [CMakeFiles/cmTC_b5a65.dir/build.make:66：CMakeFiles/cmTC_b5a65.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_b5a65/fast] 错误 2
-
+Run Build Command:"/usr/bin/make" "cmTC_640e7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_640e7.dir/build.make CMakeFiles/cmTC_640e7.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_640e7.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++  -DTEST_KWSYS_CXX_HAS___INT64   -o CMakeFiles/cmTC_640e7.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:126:1: error: ‘__int64’ does not name a type; did you mean ‘__amd64’?
+ __int64 f(__int64 n) { return n; }
+ ^~~~~~~
+ __amd64
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:129:3: error: ‘__int64’ was not declared in this scope
+   __int64 n = 0;
+   ^~~~~~~
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:129:3: note: suggested alternative: ‘__amd64’
+   __int64 n = 0;
+   ^~~~~~~
+   __amd64
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:130:29: error: ‘n’ was not declared in this scope
+   return static_cast<int>(f(n));
+                             ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:130:27: error: ‘f’ was not declared in this scope
+   return static_cast<int>(f(n));
+                           ^
+CMakeFiles/cmTC_640e7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_640e7.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_640e7.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_640e7/fast' failed
+make: *** [cmTC_640e7/fast] Error 2
 
 
 Determining size of __int64 failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1be9b/fast && /usr/bin/make -f CMakeFiles/cmTC_1be9b.dir/build.make CMakeFiles/cmTC_1be9b.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1be9b.dir/KWSYS_SIZEOF___INT64.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_1be9b.dir/KWSYS_SIZEOF___INT64.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
-   23 | #define SIZE (sizeof(__int64))
-      |                      ^~~~~~~
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
-   25 |   ('0' + ((SIZE / 10000)%10)),
-      |            ^~~~
-make[1]: *** [CMakeFiles/cmTC_1be9b.dir/build.make:66：CMakeFiles/cmTC_1be9b.dir/KWSYS_SIZEOF___INT64.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_1be9b/fast] 错误 2
+Run Build Command:"/usr/bin/make" "cmTC_09cf9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09cf9.dir/build.make CMakeFiles/cmTC_09cf9.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_09cf9.dir/KWSYS_SIZEOF___INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_09cf9.dir/KWSYS_SIZEOF___INT64.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_09cf9.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_09cf9.dir/KWSYS_SIZEOF___INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_09cf9.dir/KWSYS_SIZEOF___INT64.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_09cf9/fast' failed
+make: *** [cmTC_09cf9/fast] Error 2
 
-
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:
 #include <sys/types.h>
 #include <stdint.h>
 #include <stddef.h>
@@ -259,7 +273,7 @@ make: *** [Makefile:121：cmTC_1be9b/fast] 错误 2
 #endif
 
 #define SIZE (sizeof(__int64))
-static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
   ('0' + ((SIZE / 10000)%10)),
   ('0' + ((SIZE / 1000)%10)),
   ('0' + ((SIZE / 100)%10)),
@@ -285,997 +299,88 @@ int main(int argc, char *argv[])
 
 
 Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_3471a/fast && /usr/bin/make -f CMakeFiles/cmTC_3471a.dir/build.make CMakeFiles/cmTC_3471a.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_3471a.dir/kwsysPlatformTestsCXX.cxx.o
-/usr/bin/c++  -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H   -o CMakeFiles/cmTC_3471a.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:450:13: error: ‘environ’ was not declared in this scope; did you mean ‘union’?
-  450 |   char* e = environ[0];
-      |             ^~~~~~~
-      |             union
-make[1]: *** [CMakeFiles/cmTC_3471a.dir/build.make:66：CMakeFiles/cmTC_3471a.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_3471a/fast] 错误 2
-
+Run Build Command:"/usr/bin/make" "cmTC_06ad2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_06ad2.dir/build.make CMakeFiles/cmTC_06ad2.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_06ad2.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++  -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H   -o CMakeFiles/cmTC_06ad2.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:450:13: error: ‘environ’ was not declared in this scope
+   char* e = environ[0];
+             ^~~~~~~
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:450:13: note: suggested alternative: ‘union’
+   char* e = environ[0];
+             ^~~~~~~
+             union
+CMakeFiles/cmTC_06ad2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_06ad2.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_06ad2.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_06ad2/fast' failed
+make: *** [cmTC_06ad2/fast] Error 2
 
 
 Checking whether CXX compiler has _atoi64 failed to compile with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_72131/fast"
+/usr/bin/make -f CMakeFiles/cmTC_72131.dir/build.make CMakeFiles/cmTC_72131.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_72131.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++  -DTEST_KWSYS_CXX_HAS__ATOI64   -o CMakeFiles/cmTC_72131.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:493:27: error: ‘_atoi64’ was not declared in this scope
+   return static_cast<int>(_atoi64(str));
+                           ^~~~~~~
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:493:27: note: suggested alternative: ‘atoi’
+   return static_cast<int>(_atoi64(str));
+                           ^~~~~~~
+                           atoi
+CMakeFiles/cmTC_72131.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_72131.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_72131.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_72131/fast' failed
+make: *** [cmTC_72131/fast] Error 2
 
-Run Build Command(s):/usr/bin/make cmTC_444e2/fast && /usr/bin/make -f CMakeFiles/cmTC_444e2.dir/build.make CMakeFiles/cmTC_444e2.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_444e2.dir/kwsysPlatformTestsCXX.cxx.o
-/usr/bin/c++  -DTEST_KWSYS_CXX_HAS__ATOI64   -o CMakeFiles/cmTC_444e2.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
-/home/jeff/codes/vtk-v6.2.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:493:27: error: ‘_atoi64’ was not declared in this scope; did you mean ‘atoi’?
-  493 |   return static_cast<int>(_atoi64(str));
-      |                           ^~~~~~~
-      |                           atoi
-make[1]: *** [CMakeFiles/cmTC_444e2.dir/build.make:66：CMakeFiles/cmTC_444e2.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_444e2/fast] 错误 2
-
-
-
-Determining if files windows.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_a65b3/fast && /usr/bin/make -f CMakeFiles/cmTC_a65b3.dir/build.make CMakeFiles/cmTC_a65b3.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a65b3.dir/HAVE_WINDOWS_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_a65b3.dir/HAVE_WINDOWS_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c:2:10: fatal error: windows.h: 没有那个文件或目录
-    2 | #include <windows.h>
-      |          ^~~~~~~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_a65b3.dir/build.make:66：CMakeFiles/cmTC_a65b3.dir/HAVE_WINDOWS_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_a65b3/fast] 错误 2
-
-
-Source:
-/* */
-#include <windows.h>
-
-
-int main(void){return 0;}
-
-Determining if files ieeefp.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_425f6/fast && /usr/bin/make -f CMakeFiles/cmTC_425f6.dir/build.make CMakeFiles/cmTC_425f6.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_425f6.dir/HAVE_IEEEFP_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_425f6.dir/HAVE_IEEEFP_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_IEEEFP_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_IEEEFP_H.c:2:10: fatal error: ieeefp.h: 没有那个文件或目录
-    2 | #include <ieeefp.h>
-      |          ^~~~~~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_425f6.dir/build.make:66：CMakeFiles/cmTC_425f6.dir/HAVE_IEEEFP_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_425f6/fast] 错误 2
-
-
-Source:
-/* */
-#include <ieeefp.h>
-
-
-int main(void){return 0;}
-
-Determining if the function floor exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_c5972/fast && /usr/bin/make -f CMakeFiles/cmTC_c5972.dir/build.make CMakeFiles/cmTC_c5972.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_c5972.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTC_c5972.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c5972
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5972.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=floor    -rdynamic CMakeFiles/cmTC_c5972.dir/CheckFunctionExists.c.o  -o cmTC_c5972 
-/usr/bin/ld: CMakeFiles/cmTC_c5972.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `floor'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_c5972.dir/build.make:87：cmTC_c5972] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_c5972/fast] 错误 2
-
-
-
-Determining if the function pow exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_b38a5/fast && /usr/bin/make -f CMakeFiles/cmTC_b38a5.dir/build.make CMakeFiles/cmTC_b38a5.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_b38a5.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTC_b38a5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_b38a5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b38a5.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=pow    -rdynamic CMakeFiles/cmTC_b38a5.dir/CheckFunctionExists.c.o  -o cmTC_b38a5 
-/usr/bin/ld: CMakeFiles/cmTC_b38a5.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `pow'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_b38a5.dir/build.make:87：cmTC_b38a5] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_b38a5/fast] 错误 2
-
-
-
-Determining if the function sqrt exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_83ddb/fast && /usr/bin/make -f CMakeFiles/cmTC_83ddb.dir/build.make CMakeFiles/cmTC_83ddb.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_83ddb.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTC_83ddb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_83ddb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83ddb.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=sqrt    -rdynamic CMakeFiles/cmTC_83ddb.dir/CheckFunctionExists.c.o  -o cmTC_83ddb 
-/usr/bin/ld: CMakeFiles/cmTC_83ddb.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `sqrt'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_83ddb.dir/build.make:87：cmTC_83ddb] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_83ddb/fast] 错误 2
-
-
-
-Determining if the function WSAStartup exists in the ws2_32;m;dl failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_a703d/fast && /usr/bin/make -f CMakeFiles/cmTC_a703d.dir/build.make CMakeFiles/cmTC_a703d.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a703d.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup   -o CMakeFiles/cmTC_a703d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a703d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a703d.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup    -rdynamic CMakeFiles/cmTC_a703d.dir/CheckFunctionExists.c.o  -o cmTC_a703d  -lws2_32 -lm -ldl 
-/usr/bin/ld: 找不到 -lws2_32
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_a703d.dir/build.make:87：cmTC_a703d] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_a703d/fast] 错误 2
-
-
-
-Determining if the function gethostbyname exists in the wsock32;m;dl failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_75a0b/fast && /usr/bin/make -f CMakeFiles/cmTC_75a0b.dir/build.make CMakeFiles/cmTC_75a0b.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_75a0b.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_75a0b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_75a0b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75a0b.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_75a0b.dir/CheckFunctionExists.c.o  -o cmTC_75a0b  -lwsock32 -lm -ldl 
-/usr/bin/ld: 找不到 -lwsock32
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_75a0b.dir/build.make:87：cmTC_75a0b] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_75a0b/fast] 错误 2
-
-
-
-Determining if the function gethostname exists in the ucb;m;dl failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_ca594/fast && /usr/bin/make -f CMakeFiles/cmTC_ca594.dir/build.make CMakeFiles/cmTC_ca594.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_ca594.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTC_ca594.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ca594
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca594.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostname    -rdynamic CMakeFiles/cmTC_ca594.dir/CheckFunctionExists.c.o  -o cmTC_ca594  -lucb -lm -ldl 
-/usr/bin/ld: 找不到 -lucb
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_ca594.dir/build.make:87：cmTC_ca594] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_ca594/fast] 错误 2
-
-
-
-Determining if the function connect exists in the socket;m;dl failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_1e0d2/fast && /usr/bin/make -f CMakeFiles/cmTC_1e0d2.dir/build.make CMakeFiles/cmTC_1e0d2.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1e0d2.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_1e0d2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1e0d2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e0d2.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_1e0d2.dir/CheckFunctionExists.c.o  -o cmTC_1e0d2  -lsocket -lm -ldl 
-/usr/bin/ld: 找不到 -lsocket
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_1e0d2.dir/build.make:87：cmTC_1e0d2] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_1e0d2/fast] 错误 2
-
-
-
-Determining if the function clock_gettime exists in the posix4 failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_4676a/fast && /usr/bin/make -f CMakeFiles/cmTC_4676a.dir/build.make CMakeFiles/cmTC_4676a.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_4676a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_4676a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_4676a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4676a.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime    -rdynamic CMakeFiles/cmTC_4676a.dir/CheckFunctionExists.c.o  -o cmTC_4676a  -lposix4 -lm -ldl 
-/usr/bin/ld: 找不到 -lposix4
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_4676a.dir/build.make:87：cmTC_4676a] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_4676a/fast] 错误 2
-
-
-
-Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;mach/mach_time.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_c6107/fast && /usr/bin/make -f CMakeFiles/cmTC_c6107.dir/build.make CMakeFiles/cmTC_c6107.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_c6107.dir/H5_HAVE_MACH_MACH_TIME_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_c6107.dir/H5_HAVE_MACH_MACH_TIME_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_MACH_MACH_TIME_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_MACH_MACH_TIME_H.c:14:10: fatal error: mach/mach_time.h: 没有那个文件或目录
-   14 | #include <mach/mach_time.h>
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_c6107.dir/build.make:66：CMakeFiles/cmTC_c6107.dir/H5_HAVE_MACH_MACH_TIME_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_c6107/fast] 错误 2
-
-
-Source:
-/* */
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <sys/stat.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <stddef.h>
-#include <setjmp.h>
-#include <features.h>
-#include <dirent.h>
-#include <stdint.h>
-#include <mach/mach_time.h>
-
-
-int main(void){return 0;}
-
-Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;io.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_ea044/fast && /usr/bin/make -f CMakeFiles/cmTC_ea044.dir/build.make CMakeFiles/cmTC_ea044.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_ea044.dir/H5_HAVE_IO_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_ea044.dir/H5_HAVE_IO_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_IO_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_IO_H.c:14:10: fatal error: io.h: 没有那个文件或目录
-   14 | #include <io.h>
-      |          ^~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_ea044.dir/build.make:66：CMakeFiles/cmTC_ea044.dir/H5_HAVE_IO_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_ea044/fast] 错误 2
-
-
-Source:
-/* */
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <sys/stat.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <stddef.h>
-#include <setjmp.h>
-#include <features.h>
-#include <dirent.h>
-#include <stdint.h>
-#include <io.h>
-
-
-int main(void){return 0;}
-
-Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;winsock2.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_6ac19/fast && /usr/bin/make -f CMakeFiles/cmTC_6ac19.dir/build.make CMakeFiles/cmTC_6ac19.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_6ac19.dir/H5_HAVE_WINSOCK2_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_6ac19.dir/H5_HAVE_WINSOCK2_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_WINSOCK2_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_WINSOCK2_H.c:14:10: fatal error: winsock2.h: 没有那个文件或目录
-   14 | #include <winsock2.h>
-      |          ^~~~~~~~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_6ac19.dir/build.make:66：CMakeFiles/cmTC_6ac19.dir/H5_HAVE_WINSOCK2_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_6ac19/fast] 错误 2
-
-
-Source:
-/* */
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <sys/stat.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <stddef.h>
-#include <setjmp.h>
-#include <features.h>
-#include <dirent.h>
-#include <stdint.h>
-#include <winsock2.h>
-
-
-int main(void){return 0;}
-
-Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;globus/common.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_de630/fast && /usr/bin/make -f CMakeFiles/cmTC_de630.dir/build.make CMakeFiles/cmTC_de630.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_de630.dir/H5_HAVE_GLOBUS_COMMON_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_de630.dir/H5_HAVE_GLOBUS_COMMON_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_GLOBUS_COMMON_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_GLOBUS_COMMON_H.c:15:10: fatal error: globus/common.h: 没有那个文件或目录
-   15 | #include <globus/common.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_de630.dir/build.make:66：CMakeFiles/cmTC_de630.dir/H5_HAVE_GLOBUS_COMMON_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_de630/fast] 错误 2
-
-
-Source:
-/* */
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <sys/stat.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <stddef.h>
-#include <setjmp.h>
-#include <features.h>
-#include <dirent.h>
-#include <stdint.h>
-#include <sys/timeb.h>
-#include <globus/common.h>
-
-
-int main(void){return 0;}
-
-Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pdb.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_c32d4/fast && /usr/bin/make -f CMakeFiles/cmTC_c32d4.dir/build.make CMakeFiles/cmTC_c32d4.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_c32d4.dir/H5_HAVE_PDB_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_c32d4.dir/H5_HAVE_PDB_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_PDB_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_PDB_H.c:15:10: fatal error: pdb.h: 没有那个文件或目录
-   15 | #include <pdb.h>
-      |          ^~~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_c32d4.dir/build.make:66：CMakeFiles/cmTC_c32d4.dir/H5_HAVE_PDB_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_c32d4/fast] 错误 2
-
-
-Source:
-/* */
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <sys/stat.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <stddef.h>
-#include <setjmp.h>
-#include <features.h>
-#include <dirent.h>
-#include <stdint.h>
-#include <sys/timeb.h>
-#include <pdb.h>
-
-
-int main(void){return 0;}
-
-Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pthread.h;srbclient.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_5d84c/fast && /usr/bin/make -f CMakeFiles/cmTC_5d84c.dir/build.make CMakeFiles/cmTC_5d84c.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_5d84c.dir/H5_HAVE_SRBCLIENT_H.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_5d84c.dir/H5_HAVE_SRBCLIENT_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_SRBCLIENT_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/H5_HAVE_SRBCLIENT_H.c:16:10: fatal error: srbclient.h: 没有那个文件或目录
-   16 | #include <srbclient.h>
-      |          ^~~~~~~~~~~~~
-compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_5d84c.dir/build.make:66：CMakeFiles/cmTC_5d84c.dir/H5_HAVE_SRBCLIENT_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_5d84c/fast] 错误 2
-
-
-Source:
-/* */
-#include <sys/resource.h>
-#include <sys/time.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <sys/stat.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <stddef.h>
-#include <setjmp.h>
-#include <features.h>
-#include <dirent.h>
-#include <stdint.h>
-#include <sys/timeb.h>
-#include <pthread.h>
-#include <srbclient.h>
-
-
-int main(void){return 0;}
-
-Determining size of __int64 failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_10647/fast && /usr/bin/make -f CMakeFiles/cmTC_10647.dir/build.make CMakeFiles/cmTC_10647.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_10647.dir/H5_SIZEOF___INT64.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w    -o CMakeFiles/cmTC_10647.dir/H5_SIZEOF___INT64.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
-   23 | #define SIZE (sizeof(__int64))
-      |                      ^~~~~~~
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
-   25 |   ('0' + ((SIZE / 10000)%10)),
-      |            ^~~~
-make[1]: *** [CMakeFiles/cmTC_10647.dir/build.make:66：CMakeFiles/cmTC_10647.dir/H5_SIZEOF___INT64.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_10647/fast] 错误 2
-
-
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
-#include <sys/types.h>
-#include <stdint.h>
-#include <stddef.h>
-
-
-#undef KEY
-#if defined(__i386)
-# define KEY '_','_','i','3','8','6'
-#elif defined(__x86_64)
-# define KEY '_','_','x','8','6','_','6','4'
-#elif defined(__ppc__)
-# define KEY '_','_','p','p','c','_','_'
-#elif defined(__ppc64__)
-# define KEY '_','_','p','p','c','6','4','_','_'
-#elif defined(__aarch64__)
-# define KEY '_','_','a','a','r','c','h','6','4','_','_'
-#elif defined(__ARM_ARCH_7A__)
-# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
-#elif defined(__ARM_ARCH_7S__)
-# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
-#endif
-
-#define SIZE (sizeof(__int64))
-static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
-  ('0' + ((SIZE / 10000)%10)),
-  ('0' + ((SIZE / 1000)%10)),
-  ('0' + ((SIZE / 100)%10)),
-  ('0' + ((SIZE / 10)%10)),
-  ('0' +  (SIZE    % 10)),
-  ']',
-#ifdef KEY
-  ' ','k','e','y','[', KEY, ']',
-#endif
-  '\0'};
-
-#ifdef __CLASSIC_C__
-int main(argc, argv) int argc; char *argv[];
-#else
-int main(int argc, char *argv[])
-#endif
-{
-  int require = 0;
-  require += info_size[argc];
-  (void)argv;
-  return require;
-}
-
-
-Determining if the variable CLOCK_MONOTONIC exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_39675/fast && /usr/bin/make -f CMakeFiles/cmTC_39675.dir/build.make CMakeFiles/cmTC_39675.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_39675.dir/CheckVariableExists.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC   -o CMakeFiles/cmTC_39675.dir/CheckVariableExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckVariableExists.c
-Linking C executable cmTC_39675
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39675.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC    -rdynamic CMakeFiles/cmTC_39675.dir/CheckVariableExists.c.o  -o cmTC_39675  -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_39675.dir/CheckVariableExists.c.o: in function `main':
-CheckVariableExists.c:(.text+0x29): undefined reference to `CLOCK_MONOTONIC'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_39675.dir/build.make:87：cmTC_39675] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_39675/fast] 错误 2
-
-
-
-Performing Other Test HAVE___TM_GMTOFF failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_ac4b3/fast && /usr/bin/make -f CMakeFiles/cmTC_ac4b3.dir/build.make CMakeFiles/cmTC_ac4b3.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_ac4b3.dir/HDF5Tests.c.o
-/usr/bin/cc   -w -w -DHAVE___TM_GMTOFF  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_ac4b3.dir/HDF5Tests.c.o   -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:191:30: error: ‘struct tm’ has no member named ‘__tm_gmtoff’; did you mean ‘tm_gmtoff’?
-  191 | SIMPLE_TEST(struct tm tm; tm.__tm_gmtoff=0);
-      |                              ^~~~~~~~~~~
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
-    1 | #define SIMPLE_TEST(x) int main(){ x; return 0; }
-      |                                    ^
-make[1]: *** [CMakeFiles/cmTC_ac4b3.dir/build.make:66：CMakeFiles/cmTC_ac4b3.dir/HDF5Tests.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_ac4b3/fast] 错误 2
-
-
-Performing Other Test HAVE_STRUCT_VIDEOCONFIG failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_6b8d2/fast && /usr/bin/make -f CMakeFiles/cmTC_6b8d2.dir/build.make CMakeFiles/cmTC_6b8d2.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_6b8d2.dir/HDF5Tests.c.o
-/usr/bin/cc   -w -w -DHAVE_STRUCT_VIDEOCONFIG  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_6b8d2.dir/HDF5Tests.c.o   -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:460:32: error: storage size of ‘w’ isn’t known
-  460 | SIMPLE_TEST(struct videoconfig w; w.numtextcols=0);
-      |                                ^
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
-    1 | #define SIMPLE_TEST(x) int main(){ x; return 0; }
-      |                                    ^
-make[1]: *** [CMakeFiles/cmTC_6b8d2.dir/build.make:66：CMakeFiles/cmTC_6b8d2.dir/HDF5Tests.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_6b8d2/fast] 错误 2
-
-
-Performing Other Test HAVE_STRUCT_TEXT_INFO failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_1ecc7/fast && /usr/bin/make -f CMakeFiles/cmTC_1ecc7.dir/build.make CMakeFiles/cmTC_1ecc7.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1ecc7.dir/HDF5Tests.c.o
-/usr/bin/cc   -w -w -DHAVE_STRUCT_TEXT_INFO  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_1ecc7.dir/HDF5Tests.c.o   -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:466:30: error: storage size of ‘w’ isn’t known
-  466 | SIMPLE_TEST(struct text_info w; w.screenwidth=0);
-      |                              ^
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
-    1 | #define SIMPLE_TEST(x) int main(){ x; return 0; }
-      |                                    ^
-make[1]: *** [CMakeFiles/cmTC_1ecc7.dir/build.make:66：CMakeFiles/cmTC_1ecc7.dir/HDF5Tests.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_1ecc7/fast] 错误 2
-
-
-Determining if the function _getvideoconfig exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_55572/fast && /usr/bin/make -f CMakeFiles/cmTC_55572.dir/build.make CMakeFiles/cmTC_55572.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_55572.dir/CheckFunctionExists.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig   -o CMakeFiles/cmTC_55572.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_55572
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55572.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig    -rdynamic CMakeFiles/cmTC_55572.dir/CheckFunctionExists.c.o  -o cmTC_55572  -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_55572.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `_getvideoconfig'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_55572.dir/build.make:87：cmTC_55572] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_55572/fast] 错误 2
-
-
-
-Determining if the function gettextinfo exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_91e84/fast && /usr/bin/make -f CMakeFiles/cmTC_91e84.dir/build.make CMakeFiles/cmTC_91e84.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_91e84.dir/CheckFunctionExists.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo   -o CMakeFiles/cmTC_91e84.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_91e84
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91e84.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo    -rdynamic CMakeFiles/cmTC_91e84.dir/CheckFunctionExists.c.o  -o cmTC_91e84  -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_91e84.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `gettextinfo'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_91e84.dir/build.make:87：cmTC_91e84] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_91e84/fast] 错误 2
-
-
-
-Determining if the function _scrsize exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_383ff/fast && /usr/bin/make -f CMakeFiles/cmTC_383ff.dir/build.make CMakeFiles/cmTC_383ff.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_383ff.dir/CheckFunctionExists.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=_scrsize   -o CMakeFiles/cmTC_383ff.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_383ff
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_383ff.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=_scrsize    -rdynamic CMakeFiles/cmTC_383ff.dir/CheckFunctionExists.c.o  -o cmTC_383ff  -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_383ff.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `_scrsize'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_383ff.dir/build.make:87：cmTC_383ff] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_383ff/fast] 错误 2
-
-
-
-Determining if the function GetConsoleScreenBufferInfo exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_40b23/fast && /usr/bin/make -f CMakeFiles/cmTC_40b23.dir/build.make CMakeFiles/cmTC_40b23.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_40b23.dir/CheckFunctionExists.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo   -o CMakeFiles/cmTC_40b23.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_40b23
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40b23.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo    -rdynamic CMakeFiles/cmTC_40b23.dir/CheckFunctionExists.c.o  -o cmTC_40b23  -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_40b23.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `GetConsoleScreenBufferInfo'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_40b23.dir/build.make:87：cmTC_40b23] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_40b23/fast] 错误 2
-
-
-
-Determining if the function setsysinfo exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_f4f28/fast && /usr/bin/make -f CMakeFiles/cmTC_f4f28.dir/build.make CMakeFiles/cmTC_f4f28.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_f4f28.dir/CheckFunctionExists.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTC_f4f28.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f4f28
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4f28.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo    -rdynamic CMakeFiles/cmTC_f4f28.dir/CheckFunctionExists.c.o  -o cmTC_f4f28  -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_f4f28.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `setsysinfo'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_f4f28.dir/build.make:87：cmTC_f4f28] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_f4f28/fast] 错误 2
-
-
-
-Determining if the function sigsetjmp exists failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_6d161/fast && /usr/bin/make -f CMakeFiles/cmTC_6d161.dir/build.make CMakeFiles/cmTC_6d161.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_6d161.dir/CheckFunctionExists.c.o
-/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTC_6d161.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_6d161
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d161.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp    -rdynamic CMakeFiles/cmTC_6d161.dir/CheckFunctionExists.c.o  -o cmTC_6d161  -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_6d161.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `sigsetjmp'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_6d161.dir/build.make:87：cmTC_6d161] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_6d161/fast] 错误 2
-
-
-
-Performing CXX Test OLD_HEADER_FILENAME failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_a217e/fast && /usr/bin/make -f CMakeFiles/cmTC_a217e.dir/build.make CMakeFiles/cmTC_a217e.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_a217e.dir/HDF5CXXTests.cpp.o
-/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_a217e.dir/HDF5CXXTests.cpp.o -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
-Linking CXX executable cmTC_a217e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a217e.dir/link.txt --verbose=1
-/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_a217e.dir/HDF5CXXTests.cpp.o  -o cmTC_a217e  -lm -ldl 
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-
-
-Performing CXX Test H5_NO_NAMESPACE failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_d492d/fast && /usr/bin/make -f CMakeFiles/cmTC_d492d.dir/build.make CMakeFiles/cmTC_d492d.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_d492d.dir/HDF5CXXTests.cpp.o
-/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_d492d.dir/HDF5CXXTests.cpp.o -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
-Linking CXX executable cmTC_d492d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d492d.dir/link.txt --verbose=1
-/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_d492d.dir/HDF5CXXTests.cpp.o  -o cmTC_d492d  -lm -ldl 
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-
-
-Performing CXX Test H5_NO_STD failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_2b3a2/fast && /usr/bin/make -f CMakeFiles/cmTC_2b3a2.dir/build.make CMakeFiles/cmTC_2b3a2.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_2b3a2.dir/HDF5CXXTests.cpp.o
-/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_2b3a2.dir/HDF5CXXTests.cpp.o -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
-Linking CXX executable cmTC_2b3a2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b3a2.dir/link.txt --verbose=1
-/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_2b3a2.dir/HDF5CXXTests.cpp.o  -o cmTC_2b3a2  -lm -ldl 
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-
-
-Performing CXX Test BOOL_NOTDEFINED failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_fe2e0/fast && /usr/bin/make -f CMakeFiles/cmTC_fe2e0.dir/build.make CMakeFiles/cmTC_fe2e0.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_fe2e0.dir/HDF5CXXTests.cpp.o
-/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_fe2e0.dir/HDF5CXXTests.cpp.o -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
-Linking CXX executable cmTC_fe2e0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe2e0.dir/link.txt --verbose=1
-/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_fe2e0.dir/HDF5CXXTests.cpp.o  -o cmTC_fe2e0  -lm -ldl 
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-
-
-Performing CXX Test NO_STATIC_CAST failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_bb72c/fast && /usr/bin/make -f CMakeFiles/cmTC_bb72c.dir/build.make CMakeFiles/cmTC_bb72c.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_bb72c.dir/HDF5CXXTests.cpp.o
-/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_bb72c.dir/HDF5CXXTests.cpp.o -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
-Linking CXX executable cmTC_bb72c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb72c.dir/link.txt --verbose=1
-/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_bb72c.dir/HDF5CXXTests.cpp.o  -o cmTC_bb72c  -lm -ldl 
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-
-
-Test H5_FP_TO_ULLONG_RIGHT_MAXIMUM Run failed with the following output and exit code:
- Change Dir: /home/jeff/codes/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_85efd/fast && /usr/bin/make -f CMakeFiles/cmTC_85efd.dir/build.make CMakeFiles/cmTC_85efd.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_85efd.dir/ConversionTests.c.o
-/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST   -o CMakeFiles/cmTC_85efd.dir/ConversionTests.c.o   -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/ConversionTests.c
-Linking C executable cmTC_85efd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85efd.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST    -rdynamic CMakeFiles/cmTC_85efd.dir/ConversionTests.c.o  -o cmTC_85efd 
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp”
-
-
-Determining size of uchar failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_fe803/fast && /usr/bin/make -f CMakeFiles/cmTC_fe803.dir/build.make CMakeFiles/cmTC_fe803.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_fe803.dir/SIZEOF_UCHAR.c.o
-/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_fe803.dir/SIZEOF_UCHAR.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:23:22: error: ‘uchar’ undeclared here (not in a function); did you mean ‘u_char’?
-   23 | #define SIZE (sizeof(uchar))
-      |                      ^~~~~
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:12: note: in expansion of macro ‘SIZE’
-   25 |   ('0' + ((SIZE / 10000)%10)),
-      |            ^~~~
-make[1]: *** [CMakeFiles/cmTC_fe803.dir/build.make:66：CMakeFiles/cmTC_fe803.dir/SIZEOF_UCHAR.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_fe803/fast] 错误 2
-
-
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:
-#include <sys/types.h>
-#include <stdint.h>
-#include <stddef.h>
-
-
-#undef KEY
-#if defined(__i386)
-# define KEY '_','_','i','3','8','6'
-#elif defined(__x86_64)
-# define KEY '_','_','x','8','6','_','6','4'
-#elif defined(__ppc__)
-# define KEY '_','_','p','p','c','_','_'
-#elif defined(__ppc64__)
-# define KEY '_','_','p','p','c','6','4','_','_'
-#elif defined(__aarch64__)
-# define KEY '_','_','a','a','r','c','h','6','4','_','_'
-#elif defined(__ARM_ARCH_7A__)
-# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
-#elif defined(__ARM_ARCH_7S__)
-# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
-#endif
-
-#define SIZE (sizeof(uchar))
-static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
-  ('0' + ((SIZE / 10000)%10)),
-  ('0' + ((SIZE / 1000)%10)),
-  ('0' + ((SIZE / 100)%10)),
-  ('0' + ((SIZE / 10)%10)),
-  ('0' +  (SIZE    % 10)),
-  ']',
-#ifdef KEY
-  ' ','k','e','y','[', KEY, ']',
-#endif
-  '\0'};
-
-#ifdef __CLASSIC_C__
-int main(argc, argv) int argc; char *argv[];
-#else
-int main(int argc, char *argv[])
-#endif
-{
-  int require = 0;
-  require += info_size[argc];
-  (void)argv;
-  return require;
-}
-
-
-Performing C SOURCE FILE Test GLX_INCLUDES_GLXEXT failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_a21ea/fast && /usr/bin/make -f CMakeFiles/cmTC_a21ea.dir/build.make CMakeFiles/cmTC_a21ea.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a21ea.dir/src.c.o
-/usr/bin/cc   -DGLX_INCLUDES_GLXEXT   -o CMakeFiles/cmTC_a21ea.dir/src.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: ‘a’ undeclared (first use in this function)
-    8 |  a; /* will raise a syntax error */
-      |  ^
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_a21ea.dir/build.make:66：CMakeFiles/cmTC_a21ea.dir/src.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_a21ea/fast] 错误 2
-
-
-Source file was:
-
-#include <GL/glx.h>
-int main()
-{
-#ifdef __glxext_h_
- return 0;
-#else
- a; /* will raise a syntax error */
-#endif
-}
-
-Performing C SOURCE FILE Test GLX_DEFINES_TYPE_GLXextFuncPtr_AS_EMPTY failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_24b30/fast && /usr/bin/make -f CMakeFiles/cmTC_24b30.dir/build.make CMakeFiles/cmTC_24b30.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_24b30.dir/src.c.o
-/usr/bin/cc   -DGLX_DEFINES_TYPE_GLXextFuncPtr_AS_EMPTY   -o CMakeFiles/cmTC_24b30.dir/src.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘f’
-    8 |  f(x); /* fails if prototype is void, pass if prototype is empty. */
-      |  ^
-make[1]: *** [CMakeFiles/cmTC_24b30.dir/build.make:66：CMakeFiles/cmTC_24b30.dir/src.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_24b30/fast] 错误 2
-
-
-Source file was:
-
-#define GLX_GLXEXT_LEGACY
-#include <GL/glx.h>
-int main()
-{
- __GLXextFuncPtr f;
- int x;
- f(x); /* fails if prototype is void, pass if prototype is empty. */
-
- return 0;
-}
-
-Performing C SOURCE FILE Test GLX_DECLARES_FUNCTION_glXGetProcAddressARB_AS_EMPTY failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_89310/fast && /usr/bin/make -f CMakeFiles/cmTC_89310.dir/build.make CMakeFiles/cmTC_89310.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_89310.dir/src.c.o
-/usr/bin/cc   -DGLX_DECLARES_FUNCTION_glXGetProcAddressARB_AS_EMPTY   -o CMakeFiles/cmTC_89310.dir/src.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘glXGetProcAddressARB((const GLubyte *)"aRandomFunction")’
-    8 |  glXGetProcAddressARB((const GLubyte *)("aRandomFunction"))(x);
-      |  ^~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_89310.dir/build.make:66：CMakeFiles/cmTC_89310.dir/src.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_89310/fast] 错误 2
-
-
-Source file was:
-
-#define GLX_GLXEXT_LEGACY
-#include <GL/glx.h>
-int main()
-{
- int x;
- /* fails if prototype is void, pass if prototype is empty. */
- glXGetProcAddressARB((const GLubyte *)("aRandomFunction"))(x);
- return 0;
-}
-
-Performing C SOURCE FILE Test GLX_DECLARES_FUNCTION_glXGetProcAddress_AS_EMPTY failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_7e9e2/fast && /usr/bin/make -f CMakeFiles/cmTC_7e9e2.dir/build.make CMakeFiles/cmTC_7e9e2.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_7e9e2.dir/src.c.o
-/usr/bin/cc   -DGLX_DECLARES_FUNCTION_glXGetProcAddress_AS_EMPTY   -o CMakeFiles/cmTC_7e9e2.dir/src.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘glXGetProcAddress((const GLubyte *)"aRandomFunction")’
-    8 |  glXGetProcAddress((const GLubyte *)("aRandomFunction"))(x);
-      |  ^~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_7e9e2.dir/build.make:66：CMakeFiles/cmTC_7e9e2.dir/src.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_7e9e2/fast] 错误 2
-
-
-Source file was:
-
-#define GLX_GLXEXT_LEGACY
-#include <GL/glx.h>
-int main()
-{
- int x;
- /* fails if prototype is void, pass if prototype is empty. */
- glXGetProcAddress((const GLubyte *)("aRandomFunction"))(x);
- return 0;
-}
 
 Determining if the function shl_load exists in the dld;dl failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a0af1/fast && /usr/bin/make -f CMakeFiles/cmTC_a0af1.dir/build.make CMakeFiles/cmTC_a0af1.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a0af1.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=shl_load   -o CMakeFiles/cmTC_a0af1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a0af1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0af1.dir/link.txt --verbose=1
-/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=shl_load    -rdynamic CMakeFiles/cmTC_a0af1.dir/CheckFunctionExists.c.o  -o cmTC_a0af1  -ldld -ldl 
+Run Build Command:"/usr/bin/make" "cmTC_67cd0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_67cd0.dir/build.make CMakeFiles/cmTC_67cd0.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_67cd0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=shl_load   -o CMakeFiles/cmTC_67cd0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_67cd0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67cd0.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=shl_load    -rdynamic CMakeFiles/cmTC_67cd0.dir/CheckFunctionExists.c.o  -o cmTC_67cd0 -ldld -ldl 
 /usr/bin/ld: 找不到 -ldld
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_a0af1.dir/build.make:87：cmTC_a0af1] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_a0af1/fast] 错误 2
-
+CMakeFiles/cmTC_67cd0.dir/build.make:97: recipe for target 'cmTC_67cd0' failed
+make[1]: *** [cmTC_67cd0] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_67cd0/fast' failed
+make: *** [cmTC_67cd0/fast] Error 2
 
 
 Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;ansidecl.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_181d6/fast && /usr/bin/make -f CMakeFiles/cmTC_181d6.dir/build.make CMakeFiles/cmTC_181d6.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_181d6.dir/HAVE_ANSIDECL_H.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_181d6.dir/HAVE_ANSIDECL_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_ANSIDECL_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_ANSIDECL_H.c:25:10: fatal error: ansidecl.h: 没有那个文件或目录
-   25 | #include <ansidecl.h>
-      |          ^~~~~~~~~~~~
+Run Build Command:"/usr/bin/make" "cmTC_562d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_562d7.dir/build.make CMakeFiles/cmTC_562d7.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_562d7.dir/CheckIncludeFiles.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_562d7.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:25:10: fatal error: ansidecl.h: 没有那个文件或目录
+ #include <ansidecl.h>
+          ^~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_181d6.dir/build.make:66：CMakeFiles/cmTC_181d6.dir/HAVE_ANSIDECL_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_181d6/fast] 错误 2
-
+CMakeFiles/cmTC_562d7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_562d7.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_562d7.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_562d7/fast' failed
+make: *** [cmTC_562d7/fast] Error 2
 
 Source:
 /* */
@@ -1308,20 +413,22 @@ Source:
 int main(void){return 0;}
 
 Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;dl.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4bc07/fast && /usr/bin/make -f CMakeFiles/cmTC_4bc07.dir/build.make CMakeFiles/cmTC_4bc07.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_4bc07.dir/HAVE_DL_H.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_4bc07.dir/HAVE_DL_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_DL_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_DL_H.c:29:10: fatal error: dl.h: 没有那个文件或目录
-   29 | #include <dl.h>
-      |          ^~~~~~
+Run Build Command:"/usr/bin/make" "cmTC_3e138/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3e138.dir/build.make CMakeFiles/cmTC_3e138.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3e138.dir/CheckIncludeFiles.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_3e138.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:29:10: fatal error: dl.h: 没有那个文件或目录
+ #include <dl.h>
+          ^~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_4bc07.dir/build.make:66：CMakeFiles/cmTC_4bc07.dir/HAVE_DL_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_4bc07/fast] 错误 2
-
+CMakeFiles/cmTC_3e138.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3e138.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3e138.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_3e138/fast' failed
+make: *** [cmTC_3e138/fast] Error 2
 
 Source:
 /* */
@@ -1358,20 +465,22 @@ Source:
 int main(void){return 0;}
 
 Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;fp_class.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1053d/fast && /usr/bin/make -f CMakeFiles/cmTC_1053d.dir/build.make CMakeFiles/cmTC_1053d.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1053d.dir/HAVE_FP_CLASS_H.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_1053d.dir/HAVE_FP_CLASS_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_FP_CLASS_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_FP_CLASS_H.c:30:10: fatal error: fp_class.h: 没有那个文件或目录
-   30 | #include <fp_class.h>
-      |          ^~~~~~~~~~~~
+Run Build Command:"/usr/bin/make" "cmTC_154c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_154c5.dir/build.make CMakeFiles/cmTC_154c5.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_154c5.dir/CheckIncludeFiles.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_154c5.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:10: fatal error: fp_class.h: 没有那个文件或目录
+ #include <fp_class.h>
+          ^~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_1053d.dir/build.make:66：CMakeFiles/cmTC_1053d.dir/HAVE_FP_CLASS_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_1053d/fast] 错误 2
-
+CMakeFiles/cmTC_154c5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_154c5.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_154c5.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_154c5/fast' failed
+make: *** [cmTC_154c5/fast] Error 2
 
 Source:
 /* */
@@ -1408,21 +517,76 @@ Source:
 
 int main(void){return 0;}
 
-Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;nan.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;ieeefp.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_742e1/fast && /usr/bin/make -f CMakeFiles/cmTC_742e1.dir/build.make CMakeFiles/cmTC_742e1.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_742e1.dir/HAVE_NAN_H.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_742e1.dir/HAVE_NAN_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_NAN_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_NAN_H.c:31:10: fatal error: nan.h: 没有那个文件或目录
-   31 | #include <nan.h>
-      |          ^~~~~~~
+Run Build Command:"/usr/bin/make" "cmTC_0480e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0480e.dir/build.make CMakeFiles/cmTC_0480e.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0480e.dir/CheckIncludeFiles.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_0480e.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:10: fatal error: ieeefp.h: 没有那个文件或目录
+ #include <ieeefp.h>
+          ^~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_742e1.dir/build.make:66：CMakeFiles/cmTC_742e1.dir/HAVE_NAN_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_742e1/fast] 错误 2
+CMakeFiles/cmTC_0480e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0480e.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_0480e.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_0480e/fast' failed
+make: *** [cmTC_0480e/fast] Error 2
 
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <ieeefp.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;nan.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2b40f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b40f.dir/build.make CMakeFiles/cmTC_2b40f.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2b40f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_2b40f.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:10: fatal error: nan.h: 没有那个文件或目录
+ #include <nan.h>
+          ^~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_2b40f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2b40f.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2b40f.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_2b40f/fast' failed
+make: *** [cmTC_2b40f/fast] Error 2
 
 Source:
 /* */
@@ -1461,20 +625,22 @@ Source:
 int main(void){return 0;}
 
 Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;ndir.h exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b8ec6/fast && /usr/bin/make -f CMakeFiles/cmTC_b8ec6.dir/build.make CMakeFiles/cmTC_b8ec6.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_b8ec6.dir/HAVE_NDIR_H.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_b8ec6.dir/HAVE_NDIR_H.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_NDIR_H.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CheckIncludeFiles/HAVE_NDIR_H.c:31:10: fatal error: ndir.h: 没有那个文件或目录
-   31 | #include <ndir.h>
-      |          ^~~~~~~~
+Run Build Command:"/usr/bin/make" "cmTC_4647c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4647c.dir/build.make CMakeFiles/cmTC_4647c.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4647c.dir/CheckIncludeFiles.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_4647c.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:10: fatal error: ndir.h: 没有那个文件或目录
+ #include <ndir.h>
+          ^~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_b8ec6.dir/build.make:66：CMakeFiles/cmTC_b8ec6.dir/HAVE_NDIR_H.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_b8ec6/fast] 错误 2
-
+CMakeFiles/cmTC_4647c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4647c.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4647c.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_4647c/fast' failed
+make: *** [cmTC_4647c/fast] Error 2
 
 Source:
 /* */
@@ -1513,24 +679,26 @@ Source:
 int main(void){return 0;}
 
 Determining if the fpclass exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_25131/fast && /usr/bin/make -f CMakeFiles/cmTC_25131.dir/build.make CMakeFiles/cmTC_25131.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_25131.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_25131.dir/CheckSymbolExists.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fpclass’ undeclared (first use in this function); did you mean ‘p_class’?
-   41 |   return ((int*)(&fpclass))[argc];
-      |                   ^~~~~~~
-      |                   p_class
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_25131.dir/build.make:66：CMakeFiles/cmTC_25131.dir/CheckSymbolExists.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_25131/fast] 错误 2
+Run Build Command:"/usr/bin/make" "cmTC_35174/fast"
+/usr/bin/make -f CMakeFiles/cmTC_35174.dir/build.make CMakeFiles/cmTC_35174.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_35174.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_35174.dir/CheckSymbolExists.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fpclass’ undeclared (first use in this function); did you mean ‘p_class’?
+   return ((int*)(&fpclass))[argc];
+                   ^~~~~~~
+                   p_class
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_35174.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_35174.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_35174.dir/CheckSymbolExists.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_35174/fast' failed
+make: *** [cmTC_35174/fast] Error 2
 
-
-File /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <stdio.h>
 #include <stddef.h>
@@ -1577,25 +745,28 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
+
 Determining if the fp_class exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_aef96/fast && /usr/bin/make -f CMakeFiles/cmTC_aef96.dir/build.make CMakeFiles/cmTC_aef96.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_aef96.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_aef96.dir/CheckSymbolExists.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fp_class’ undeclared (first use in this function); did you mean ‘p_class’?
-   41 |   return ((int*)(&fp_class))[argc];
-      |                   ^~~~~~~~
-      |                   p_class
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_aef96.dir/build.make:66：CMakeFiles/cmTC_aef96.dir/CheckSymbolExists.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_aef96/fast] 错误 2
+Run Build Command:"/usr/bin/make" "cmTC_4ccad/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4ccad.dir/build.make CMakeFiles/cmTC_4ccad.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4ccad.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_4ccad.dir/CheckSymbolExists.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fp_class’ undeclared (first use in this function); did you mean ‘p_class’?
+   return ((int*)(&fp_class))[argc];
+                   ^~~~~~~~
+                   p_class
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_4ccad.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4ccad.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4ccad.dir/CheckSymbolExists.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_4ccad/fast' failed
+make: *** [cmTC_4ccad/fast] Error 2
 
-
-File /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <stdio.h>
 #include <stddef.h>
@@ -1642,25 +813,28 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
+
 Determining if the _stat exist failed with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_02937/fast && /usr/bin/make -f CMakeFiles/cmTC_02937.dir/build.make CMakeFiles/cmTC_02937.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_02937.dir/CheckSymbolExists.c.o
-/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_02937.dir/CheckSymbolExists.c.o   -c /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘_stat’ undeclared (first use in this function); did you mean ‘lstat’?
-   41 |   return ((int*)(&_stat))[argc];
-      |                   ^~~~~
-      |                   lstat
-/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_02937.dir/build.make:66：CMakeFiles/cmTC_02937.dir/CheckSymbolExists.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_02937/fast] 错误 2
+Run Build Command:"/usr/bin/make" "cmTC_0462d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0462d.dir/build.make CMakeFiles/cmTC_0462d.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0462d.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_0462d.dir/CheckSymbolExists.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘_stat’ undeclared (first use in this function); did you mean ‘lstat’?
+   return ((int*)(&_stat))[argc];
+                   ^~~~~
+                   lstat
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_0462d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0462d.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_0462d.dir/CheckSymbolExists.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_0462d/fast' failed
+make: *** [cmTC_0462d/fast] Error 2
 
-
-File /home/jeff/codes/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <stdio.h>
 #include <stddef.h>
@@ -1707,20 +881,1126 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
+
 Checking for DIR in sys/ndir.h failed to compile with the following output:
-Change Dir: /home/jeff/codes/vtk-v6.2.0/build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2f196/fast && /usr/bin/make -f CMakeFiles/cmTC_2f196.dir/build.make CMakeFiles/cmTC_2f196.dir/build
-make[1]: 进入目录“/home/jeff/codes/vtk-v6.2.0/build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_2f196.dir/platformTestsC.c.o
-/usr/bin/cc -DTEST_HAVE_SYS_NDIR_H  -w -w    -o CMakeFiles/cmTC_2f196.dir/platformTestsC.c.o   -c /home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/platformTestsC.c
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/platformTestsC.c:82:10: fatal error: sys/ndir.h: 没有那个文件或目录
-   82 | #include <sys/ndir.h>
-      |          ^~~~~~~~~~~~
+Run Build Command:"/usr/bin/make" "cmTC_dcfc0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dcfc0.dir/build.make CMakeFiles/cmTC_dcfc0.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_dcfc0.dir/platformTestsC.c.o
+/usr/bin/cc -DTEST_HAVE_SYS_NDIR_H  -w -w    -o CMakeFiles/cmTC_dcfc0.dir/platformTestsC.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/platformTestsC.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/libxml2/vtklibxml2/platformTestsC.c:82:10: fatal error: sys/ndir.h: 没有那个文件或目录
+ #include <sys/ndir.h>
+          ^~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_2f196.dir/build.make:66：CMakeFiles/cmTC_2f196.dir/platformTestsC.c.o] 错误 1
-make[1]: 离开目录“/home/jeff/codes/vtk-v6.2.0/build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_2f196/fast] 错误 2
+CMakeFiles/cmTC_dcfc0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_dcfc0.dir/platformTestsC.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_dcfc0.dir/platformTestsC.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_dcfc0/fast' failed
+make: *** [cmTC_dcfc0/fast] Error 2
 
 
+Determining if files windows.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d58a3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d58a3.dir/build.make CMakeFiles/cmTC_d58a3.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d58a3.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_d58a3.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: windows.h: 没有那个文件或目录
+ #include <windows.h>
+          ^~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_d58a3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d58a3.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d58a3.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_d58a3/fast' failed
+make: *** [cmTC_d58a3/fast] Error 2
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_153e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_153e2.dir/build.make CMakeFiles/cmTC_153e2.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_153e2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTC_153e2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_153e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_153e2.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=floor    -rdynamic CMakeFiles/cmTC_153e2.dir/CheckFunctionExists.c.o  -o cmTC_153e2 
+CMakeFiles/cmTC_153e2.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘floor’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_153e2.dir/build.make:97: recipe for target 'cmTC_153e2' failed
+make[1]: *** [cmTC_153e2] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_153e2/fast' failed
+make: *** [cmTC_153e2/fast] Error 2
+
+
+Determining if the function pow exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f100c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f100c.dir/build.make CMakeFiles/cmTC_f100c.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f100c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTC_f100c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f100c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f100c.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=pow    -rdynamic CMakeFiles/cmTC_f100c.dir/CheckFunctionExists.c.o  -o cmTC_f100c 
+CMakeFiles/cmTC_f100c.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘pow’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f100c.dir/build.make:97: recipe for target 'cmTC_f100c' failed
+make[1]: *** [cmTC_f100c] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_f100c/fast' failed
+make: *** [cmTC_f100c/fast] Error 2
+
+
+Determining if the function sqrt exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55ca2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55ca2.dir/build.make CMakeFiles/cmTC_55ca2.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_55ca2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTC_55ca2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_55ca2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55ca2.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=sqrt    -rdynamic CMakeFiles/cmTC_55ca2.dir/CheckFunctionExists.c.o  -o cmTC_55ca2 
+CMakeFiles/cmTC_55ca2.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘sqrt’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_55ca2.dir/build.make:97: recipe for target 'cmTC_55ca2' failed
+make[1]: *** [cmTC_55ca2] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_55ca2/fast' failed
+make: *** [cmTC_55ca2/fast] Error 2
+
+
+Performing C SOURCE FILE Test GLX_INCLUDES_GLXEXT failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a7e25/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7e25.dir/build.make CMakeFiles/cmTC_a7e25.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a7e25.dir/src.c.o
+/usr/bin/cc   -DGLX_INCLUDES_GLXEXT   -o CMakeFiles/cmTC_a7e25.dir/src.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: ‘a’ undeclared (first use in this function)
+  a; /* will raise a syntax error */
+  ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_a7e25.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a7e25.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a7e25.dir/src.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_a7e25/fast' failed
+make: *** [cmTC_a7e25/fast] Error 2
+
+Source file was:
+
+#include <GL/glx.h>
+int main()
+{
+#ifdef __glxext_h_
+ return 0;
+#else
+ a; /* will raise a syntax error */
+#endif
+}
+
+Performing C SOURCE FILE Test GLX_DEFINES_TYPE_GLXextFuncPtr_AS_EMPTY failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_96aa6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96aa6.dir/build.make CMakeFiles/cmTC_96aa6.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_96aa6.dir/src.c.o
+/usr/bin/cc   -DGLX_DEFINES_TYPE_GLXextFuncPtr_AS_EMPTY   -o CMakeFiles/cmTC_96aa6.dir/src.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘f’
+  f(x); /* fails if prototype is void, pass if prototype is empty. */
+  ^
+CMakeFiles/cmTC_96aa6.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_96aa6.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_96aa6.dir/src.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_96aa6/fast' failed
+make: *** [cmTC_96aa6/fast] Error 2
+
+Source file was:
+
+#define GLX_GLXEXT_LEGACY
+#include <GL/glx.h>
+int main()
+{
+ __GLXextFuncPtr f;
+ int x;
+ f(x); /* fails if prototype is void, pass if prototype is empty. */
+
+ return 0;
+}
+
+Performing C SOURCE FILE Test GLX_DECLARES_FUNCTION_glXGetProcAddressARB_AS_EMPTY failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0302e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0302e.dir/build.make CMakeFiles/cmTC_0302e.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0302e.dir/src.c.o
+/usr/bin/cc   -DGLX_DECLARES_FUNCTION_glXGetProcAddressARB_AS_EMPTY   -o CMakeFiles/cmTC_0302e.dir/src.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘glXGetProcAddressARB((const GLubyte *)"aRandomFunction")’
+  glXGetProcAddressARB((const GLubyte *)("aRandomFunction"))(x);
+  ^~~~~~~~~~~~~~~~~~~~
+CMakeFiles/cmTC_0302e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0302e.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_0302e.dir/src.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_0302e/fast' failed
+make: *** [cmTC_0302e/fast] Error 2
+
+Source file was:
+
+#define GLX_GLXEXT_LEGACY
+#include <GL/glx.h>
+int main()
+{
+ int x;
+ /* fails if prototype is void, pass if prototype is empty. */
+ glXGetProcAddressARB((const GLubyte *)("aRandomFunction"))(x);
+ return 0;
+}
+
+Performing C SOURCE FILE Test GLX_DECLARES_FUNCTION_glXGetProcAddress_AS_EMPTY failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29cfd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_29cfd.dir/build.make CMakeFiles/cmTC_29cfd.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_29cfd.dir/src.c.o
+/usr/bin/cc   -DGLX_DECLARES_FUNCTION_glXGetProcAddress_AS_EMPTY   -o CMakeFiles/cmTC_29cfd.dir/src.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘glXGetProcAddress((const GLubyte *)"aRandomFunction")’
+  glXGetProcAddress((const GLubyte *)("aRandomFunction"))(x);
+  ^~~~~~~~~~~~~~~~~
+CMakeFiles/cmTC_29cfd.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_29cfd.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_29cfd.dir/src.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_29cfd/fast' failed
+make: *** [cmTC_29cfd/fast] Error 2
+
+Source file was:
+
+#define GLX_GLXEXT_LEGACY
+#include <GL/glx.h>
+int main()
+{
+ int x;
+ /* fails if prototype is void, pass if prototype is empty. */
+ glXGetProcAddress((const GLubyte *)("aRandomFunction"))(x);
+ return 0;
+}
+
+Determining if the function WSAStartup exists in the ws2_32;m;dl failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_df584/fast"
+/usr/bin/make -f CMakeFiles/cmTC_df584.dir/build.make CMakeFiles/cmTC_df584.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_df584.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup   -o CMakeFiles/cmTC_df584.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_df584
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df584.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup    -rdynamic CMakeFiles/cmTC_df584.dir/CheckFunctionExists.c.o  -o cmTC_df584 -lws2_32 -lm -ldl 
+/usr/bin/ld: 找不到 -lws2_32
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_df584.dir/build.make:97: recipe for target 'cmTC_df584' failed
+make[1]: *** [cmTC_df584] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_df584/fast' failed
+make: *** [cmTC_df584/fast] Error 2
+
+
+Determining if the function gethostbyname exists in the wsock32;m;dl failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_897fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_897fe.dir/build.make CMakeFiles/cmTC_897fe.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_897fe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_897fe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_897fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_897fe.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_897fe.dir/CheckFunctionExists.c.o  -o cmTC_897fe -lwsock32 -lm -ldl 
+/usr/bin/ld: 找不到 -lwsock32
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_897fe.dir/build.make:97: recipe for target 'cmTC_897fe' failed
+make[1]: *** [cmTC_897fe] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_897fe/fast' failed
+make: *** [cmTC_897fe/fast] Error 2
+
+
+Determining if the function gethostname exists in the ucb;m;dl failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_727ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_727ed.dir/build.make CMakeFiles/cmTC_727ed.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_727ed.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTC_727ed.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_727ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_727ed.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostname    -rdynamic CMakeFiles/cmTC_727ed.dir/CheckFunctionExists.c.o  -o cmTC_727ed -lucb -lm -ldl 
+/usr/bin/ld: 找不到 -lucb
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_727ed.dir/build.make:97: recipe for target 'cmTC_727ed' failed
+make[1]: *** [cmTC_727ed] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_727ed/fast' failed
+make: *** [cmTC_727ed/fast] Error 2
+
+
+Determining if the function connect exists in the socket;m;dl failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1eef2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1eef2.dir/build.make CMakeFiles/cmTC_1eef2.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1eef2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_1eef2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1eef2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1eef2.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_1eef2.dir/CheckFunctionExists.c.o  -o cmTC_1eef2 -lsocket -lm -ldl 
+/usr/bin/ld: 找不到 -lsocket
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1eef2.dir/build.make:97: recipe for target 'cmTC_1eef2' failed
+make[1]: *** [cmTC_1eef2] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_1eef2/fast' failed
+make: *** [cmTC_1eef2/fast] Error 2
+
+
+Determining if the function clock_gettime exists in the posix4 failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77d5d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77d5d.dir/build.make CMakeFiles/cmTC_77d5d.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_77d5d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_77d5d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_77d5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77d5d.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime    -rdynamic CMakeFiles/cmTC_77d5d.dir/CheckFunctionExists.c.o  -o cmTC_77d5d -lposix4 -lm -ldl 
+/usr/bin/ld: 找不到 -lposix4
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_77d5d.dir/build.make:97: recipe for target 'cmTC_77d5d' failed
+make[1]: *** [cmTC_77d5d] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_77d5d/fast' failed
+make: *** [cmTC_77d5d/fast] Error 2
+
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;mach/mach_time.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_19931/fast"
+/usr/bin/make -f CMakeFiles/cmTC_19931.dir/build.make CMakeFiles/cmTC_19931.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_19931.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_19931.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:10: fatal error: mach/mach_time.h: 没有那个文件或目录
+ #include <mach/mach_time.h>
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_19931.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_19931.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_19931.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_19931/fast' failed
+make: *** [cmTC_19931/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <mach/mach_time.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;io.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a281b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a281b.dir/build.make CMakeFiles/cmTC_a281b.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a281b.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_a281b.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:10: fatal error: io.h: 没有那个文件或目录
+ #include <io.h>
+          ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_a281b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a281b.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a281b.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_a281b/fast' failed
+make: *** [cmTC_a281b/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;winsock2.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_003a3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_003a3.dir/build.make CMakeFiles/cmTC_003a3.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_003a3.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_003a3.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:10: fatal error: winsock2.h: 没有那个文件或目录
+ #include <winsock2.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_003a3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_003a3.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_003a3.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_003a3/fast' failed
+make: *** [cmTC_003a3/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <winsock2.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;globus/common.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7a40a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7a40a.dir/build.make CMakeFiles/cmTC_7a40a.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7a40a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_7a40a.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:15:10: fatal error: globus/common.h: 没有那个文件或目录
+ #include <globus/common.h>
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_7a40a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7a40a.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_7a40a.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_7a40a/fast' failed
+make: *** [cmTC_7a40a/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <globus/common.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pdb.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a82d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a82d4.dir/build.make CMakeFiles/cmTC_a82d4.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a82d4.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_a82d4.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:15:10: fatal error: pdb.h: 没有那个文件或目录
+ #include <pdb.h>
+          ^~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_a82d4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a82d4.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a82d4.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_a82d4/fast' failed
+make: *** [cmTC_a82d4/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <pdb.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pthread.h;srbclient.h exist failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b18a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b18a.dir/build.make CMakeFiles/cmTC_3b18a.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3b18a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_3b18a.dir/CheckIncludeFiles.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:16:10: fatal error: srbclient.h: 没有那个文件或目录
+ #include <srbclient.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_3b18a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3b18a.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3b18a.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_3b18a/fast' failed
+make: *** [cmTC_3b18a/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <pthread.h>
+#include <srbclient.h>
+
+
+int main(void){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0410a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0410a.dir/build.make CMakeFiles/cmTC_0410a.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0410a.dir/H5_SIZEOF___INT64.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w    -o CMakeFiles/cmTC_0410a.dir/H5_SIZEOF___INT64.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_0410a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0410a.dir/H5_SIZEOF___INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_0410a.dir/H5_SIZEOF___INT64.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_0410a/fast' failed
+make: *** [cmTC_0410a/fast] Error 2
+
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the variable CLOCK_MONOTONIC exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_faefd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_faefd.dir/build.make CMakeFiles/cmTC_faefd.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_faefd.dir/CheckVariableExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC   -o CMakeFiles/cmTC_faefd.dir/CheckVariableExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckVariableExists.c
+Linking C executable cmTC_faefd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faefd.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC    -rdynamic CMakeFiles/cmTC_faefd.dir/CheckVariableExists.c.o  -o cmTC_faefd -lm -ldl 
+CMakeFiles/cmTC_faefd.dir/CheckVariableExists.c.o：在函数‘main’中：
+CheckVariableExists.c:(.text+0x25)：对‘CLOCK_MONOTONIC’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_faefd.dir/build.make:97: recipe for target 'cmTC_faefd' failed
+make[1]: *** [cmTC_faefd] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_faefd/fast' failed
+make: *** [cmTC_faefd/fast] Error 2
+
+
+Performing Other Test HAVE___TM_GMTOFF failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8a7b9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8a7b9.dir/build.make CMakeFiles/cmTC_8a7b9.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8a7b9.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE___TM_GMTOFF  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_8a7b9.dir/HDF5Tests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:191:30: error: ‘struct tm’ has no member named ‘__tm_gmtoff’; did you mean ‘tm_gmtoff’?
+ SIMPLE_TEST(struct tm tm; tm.__tm_gmtoff=0);
+                              ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_8a7b9.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8a7b9.dir/HDF5Tests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_8a7b9.dir/HDF5Tests.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_8a7b9/fast' failed
+make: *** [cmTC_8a7b9/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_VIDEOCONFIG failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a909/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a909.dir/build.make CMakeFiles/cmTC_2a909.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2a909.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_VIDEOCONFIG  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_2a909.dir/HDF5Tests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:460:32: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct videoconfig w; w.numtextcols=0);
+                                ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_2a909.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2a909.dir/HDF5Tests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2a909.dir/HDF5Tests.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_2a909/fast' failed
+make: *** [cmTC_2a909/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_TEXT_INFO failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6b8ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6b8ef.dir/build.make CMakeFiles/cmTC_6b8ef.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_6b8ef.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_TEXT_INFO  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_6b8ef.dir/HDF5Tests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:466:30: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct text_info w; w.screenwidth=0);
+                              ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_6b8ef.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6b8ef.dir/HDF5Tests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_6b8ef.dir/HDF5Tests.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_6b8ef/fast' failed
+make: *** [cmTC_6b8ef/fast] Error 2
+
+Determining if the function _getvideoconfig exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2cfb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2cfb.dir/build.make CMakeFiles/cmTC_f2cfb.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f2cfb.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig   -o CMakeFiles/cmTC_f2cfb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f2cfb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2cfb.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig    -rdynamic CMakeFiles/cmTC_f2cfb.dir/CheckFunctionExists.c.o  -o cmTC_f2cfb -lm -ldl 
+CMakeFiles/cmTC_f2cfb.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘_getvideoconfig’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f2cfb.dir/build.make:97: recipe for target 'cmTC_f2cfb' failed
+make[1]: *** [cmTC_f2cfb] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_f2cfb/fast' failed
+make: *** [cmTC_f2cfb/fast] Error 2
+
+
+Determining if the function gettextinfo exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bfc84/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bfc84.dir/build.make CMakeFiles/cmTC_bfc84.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bfc84.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo   -o CMakeFiles/cmTC_bfc84.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bfc84
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfc84.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo    -rdynamic CMakeFiles/cmTC_bfc84.dir/CheckFunctionExists.c.o  -o cmTC_bfc84 -lm -ldl 
+CMakeFiles/cmTC_bfc84.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘gettextinfo’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bfc84.dir/build.make:97: recipe for target 'cmTC_bfc84' failed
+make[1]: *** [cmTC_bfc84] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_bfc84/fast' failed
+make: *** [cmTC_bfc84/fast] Error 2
+
+
+Determining if the function _scrsize exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8b87/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8b87.dir/build.make CMakeFiles/cmTC_c8b87.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c8b87.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=_scrsize   -o CMakeFiles/cmTC_c8b87.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c8b87
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8b87.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=_scrsize    -rdynamic CMakeFiles/cmTC_c8b87.dir/CheckFunctionExists.c.o  -o cmTC_c8b87 -lm -ldl 
+CMakeFiles/cmTC_c8b87.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘_scrsize’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c8b87.dir/build.make:97: recipe for target 'cmTC_c8b87' failed
+make[1]: *** [cmTC_c8b87] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_c8b87/fast' failed
+make: *** [cmTC_c8b87/fast] Error 2
+
+
+Determining if the function GetConsoleScreenBufferInfo exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7026b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7026b.dir/build.make CMakeFiles/cmTC_7026b.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7026b.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo   -o CMakeFiles/cmTC_7026b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7026b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7026b.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo    -rdynamic CMakeFiles/cmTC_7026b.dir/CheckFunctionExists.c.o  -o cmTC_7026b -lm -ldl 
+CMakeFiles/cmTC_7026b.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘GetConsoleScreenBufferInfo’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7026b.dir/build.make:97: recipe for target 'cmTC_7026b' failed
+make[1]: *** [cmTC_7026b] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_7026b/fast' failed
+make: *** [cmTC_7026b/fast] Error 2
+
+
+Determining if the function setsysinfo exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_53840/fast"
+/usr/bin/make -f CMakeFiles/cmTC_53840.dir/build.make CMakeFiles/cmTC_53840.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_53840.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTC_53840.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_53840
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53840.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo    -rdynamic CMakeFiles/cmTC_53840.dir/CheckFunctionExists.c.o  -o cmTC_53840 -lm -ldl 
+CMakeFiles/cmTC_53840.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘setsysinfo’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_53840.dir/build.make:97: recipe for target 'cmTC_53840' failed
+make[1]: *** [cmTC_53840] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_53840/fast' failed
+make: *** [cmTC_53840/fast] Error 2
+
+
+Determining if the function sigsetjmp exists failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4c4dd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c4dd.dir/build.make CMakeFiles/cmTC_4c4dd.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4c4dd.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTC_4c4dd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4c4dd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c4dd.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp    -rdynamic CMakeFiles/cmTC_4c4dd.dir/CheckFunctionExists.c.o  -o cmTC_4c4dd -lm -ldl 
+CMakeFiles/cmTC_4c4dd.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘sigsetjmp’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4c4dd.dir/build.make:97: recipe for target 'cmTC_4c4dd' failed
+make[1]: *** [cmTC_4c4dd] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_4c4dd/fast' failed
+make: *** [cmTC_4c4dd/fast] Error 2
+
+
+Performing CXX Test OLD_HEADER_FILENAME failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6d7a5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6d7a5.dir/build.make CMakeFiles/cmTC_6d7a5.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_6d7a5.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_6d7a5.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_6d7a5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d7a5.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_6d7a5.dir/HDF5CXXTests.cpp.o  -o cmTC_6d7a5 -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test H5_NO_NAMESPACE failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7d2bb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7d2bb.dir/build.make CMakeFiles/cmTC_7d2bb.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_7d2bb.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_7d2bb.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_7d2bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d2bb.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_7d2bb.dir/HDF5CXXTests.cpp.o  -o cmTC_7d2bb -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test H5_NO_STD failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ebb1c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebb1c.dir/build.make CMakeFiles/cmTC_ebb1c.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_ebb1c.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_ebb1c.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_ebb1c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebb1c.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_ebb1c.dir/HDF5CXXTests.cpp.o  -o cmTC_ebb1c -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test BOOL_NOTDEFINED failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c92e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c92e2.dir/build.make CMakeFiles/cmTC_c92e2.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_c92e2.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_c92e2.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_c92e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c92e2.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_c92e2.dir/HDF5CXXTests.cpp.o  -o cmTC_c92e2 -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test NO_STATIC_CAST failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74a56/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74a56.dir/build.make CMakeFiles/cmTC_74a56.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_74a56.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_74a56.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_74a56
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74a56.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_74a56.dir/HDF5CXXTests.cpp.o  -o cmTC_74a56 -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Test H5_FP_TO_ULLONG_RIGHT_MAXIMUM Run failed with the following output and exit code:
+ Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f7f38/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7f38.dir/build.make CMakeFiles/cmTC_f7f38.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f7f38.dir/ConversionTests.c.o
+/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST   -o CMakeFiles/cmTC_f7f38.dir/ConversionTests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTC_f7f38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7f38.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST    -rdynamic CMakeFiles/cmTC_f7f38.dir/ConversionTests.c.o  -o cmTC_f7f38 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp”
+
+Determining size of uchar failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_67bd0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_67bd0.dir/build.make CMakeFiles/cmTC_67bd0.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_67bd0.dir/SIZEOF_UCHAR.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTC_67bd0.dir/SIZEOF_UCHAR.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:23:22: error: ‘uchar’ undeclared here (not in a function); did you mean ‘u_char’?
+ #define SIZE (sizeof(uchar))
+                      ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_67bd0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_67bd0.dir/SIZEOF_UCHAR.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_67bd0.dir/SIZEOF_UCHAR.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_67bd0/fast' failed
+make: *** [cmTC_67bd0/fast] Error 2
+
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uchar))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Other Test HAVE___TM_GMTOFF failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fe05/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fe05.dir/build.make CMakeFiles/cmTC_1fe05.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1fe05.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE___TM_GMTOFF  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_1fe05.dir/HDF5Tests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:191:30: error: ‘struct tm’ has no member named ‘__tm_gmtoff’; did you mean ‘tm_gmtoff’?
+ SIMPLE_TEST(struct tm tm; tm.__tm_gmtoff=0);
+                              ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_1fe05.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1fe05.dir/HDF5Tests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_1fe05.dir/HDF5Tests.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_1fe05/fast' failed
+make: *** [cmTC_1fe05/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_VIDEOCONFIG failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a5a0e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a5a0e.dir/build.make CMakeFiles/cmTC_a5a0e.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a5a0e.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_VIDEOCONFIG  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_a5a0e.dir/HDF5Tests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:460:32: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct videoconfig w; w.numtextcols=0);
+                                ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_a5a0e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a5a0e.dir/HDF5Tests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a5a0e.dir/HDF5Tests.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_a5a0e/fast' failed
+make: *** [cmTC_a5a0e/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_TEXT_INFO failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_91b0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_91b0a.dir/build.make CMakeFiles/cmTC_91b0a.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_91b0a.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_TEXT_INFO  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_91b0a.dir/HDF5Tests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:466:30: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct text_info w; w.screenwidth=0);
+                              ^
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_91b0a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_91b0a.dir/HDF5Tests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_91b0a.dir/HDF5Tests.c.o] Error 1
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_91b0a/fast' failed
+make: *** [cmTC_91b0a/fast] Error 2
+
+Performing CXX Test OLD_HEADER_FILENAME failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2448/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2448.dir/build.make CMakeFiles/cmTC_f2448.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_f2448.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_f2448.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_f2448
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2448.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_f2448.dir/HDF5CXXTests.cpp.o  -o cmTC_f2448 -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test H5_NO_NAMESPACE failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca052/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca052.dir/build.make CMakeFiles/cmTC_ca052.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_ca052.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_ca052.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_ca052
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca052.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_ca052.dir/HDF5CXXTests.cpp.o  -o cmTC_ca052 -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test H5_NO_STD failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a5b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a5b6.dir/build.make CMakeFiles/cmTC_2a5b6.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_2a5b6.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_2a5b6.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_2a5b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a5b6.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_2a5b6.dir/HDF5CXXTests.cpp.o  -o cmTC_2a5b6 -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test BOOL_NOTDEFINED failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_36c4f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36c4f.dir/build.make CMakeFiles/cmTC_36c4f.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_36c4f.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_36c4f.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_36c4f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36c4f.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_36c4f.dir/HDF5CXXTests.cpp.o  -o cmTC_36c4f -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Performing CXX Test NO_STATIC_CAST failed with the following output:
+Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0c01f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c01f.dir/build.make CMakeFiles/cmTC_0c01f.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_0c01f.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_0c01f.dir/HDF5CXXTests.cpp.o -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTC_0c01f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c01f.dir/link.txt --verbose=1
+/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    -rdynamic CMakeFiles/cmTC_0c01f.dir/HDF5CXXTests.cpp.o  -o cmTC_0c01f -lm -ldl 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/CMakeFiles/CMakeTmp”
+
+Test H5_FP_TO_ULLONG_RIGHT_MAXIMUM Run failed with the following output and exit code:
+ Change Dir: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a3864/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a3864.dir/build.make CMakeFiles/cmTC_a3864.dir/build
+make[1]: 进入目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a3864.dir/ConversionTests.c.o
+/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST   -o CMakeFiles/cmTC_a3864.dir/ConversionTests.c.o   -c /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTC_a3864
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3864.dir/link.txt --verbose=1
+/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST    -rdynamic CMakeFiles/cmTC_a3864.dir/ConversionTests.c.o  -o cmTC_a3864 
+make[1]: 离开目录“/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp”
 

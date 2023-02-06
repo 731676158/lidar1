@@ -2,121 +2,121 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleDrawPolygon.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleDrawPolygon.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleFlight.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleFlight.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleImage.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleImage.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickActor.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickActor.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickCamera.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickCamera.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleMultiTouchCamera.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleMultiTouchCamera.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand2D.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand2D.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand3D.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand3D.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandPick.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandPick.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandZoom.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandZoom.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTerrain.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTerrain.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballActor.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballActor.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballCamera.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballCamera.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackball.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackball.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUnicam.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUnicam.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUser.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUser.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleSwitch.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleSwitch.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkParallelCoordinatesInteractorStyle.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkParallelCoordinatesInteractorStyle.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Interaction/Style/vtkInteractionStyleObjectFactory.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Interaction/Style/vtkInteractionStyleObjectFactory.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleDrawPolygon.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleDrawPolygon.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleFlight.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleFlight.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleImage.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleImage.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickActor.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickActor.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickCamera.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleJoystickCamera.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleMultiTouchCamera.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleMultiTouchCamera.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand2D.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand2D.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand3D.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBand3D.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandPick.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandPick.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandZoom.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleRubberBandZoom.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTerrain.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTerrain.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballActor.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballActor.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballCamera.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackballCamera.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackball.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleTrackball.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUnicam.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUnicam.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUser.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleUser.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleSwitch.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkInteractorStyleSwitch.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Interaction/Style/vtkParallelCoordinatesInteractorStyle.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Interaction/Style/vtkParallelCoordinatesInteractorStyle.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Interaction/Style/vtkInteractionStyleObjectFactory.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Interaction/Style/vtkInteractionStyleObjectFactory.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Interaction/Style/vtkInteractionStyleModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Interaction/Style/vtkInteractionStyleModule.h"
 		}
 	],
 	"target" : 

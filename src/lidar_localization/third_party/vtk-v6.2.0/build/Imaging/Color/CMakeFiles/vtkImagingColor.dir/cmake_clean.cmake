@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkImagingColor-6.2.pdb"
-  "../../lib/libvtkImagingColor-6.2.so"
-  "../../lib/libvtkImagingColor-6.2.so.1"
   "CMakeFiles/vtkImagingColor.dir/vtkImageHSIToRGB.cxx.o"
   "CMakeFiles/vtkImagingColor.dir/vtkImageHSVToRGB.cxx.o"
   "CMakeFiles/vtkImagingColor.dir/vtkImageLuminance.cxx.o"
@@ -10,6 +7,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkImagingColor.dir/vtkImageQuantizeRGBToIndex.cxx.o"
   "CMakeFiles/vtkImagingColor.dir/vtkImageRGBToHSI.cxx.o"
   "CMakeFiles/vtkImagingColor.dir/vtkImageRGBToHSV.cxx.o"
+  "../../lib/libvtkImagingColor-6.2.pdb"
+  "../../lib/libvtkImagingColor-6.2.so.1"
+  "../../lib/libvtkImagingColor-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

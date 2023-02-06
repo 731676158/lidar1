@@ -3,7 +3,7 @@
  * 
  * Define the vtkLineIntegralConvolution2D_AAV string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/LIC/vtkLineIntegralConvolution2D_AAV.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/LIC/vtkLineIntegralConvolution2D_AAV.glsl
  */
 #include "vtkLineIntegralConvolution2D_AAV.h"
 const char *vtkLineIntegralConvolution2D_AAV =

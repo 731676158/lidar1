@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersSelection-6.2.pdb"
-  "../../lib/libvtkFiltersSelection-6.2.so"
-  "../../lib/libvtkFiltersSelection-6.2.so.1"
-  "CMakeFiles/vtkFiltersSelection.dir/vtkCellDistanceSelector.cxx.o"
   "CMakeFiles/vtkFiltersSelection.dir/vtkKdTreeSelector.cxx.o"
   "CMakeFiles/vtkFiltersSelection.dir/vtkLinearSelector.cxx.o"
+  "CMakeFiles/vtkFiltersSelection.dir/vtkCellDistanceSelector.cxx.o"
+  "../../lib/libvtkFiltersSelection-6.2.pdb"
+  "../../lib/libvtkFiltersSelection-6.2.so.1"
+  "../../lib/libvtkFiltersSelection-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

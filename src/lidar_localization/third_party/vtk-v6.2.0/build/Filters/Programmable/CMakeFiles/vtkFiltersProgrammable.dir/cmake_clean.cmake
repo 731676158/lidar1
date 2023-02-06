@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkFiltersProgrammable-6.2.pdb"
-  "../../lib/libvtkFiltersProgrammable-6.2.so"
-  "../../lib/libvtkFiltersProgrammable-6.2.so.1"
   "CMakeFiles/vtkFiltersProgrammable.dir/vtkProgrammableAttributeDataFilter.cxx.o"
   "CMakeFiles/vtkFiltersProgrammable.dir/vtkProgrammableFilter.cxx.o"
   "CMakeFiles/vtkFiltersProgrammable.dir/vtkProgrammableGlyphFilter.cxx.o"
+  "../../lib/libvtkFiltersProgrammable-6.2.pdb"
+  "../../lib/libvtkFiltersProgrammable-6.2.so.1"
+  "../../lib/libvtkFiltersProgrammable-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

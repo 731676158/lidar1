@@ -1,5 +1,5 @@
 # Target labels
  vtknetcdf
 # Source files and their labels
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/netcdf/vtknetcdf/cxx/netcdf.cpp
-/home/jeff/codes/vtk-v6.2.0/ThirdParty/netcdf/vtknetcdf/cxx/ncvalues.cpp
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/netcdf/vtknetcdf/cxx/netcdf.cpp
+/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/netcdf/vtknetcdf/cxx/ncvalues.cpp

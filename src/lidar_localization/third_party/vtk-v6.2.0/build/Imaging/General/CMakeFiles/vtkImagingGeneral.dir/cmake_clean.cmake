@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkImagingGeneral-6.2.pdb"
-  "../../lib/libvtkImagingGeneral-6.2.so"
-  "../../lib/libvtkImagingGeneral-6.2.so.1"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageAnisotropicDiffusion2D.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageAnisotropicDiffusion3D.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageCheckerboard.cxx.o"
@@ -19,13 +16,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageNormalize.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageRange3D.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageSeparableConvolution.cxx.o"
-  "CMakeFiles/vtkImagingGeneral.dir/vtkImageSlab.cxx.o"
-  "CMakeFiles/vtkImagingGeneral.dir/vtkImageSlabReslice.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageSobel2D.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageSobel3D.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageSpatialAlgorithm.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkImageVariance3D.cxx.o"
   "CMakeFiles/vtkImagingGeneral.dir/vtkSimpleImageFilterExample.cxx.o"
+  "CMakeFiles/vtkImagingGeneral.dir/vtkImageSlab.cxx.o"
+  "CMakeFiles/vtkImagingGeneral.dir/vtkImageSlabReslice.cxx.o"
+  "../../lib/libvtkImagingGeneral-6.2.pdb"
+  "../../lib/libvtkImagingGeneral-6.2.so.1"
+  "../../lib/libvtkImagingGeneral-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

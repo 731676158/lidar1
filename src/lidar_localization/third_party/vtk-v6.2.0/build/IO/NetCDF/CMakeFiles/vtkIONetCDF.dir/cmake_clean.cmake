@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIONetCDF-6.2.pdb"
-  "../../lib/libvtkIONetCDF-6.2.so"
-  "../../lib/libvtkIONetCDF-6.2.so.1"
   "CMakeFiles/vtkIONetCDF.dir/vtkMPASReader.cxx.o"
   "CMakeFiles/vtkIONetCDF.dir/vtkNetCDFCAMReader.cxx.o"
   "CMakeFiles/vtkIONetCDF.dir/vtkNetCDFCFReader.cxx.o"
@@ -9,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIONetCDF.dir/vtkNetCDFReader.cxx.o"
   "CMakeFiles/vtkIONetCDF.dir/vtkSLACParticleReader.cxx.o"
   "CMakeFiles/vtkIONetCDF.dir/vtkSLACReader.cxx.o"
+  "../../lib/libvtkIONetCDF-6.2.pdb"
+  "../../lib/libvtkIONetCDF-6.2.so.1"
+  "../../lib/libvtkIONetCDF-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

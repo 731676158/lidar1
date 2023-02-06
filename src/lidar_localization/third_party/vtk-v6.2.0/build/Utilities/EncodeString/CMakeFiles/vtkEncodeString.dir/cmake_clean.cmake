@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../../bin/vtkEncodeString-6.2"
-  "../../bin/vtkEncodeString-6.2.pdb"
   "CMakeFiles/vtkEncodeString.dir/vtkEncodeString.cxx.o"
+  "../../bin/vtkEncodeString-6.2.pdb"
+  "../../bin/vtkEncodeString-6.2"
 )
 
 # Per-language clean rules from dependency scanning.

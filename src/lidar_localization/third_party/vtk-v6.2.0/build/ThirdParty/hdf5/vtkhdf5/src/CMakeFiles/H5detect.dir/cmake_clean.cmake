@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../../../../bin/H5detect"
-  "../../../../bin/H5detect.pdb"
   "CMakeFiles/H5detect.dir/H5detect.c.o"
+  "../../../../bin/H5detect.pdb"
+  "../../../../bin/H5detect"
 )
 
 # Per-language clean rules from dependency scanning.

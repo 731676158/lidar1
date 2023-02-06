@@ -1,12 +1,7 @@
 file(REMOVE_RECURSE
-  "../../../lib/libvtkfreetype-6.2.pdb"
-  "../../../lib/libvtkfreetype-6.2.so"
-  "../../../lib/libvtkfreetype-6.2.so.1"
-  "CMakeFiles/vtkfreetype.dir/builds/unix/ftsystem.c.o"
   "CMakeFiles/vtkfreetype.dir/src/base/ftbase.c.o"
   "CMakeFiles/vtkfreetype.dir/src/base/ftbbox.c.o"
   "CMakeFiles/vtkfreetype.dir/src/base/ftbitmap.c.o"
-  "CMakeFiles/vtkfreetype.dir/src/base/ftdebug.c.o"
   "CMakeFiles/vtkfreetype.dir/src/base/ftglyph.c.o"
   "CMakeFiles/vtkfreetype.dir/src/base/ftinit.c.o"
   "CMakeFiles/vtkfreetype.dir/src/base/ftmm.c.o"
@@ -28,6 +23,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkfreetype.dir/src/type1/type1.c.o"
   "CMakeFiles/vtkfreetype.dir/src/type42/type42.c.o"
   "CMakeFiles/vtkfreetype.dir/src/winfonts/winfnt.c.o"
+  "CMakeFiles/vtkfreetype.dir/src/base/ftdebug.c.o"
+  "CMakeFiles/vtkfreetype.dir/builds/unix/ftsystem.c.o"
+  "../../../lib/libvtkfreetype-6.2.pdb"
+  "../../../lib/libvtkfreetype-6.2.so.1"
+  "../../../lib/libvtkfreetype-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

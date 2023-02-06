@@ -3,7 +3,7 @@
  * 
  * Define the vtkOpenGLRenderer_PeelingFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRenderer_PeelingFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/OpenGL/vtkOpenGLRenderer_PeelingFS.glsl
  */
 #include "vtkOpenGLRenderer_PeelingFS.h"
 const char *vtkOpenGLRenderer_PeelingFS =

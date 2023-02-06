@@ -2,31 +2,31 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/ap.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/ap.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/bdsvd.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/bdsvd.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/bidiagonal.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/bidiagonal.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/blas.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/blas.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/lq.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/lq.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/qr.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/qr.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/reflections.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/reflections.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/rotations.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/rotations.cpp"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/alglib/svd.cpp"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/alglib/svd.cpp"
 		}
 	],
 	"target" : 

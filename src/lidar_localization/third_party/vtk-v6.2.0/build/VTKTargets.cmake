@@ -492,7 +492,7 @@ set_target_properties(vtkGeovisCore PROPERTIES
 add_library(vtkhdf5 SHARED IMPORTED)
 
 set_target_properties(vtkhdf5 PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/jeff/codes/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/src;/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/src"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/src;/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/src"
   INTERFACE_LINK_LIBRARIES "m;dl;vtkzlib"
 )
 
@@ -500,7 +500,7 @@ set_target_properties(vtkhdf5 PROPERTIES
 add_library(vtkhdf5_hl SHARED IMPORTED)
 
 set_target_properties(vtkhdf5_hl PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/jeff/codes/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/hl/src;/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/hl/src"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5/hl/src;/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/hl/src"
   INTERFACE_LINK_LIBRARIES "vtkhdf5"
 )
 
@@ -782,29 +782,28 @@ add_executable(vtkParseOGLExt IMPORTED)
 set_property(TARGET vtksys APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtksys PROPERTIES
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "dl;dl"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtksys-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtksys-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtksys-6.2.so.1"
   )
 
 # Import target "vtkCommonCore" for configuration "Debug"
 set_property(TARGET vtkCommonCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonCore PROPERTIES
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonCore-6.2.so.1"
   )
 
 # Import target "vtkCommonMath" for configuration "Debug"
 set_property(TARGET vtkCommonMath APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonMath PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonMath-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonMath-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonMath-6.2.so.1"
   )
 
 # Import target "vtkCommonMisc" for configuration "Debug"
 set_property(TARGET vtkCommonMisc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonMisc PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonMisc-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonMisc-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonMisc-6.2.so.1"
   )
 
@@ -812,14 +811,14 @@ set_target_properties(vtkCommonMisc PROPERTIES
 set_property(TARGET vtkCommonSystem APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonSystem PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonSystem-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonSystem-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonSystem-6.2.so.1"
   )
 
 # Import target "vtkCommonTransforms" for configuration "Debug"
 set_property(TARGET vtkCommonTransforms APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonTransforms PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonTransforms-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonTransforms-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonTransforms-6.2.so.1"
   )
 
@@ -827,49 +826,49 @@ set_target_properties(vtkCommonTransforms PROPERTIES
 set_property(TARGET vtkCommonDataModel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonDataModel PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonDataModel-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonDataModel-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonDataModel-6.2.so.1"
   )
 
 # Import target "vtkCommonColor" for configuration "Debug"
 set_property(TARGET vtkCommonColor APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonColor PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonColor-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonColor-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonColor-6.2.so.1"
   )
 
 # Import target "vtkCommonExecutionModel" for configuration "Debug"
 set_property(TARGET vtkCommonExecutionModel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonExecutionModel PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonExecutionModel-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonExecutionModel-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonExecutionModel-6.2.so.1"
   )
 
 # Import target "vtkFiltersCore" for configuration "Debug"
 set_property(TARGET vtkFiltersCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersCore PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersCore-6.2.so.1"
   )
 
 # Import target "vtkCommonComputationalGeometry" for configuration "Debug"
 set_property(TARGET vtkCommonComputationalGeometry APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkCommonComputationalGeometry PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkCommonComputationalGeometry-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkCommonComputationalGeometry-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkCommonComputationalGeometry-6.2.so.1"
   )
 
 # Import target "vtkFiltersGeneral" for configuration "Debug"
 set_property(TARGET vtkFiltersGeneral APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersGeneral PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersGeneral-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersGeneral-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersGeneral-6.2.so.1"
   )
 
 # Import target "vtkImagingCore" for configuration "Debug"
 set_property(TARGET vtkImagingCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingCore PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingCore-6.2.so.1"
   )
 
@@ -877,49 +876,49 @@ set_target_properties(vtkImagingCore PROPERTIES
 set_property(TARGET vtkImagingFourier APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingFourier PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingFourier-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingFourier-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingFourier-6.2.so.1"
   )
 
 # Import target "vtkalglib" for configuration "Debug"
 set_property(TARGET vtkalglib APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkalglib PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkalglib-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkalglib-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkalglib-6.2.so.1"
   )
 
 # Import target "vtkFiltersStatistics" for configuration "Debug"
 set_property(TARGET vtkFiltersStatistics APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersStatistics PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersStatistics-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersStatistics-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersStatistics-6.2.so.1"
   )
 
 # Import target "vtkFiltersExtraction" for configuration "Debug"
 set_property(TARGET vtkFiltersExtraction APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersExtraction PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersExtraction-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersExtraction-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersExtraction-6.2.so.1"
   )
 
 # Import target "vtkInfovisCore" for configuration "Debug"
 set_property(TARGET vtkInfovisCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkInfovisCore PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkInfovisCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkInfovisCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkInfovisCore-6.2.so.1"
   )
 
 # Import target "vtkFiltersGeometry" for configuration "Debug"
 set_property(TARGET vtkFiltersGeometry APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersGeometry PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersGeometry-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersGeometry-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersGeometry-6.2.so.1"
   )
 
 # Import target "vtkFiltersSources" for configuration "Debug"
 set_property(TARGET vtkFiltersSources APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersSources PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersSources-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersSources-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersSources-6.2.so.1"
   )
 
@@ -927,35 +926,35 @@ set_target_properties(vtkFiltersSources PROPERTIES
 set_property(TARGET vtkRenderingCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingCore PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkFiltersSources;vtkFiltersGeometry;vtkFiltersExtraction;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingCore-6.2.so.1"
   )
 
 # Import target "vtkzlib" for configuration "Debug"
 set_property(TARGET vtkzlib APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkzlib PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkzlib-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkzlib-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkzlib-6.2.so.1"
   )
 
 # Import target "vtkfreetype" for configuration "Debug"
 set_property(TARGET vtkfreetype APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkfreetype PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkfreetype-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkfreetype-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkfreetype-6.2.so.1"
   )
 
 # Import target "vtkftgl" for configuration "Debug"
 set_property(TARGET vtkftgl APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkftgl PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkftgl-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkftgl-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkftgl-6.2.so.1"
   )
 
 # Import target "vtkRenderingFreeType" for configuration "Debug"
 set_property(TARGET vtkRenderingFreeType APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingFreeType PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingFreeType-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingFreeType-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingFreeType-6.2.so.1"
   )
 
@@ -963,7 +962,7 @@ set_target_properties(vtkRenderingFreeType PROPERTIES
 set_property(TARGET vtkRenderingContext2D APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingContext2D PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkCommonDataModel;vtkCommonMath;vtkCommonTransforms;vtkRenderingFreeType"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingContext2D-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingContext2D-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingContext2D-6.2.so.1"
   )
 
@@ -971,14 +970,14 @@ set_target_properties(vtkRenderingContext2D PROPERTIES
 set_property(TARGET vtkChartsCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkChartsCore PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkCommonColor;vtkInfovisCore"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkChartsCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkChartsCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkChartsCore-6.2.so.1"
   )
 
 # Import target "vtkDICOMParser" for configuration "Debug"
 set_property(TARGET vtkDICOMParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkDICOMParser PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkDICOMParser-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkDICOMParser-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkDICOMParser-6.2.so.1"
   )
 
@@ -986,14 +985,14 @@ set_target_properties(vtkDICOMParser PROPERTIES
 set_property(TARGET vtkIOCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOCore PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkzlib;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOCore-6.2.so.1"
   )
 
 # Import target "vtkjsoncpp" for configuration "Debug"
 set_property(TARGET vtkjsoncpp APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkjsoncpp PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkjsoncpp-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkjsoncpp-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkjsoncpp-6.2.so.1"
   )
 
@@ -1001,14 +1000,14 @@ set_target_properties(vtkjsoncpp PROPERTIES
 set_property(TARGET vtkIOGeometry APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOGeometry PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkzlib;vtkjsoncpp;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOGeometry-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOGeometry-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOGeometry-6.2.so.1"
   )
 
 # Import target "vtkexpat" for configuration "Debug"
 set_property(TARGET vtkexpat APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkexpat PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkexpat-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkexpat-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkexpat-6.2.so.1"
   )
 
@@ -1016,7 +1015,7 @@ set_target_properties(vtkexpat PROPERTIES
 set_property(TARGET vtkIOXMLParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOXMLParser PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkexpat"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOXMLParser-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOXMLParser-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOXMLParser-6.2.so.1"
   )
 
@@ -1024,7 +1023,7 @@ set_target_properties(vtkIOXMLParser PROPERTIES
 set_property(TARGET vtkIOXML APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOXML PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOXML-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOXML-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOXML-6.2.so.1"
   )
 
@@ -1032,7 +1031,7 @@ set_target_properties(vtkIOXML PROPERTIES
 set_property(TARGET vtkDomainsChemistry APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkDomainsChemistry PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkIOXML;vtkFiltersSources"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkDomainsChemistry-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkDomainsChemistry-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkDomainsChemistry-6.2.so.1"
   )
 
@@ -1040,7 +1039,7 @@ set_target_properties(vtkDomainsChemistry PROPERTIES
 set_property(TARGET vtkIOLegacy APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOLegacy PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOLegacy-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOLegacy-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOLegacy-6.2.so.1"
   )
 
@@ -1048,154 +1047,154 @@ set_target_properties(vtkIOLegacy PROPERTIES
 set_property(TARGET vtkParallelCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkParallelCore PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkParallelCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkParallelCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkParallelCore-6.2.so.1"
   )
 
 # Import target "vtkFiltersAMR" for configuration "Debug"
 set_property(TARGET vtkFiltersAMR APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersAMR PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersAMR-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersAMR-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersAMR-6.2.so.1"
   )
 
 # Import target "vtkFiltersFlowPaths" for configuration "Debug"
 set_property(TARGET vtkFiltersFlowPaths APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersFlowPaths PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersFlowPaths-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersFlowPaths-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersFlowPaths-6.2.so.1"
   )
 
 # Import target "vtkFiltersGeneric" for configuration "Debug"
 set_property(TARGET vtkFiltersGeneric APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersGeneric PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersGeneric-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersGeneric-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersGeneric-6.2.so.1"
   )
 
 # Import target "vtkImagingSources" for configuration "Debug"
 set_property(TARGET vtkImagingSources APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingSources PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingSources-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingSources-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingSources-6.2.so.1"
   )
 
 # Import target "vtkFiltersHybrid" for configuration "Debug"
 set_property(TARGET vtkFiltersHybrid APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersHybrid PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersHybrid-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersHybrid-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersHybrid-6.2.so.1"
   )
 
 # Import target "vtkFiltersHyperTree" for configuration "Debug"
 set_property(TARGET vtkFiltersHyperTree APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersHyperTree PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersHyperTree-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersHyperTree-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersHyperTree-6.2.so.1"
   )
 
 # Import target "vtkImagingGeneral" for configuration "Debug"
 set_property(TARGET vtkImagingGeneral APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingGeneral PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingGeneral-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingGeneral-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingGeneral-6.2.so.1"
   )
 
 # Import target "vtkFiltersImaging" for configuration "Debug"
 set_property(TARGET vtkFiltersImaging APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersImaging PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersImaging-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersImaging-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersImaging-6.2.so.1"
   )
 
 # Import target "vtkFiltersModeling" for configuration "Debug"
 set_property(TARGET vtkFiltersModeling APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersModeling PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersModeling-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersModeling-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersModeling-6.2.so.1"
   )
 
 # Import target "vtkFiltersParallel" for configuration "Debug"
 set_property(TARGET vtkFiltersParallel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersParallel PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersParallel-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersParallel-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersParallel-6.2.so.1"
   )
 
 # Import target "vtkFiltersParallelImaging" for configuration "Debug"
 set_property(TARGET vtkFiltersParallelImaging APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersParallelImaging PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersParallelImaging-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersParallelImaging-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersParallelImaging-6.2.so.1"
   )
 
 # Import target "vtkFiltersProgrammable" for configuration "Debug"
 set_property(TARGET vtkFiltersProgrammable APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersProgrammable PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersProgrammable-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersProgrammable-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersProgrammable-6.2.so.1"
   )
 
 # Import target "vtkFiltersSMP" for configuration "Debug"
 set_property(TARGET vtkFiltersSMP APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersSMP PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersSMP-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersSMP-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersSMP-6.2.so.1"
   )
 
 # Import target "vtkFiltersSelection" for configuration "Debug"
 set_property(TARGET vtkFiltersSelection APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersSelection PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersSelection-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersSelection-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersSelection-6.2.so.1"
   )
 
 # Import target "vtkFiltersTexture" for configuration "Debug"
 set_property(TARGET vtkFiltersTexture APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersTexture PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersTexture-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersTexture-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersTexture-6.2.so.1"
   )
 
 # Import target "verdict" for configuration "Debug"
 set_property(TARGET verdict APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(verdict PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkverdict-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkverdict-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkverdict-6.2.so.1"
   )
 
 # Import target "vtkFiltersVerdict" for configuration "Debug"
 set_property(TARGET vtkFiltersVerdict APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkFiltersVerdict PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkFiltersVerdict-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkFiltersVerdict-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkFiltersVerdict-6.2.so.1"
   )
 
 # Import target "vtkmetaio" for configuration "Debug"
 set_property(TARGET vtkmetaio APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkmetaio PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkmetaio-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkmetaio-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkmetaio-6.2.so.1"
   )
 
 # Import target "vtkjpeg" for configuration "Debug"
 set_property(TARGET vtkjpeg APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkjpeg PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkjpeg-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkjpeg-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkjpeg-6.2.so.1"
   )
 
 # Import target "vtkpng" for configuration "Debug"
 set_property(TARGET vtkpng APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkpng PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkpng-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkpng-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkpng-6.2.so.1"
   )
 
 # Import target "vtktiff" for configuration "Debug"
 set_property(TARGET vtktiff APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtktiff PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtktiff-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtktiff-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtktiff-6.2.so.1"
   )
 
@@ -1203,21 +1202,21 @@ set_target_properties(vtktiff PROPERTIES
 set_property(TARGET vtkIOImage APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOImage PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkjpeg;vtkpng;vtktiff;vtkmetaio;vtkDICOMParser;vtkzlib;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOImage-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOImage-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOImage-6.2.so.1"
   )
 
 # Import target "vtkImagingHybrid" for configuration "Debug"
 set_property(TARGET vtkImagingHybrid APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingHybrid PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingHybrid-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingHybrid-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingHybrid-6.2.so.1"
   )
 
 # Import target "vtkInfovisLayout" for configuration "Debug"
 set_property(TARGET vtkInfovisLayout APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkInfovisLayout PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkInfovisLayout-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkInfovisLayout-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkInfovisLayout-6.2.so.1"
   )
 
@@ -1225,14 +1224,14 @@ set_target_properties(vtkInfovisLayout PROPERTIES
 set_property(TARGET vtkInteractionStyle APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkInteractionStyle PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkFiltersSources;vtkFiltersExtraction"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkInteractionStyle-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkInteractionStyle-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkInteractionStyle-6.2.so.1"
   )
 
 # Import target "vtkImagingColor" for configuration "Debug"
 set_property(TARGET vtkImagingColor APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingColor PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingColor-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingColor-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingColor-6.2.so.1"
   )
 
@@ -1240,56 +1239,56 @@ set_target_properties(vtkImagingColor PROPERTIES
 set_property(TARGET vtkRenderingAnnotation APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingAnnotation PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkFiltersSources"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingAnnotation-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingAnnotation-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingAnnotation-6.2.so.1"
   )
 
 # Import target "vtkRenderingVolume" for configuration "Debug"
 set_property(TARGET vtkRenderingVolume APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingVolume PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingVolume-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingVolume-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingVolume-6.2.so.1"
   )
 
 # Import target "vtkInteractionWidgets" for configuration "Debug"
 set_property(TARGET vtkInteractionWidgets APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkInteractionWidgets PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkInteractionWidgets-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkInteractionWidgets-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkInteractionWidgets-6.2.so.1"
   )
 
 # Import target "vtkViewsCore" for configuration "Debug"
 set_property(TARGET vtkViewsCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkViewsCore PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkViewsCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkViewsCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkViewsCore-6.2.so.1"
   )
 
 # Import target "vtkproj4" for configuration "Debug"
 set_property(TARGET vtkproj4 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkproj4 PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkproj4-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkproj4-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkproj4-6.2.so.1"
   )
 
 # Import target "vtkGeovisCore" for configuration "Debug"
 set_property(TARGET vtkGeovisCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkGeovisCore PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkGeovisCore-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkGeovisCore-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkGeovisCore-6.2.so.1"
   )
 
 # Import target "vtkhdf5" for configuration "Debug"
 set_property(TARGET vtkhdf5 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkhdf5 PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkhdf5-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkhdf5-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkhdf5-6.2.so.1"
   )
 
 # Import target "vtkhdf5_hl" for configuration "Debug"
 set_property(TARGET vtkhdf5_hl APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkhdf5_hl PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkhdf5_hl-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkhdf5_hl-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkhdf5_hl-6.2.so.1"
   )
 
@@ -1297,35 +1296,35 @@ set_target_properties(vtkhdf5_hl PROPERTIES
 set_property(TARGET vtkIOAMR APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOAMR PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkhdf5_hl;vtkhdf5;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOAMR-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOAMR-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOAMR-6.2.so.1"
   )
 
 # Import target "vtkIOEnSight" for configuration "Debug"
 set_property(TARGET vtkIOEnSight APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOEnSight PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOEnSight-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOEnSight-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOEnSight-6.2.so.1"
   )
 
 # Import target "vtkNetCDF" for configuration "Debug"
 set_property(TARGET vtkNetCDF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkNetCDF PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkNetCDF-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkNetCDF-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkNetCDF-6.2.so.1"
   )
 
 # Import target "vtkNetCDF_cxx" for configuration "Debug"
 set_property(TARGET vtkNetCDF_cxx APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkNetCDF_cxx PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkNetCDF_cxx-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkNetCDF_cxx-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkNetCDF_cxx-6.2.so.1"
   )
 
 # Import target "vtkexoIIc" for configuration "Debug"
 set_property(TARGET vtkexoIIc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkexoIIc PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkexoIIc-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkexoIIc-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkexoIIc-6.2.so.1"
   )
 
@@ -1333,21 +1332,21 @@ set_target_properties(vtkexoIIc PROPERTIES
 set_property(TARGET vtkIOExodus APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOExodus PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkexoIIc;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOExodus-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOExodus-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOExodus-6.2.so.1"
   )
 
 # Import target "vtkEncodeString" for configuration "Debug"
 set_property(TARGET vtkEncodeString APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkEncodeString PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkEncodeString-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkEncodeString-6.2"
   )
 
 # Import target "vtkRenderingOpenGL" for configuration "Debug"
 set_property(TARGET vtkRenderingOpenGL APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingOpenGL PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkImagingHybrid;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingOpenGL-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingOpenGL-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingOpenGL-6.2.so.1"
   )
 
@@ -1355,14 +1354,14 @@ set_target_properties(vtkRenderingOpenGL PROPERTIES
 set_property(TARGET vtkRenderingContextOpenGL APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingContextOpenGL PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkRenderingFreeType"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingContextOpenGL-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingContextOpenGL-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingContextOpenGL-6.2.so.1"
   )
 
 # Import target "vtkgl2ps" for configuration "Debug"
 set_property(TARGET vtkgl2ps APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkgl2ps PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkgl2ps-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkgl2ps-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkgl2ps-6.2.so.1"
   )
 
@@ -1370,7 +1369,7 @@ set_target_properties(vtkgl2ps PROPERTIES
 set_property(TARGET vtkRenderingGL2PS APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingGL2PS PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkRenderingOpenGL;vtkRenderingFreeType;vtkgl2ps"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingGL2PS-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingGL2PS-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingGL2PS-6.2.so.1"
   )
 
@@ -1378,7 +1377,7 @@ set_target_properties(vtkRenderingGL2PS PROPERTIES
 set_property(TARGET vtkRenderingLabel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingLabel PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkFiltersExtraction"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingLabel-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingLabel-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingLabel-6.2.so.1"
   )
 
@@ -1386,7 +1385,7 @@ set_target_properties(vtkRenderingLabel PROPERTIES
 set_property(TARGET vtkIOExport APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOExport PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkIOImage;vtkFiltersGeometry;vtkgl2ps"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOExport-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOExport-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOExport-6.2.so.1"
   )
 
@@ -1394,14 +1393,14 @@ set_target_properties(vtkIOExport PROPERTIES
 set_property(TARGET vtkIOImport APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOImport PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkFiltersSources"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOImport-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOImport-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOImport-6.2.so.1"
   )
 
 # Import target "vtklibxml2" for configuration "Debug"
 set_property(TARGET vtklibxml2 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtklibxml2 PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtklibxml2-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtklibxml2-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtklibxml2-6.2.so.1"
   )
 
@@ -1409,7 +1408,7 @@ set_target_properties(vtklibxml2 PROPERTIES
 set_property(TARGET vtkIOInfovis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOInfovis PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtklibxml2;vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOInfovis-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOInfovis-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOInfovis-6.2.so.1"
   )
 
@@ -1417,7 +1416,7 @@ set_target_properties(vtkIOInfovis PROPERTIES
 set_property(TARGET vtkIOLSDyna APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOLSDyna PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOLSDyna-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOLSDyna-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOLSDyna-6.2.so.1"
   )
 
@@ -1425,21 +1424,21 @@ set_target_properties(vtkIOLSDyna PROPERTIES
 set_property(TARGET vtkIOMINC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOMINC PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys;vtkNetCDF;vtkNetCDF_cxx"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOMINC-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOMINC-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOMINC-6.2.so.1"
   )
 
 # Import target "vtkoggtheora" for configuration "Debug"
 set_property(TARGET vtkoggtheora APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkoggtheora PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkoggtheora-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkoggtheora-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkoggtheora-6.2.so.1"
   )
 
 # Import target "vtkIOMovie" for configuration "Debug"
 set_property(TARGET vtkIOMovie APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOMovie PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOMovie-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOMovie-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOMovie-6.2.so.1"
   )
 
@@ -1447,14 +1446,14 @@ set_target_properties(vtkIOMovie PROPERTIES
 set_property(TARGET vtkIONetCDF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIONetCDF PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys;vtkNetCDF;vtkNetCDF_cxx"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIONetCDF-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIONetCDF-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIONetCDF-6.2.so.1"
   )
 
 # Import target "vtkIOPLY" for configuration "Debug"
 set_property(TARGET vtkIOPLY APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOPLY PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOPLY-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOPLY-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOPLY-6.2.so.1"
   )
 
@@ -1462,7 +1461,7 @@ set_target_properties(vtkIOPLY PROPERTIES
 set_property(TARGET vtkIOParallel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOParallel PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkexoIIc;vtkNetCDF;vtkNetCDF_cxx"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOParallel-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOParallel-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOParallel-6.2.so.1"
   )
 
@@ -1470,14 +1469,14 @@ set_target_properties(vtkIOParallel PROPERTIES
 set_property(TARGET vtkIOParallelXML APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOParallelXML PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOParallelXML-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOParallelXML-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOParallelXML-6.2.so.1"
   )
 
 # Import target "vtksqlite" for configuration "Debug"
 set_property(TARGET vtksqlite APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtksqlite PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtksqlite-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtksqlite-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtksqlite-6.2.so.1"
   )
 
@@ -1485,7 +1484,7 @@ set_target_properties(vtksqlite PROPERTIES
 set_property(TARGET vtkIOSQL APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOSQL PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys;vtksqlite"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOSQL-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOSQL-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOSQL-6.2.so.1"
   )
 
@@ -1493,56 +1492,56 @@ set_target_properties(vtkIOSQL PROPERTIES
 set_property(TARGET vtkIOVideo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkIOVideo PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkIOVideo-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkIOVideo-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkIOVideo-6.2.so.1"
   )
 
 # Import target "vtkImagingMath" for configuration "Debug"
 set_property(TARGET vtkImagingMath APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingMath PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingMath-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingMath-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingMath-6.2.so.1"
   )
 
 # Import target "vtkImagingMorphological" for configuration "Debug"
 set_property(TARGET vtkImagingMorphological APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingMorphological PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingMorphological-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingMorphological-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingMorphological-6.2.so.1"
   )
 
 # Import target "vtkImagingStatistics" for configuration "Debug"
 set_property(TARGET vtkImagingStatistics APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingStatistics PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingStatistics-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingStatistics-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingStatistics-6.2.so.1"
   )
 
 # Import target "vtkImagingStencil" for configuration "Debug"
 set_property(TARGET vtkImagingStencil APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkImagingStencil PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkImagingStencil-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkImagingStencil-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkImagingStencil-6.2.so.1"
   )
 
 # Import target "vtkInteractionImage" for configuration "Debug"
 set_property(TARGET vtkInteractionImage APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkInteractionImage PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkInteractionImage-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkInteractionImage-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkInteractionImage-6.2.so.1"
   )
 
 # Import target "vtkRenderingFreeTypeOpenGL" for configuration "Debug"
 set_property(TARGET vtkRenderingFreeTypeOpenGL APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingFreeTypeOpenGL PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingFreeTypeOpenGL-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingFreeTypeOpenGL-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingFreeTypeOpenGL-6.2.so.1"
   )
 
 # Import target "vtkRenderingImage" for configuration "Debug"
 set_property(TARGET vtkRenderingImage APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingImage PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingImage-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingImage-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingImage-6.2.so.1"
   )
 
@@ -1550,14 +1549,14 @@ set_target_properties(vtkRenderingImage PROPERTIES
 set_property(TARGET vtkRenderingLIC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingLIC PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingLIC-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingLIC-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingLIC-6.2.so.1"
   )
 
 # Import target "vtkRenderingLOD" for configuration "Debug"
 set_property(TARGET vtkRenderingLOD APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingLOD PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingLOD-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingLOD-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingLOD-6.2.so.1"
   )
 
@@ -1565,14 +1564,14 @@ set_target_properties(vtkRenderingLOD PROPERTIES
 set_property(TARGET vtkRenderingVolumeOpenGL APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkRenderingVolumeOpenGL PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtksys;vtkFiltersGeneral;vtkFiltersSources"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkRenderingVolumeOpenGL-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkRenderingVolumeOpenGL-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkRenderingVolumeOpenGL-6.2.so.1"
   )
 
 # Import target "vtkViewsContext2D" for configuration "Debug"
 set_property(TARGET vtkViewsContext2D APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkViewsContext2D PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkViewsContext2D-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkViewsContext2D-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkViewsContext2D-6.2.so.1"
   )
 
@@ -1580,26 +1579,26 @@ set_target_properties(vtkViewsContext2D PROPERTIES
 set_property(TARGET vtkViewsInfovis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkViewsInfovis PROPERTIES
   IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "vtkFiltersGeometry"
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/lib/libvtkViewsInfovis-6.2.so.1"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/lib/libvtkViewsInfovis-6.2.so.1"
   IMPORTED_SONAME_DEBUG "libvtkViewsInfovis-6.2.so.1"
   )
 
 # Import target "vtkHashSource" for configuration "Debug"
 set_property(TARGET vtkHashSource APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkHashSource PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkHashSource-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkHashSource-6.2"
   )
 
 # Import target "vtkmkg3states" for configuration "Debug"
 set_property(TARGET vtkmkg3states APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkmkg3states PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkmkg3states-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkmkg3states-6.2"
   )
 
 # Import target "vtkParseOGLExt" for configuration "Debug"
 set_property(TARGET vtkParseOGLExt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(vtkParseOGLExt PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/jeff/codes/vtk-v6.2.0/build/bin/vtkParseOGLExt-6.2"
+  IMPORTED_LOCATION_DEBUG "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/bin/vtkParseOGLExt-6.2"
   )
 
 # This file does not depend on other imported targets which have

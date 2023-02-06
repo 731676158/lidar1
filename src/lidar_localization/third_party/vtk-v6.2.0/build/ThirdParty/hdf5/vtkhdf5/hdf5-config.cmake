@@ -28,7 +28,7 @@ ENDIF(HDF5_ENABLE_PARALLEL)
 #-----------------------------------------------------------------------------
 # Directories
 #-----------------------------------------------------------------------------
-set (HDF5_INCLUDE_DIR "/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/src;/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/c++;/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/hl;/home/jeff/codes/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/tools;/home/jeff/codes/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5" "${HDF5_MPI_C_INCLUDE_PATH}" )
+set (HDF5_INCLUDE_DIR "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/src;/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/c++;/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/hl;/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/hdf5/vtkhdf5/tools;/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/ThirdParty/hdf5/vtkhdf5" "${HDF5_MPI_C_INCLUDE_PATH}" )
 
 if (HDF5_BUILD_FORTRAN)
   set (HDF5_INCLUDE_DIR_FORTRAN "" )

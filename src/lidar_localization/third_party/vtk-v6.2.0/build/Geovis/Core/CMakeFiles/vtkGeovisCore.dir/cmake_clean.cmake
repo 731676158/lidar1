@@ -1,11 +1,7 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkGeovisCore-6.2.pdb"
-  "../../lib/libvtkGeovisCore-6.2.so"
-  "../../lib/libvtkGeovisCore-6.2.so.1"
   "CMakeFiles/vtkGeovisCore.dir/vtkCompassRepresentation.cxx.o"
   "CMakeFiles/vtkGeovisCore.dir/vtkCompassWidget.cxx.o"
   "CMakeFiles/vtkGeovisCore.dir/vtkGeoAdaptiveArcs.cxx.o"
-  "CMakeFiles/vtkGeovisCore.dir/vtkGeoAlignedImageRepresentation.cxx.o"
   "CMakeFiles/vtkGeovisCore.dir/vtkGeoAlignedImageSource.cxx.o"
   "CMakeFiles/vtkGeovisCore.dir/vtkGeoArcs.cxx.o"
   "CMakeFiles/vtkGeovisCore.dir/vtkGeoAssignCoordinates.cxx.o"
@@ -29,6 +25,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkGeovisCore.dir/vtkGeoTreeNode.cxx.o"
   "CMakeFiles/vtkGeovisCore.dir/vtkGeoTreeNodeCache.cxx.o"
   "CMakeFiles/vtkGeovisCore.dir/vtkGlobeSource.cxx.o"
+  "CMakeFiles/vtkGeovisCore.dir/vtkGeoAlignedImageRepresentation.cxx.o"
+  "../../lib/libvtkGeovisCore-6.2.pdb"
+  "../../lib/libvtkGeovisCore-6.2.so.1"
+  "../../lib/libvtkGeovisCore-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

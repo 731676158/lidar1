@@ -3,7 +3,7 @@
  * 
  * Define the vtkGPUVolumeRayCastMapper_HeaderFS string.
  *
- * Generated from file: /home/jeff/codes/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_HeaderFS.glsl
+ * Generated from file: /home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Rendering/VolumeOpenGL/vtkGPUVolumeRayCastMapper_HeaderFS.glsl
  */
 #include "vtkGPUVolumeRayCastMapper_HeaderFS.h"
 const char *vtkGPUVolumeRayCastMapper_HeaderFS =

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkRenderingFreeTypeOpenGL-6.2.pdb"
-  "../../lib/libvtkRenderingFreeTypeOpenGL-6.2.so"
-  "../../lib/libvtkRenderingFreeTypeOpenGL-6.2.so.1"
   "CMakeFiles/vtkRenderingFreeTypeOpenGL.dir/vtkOpenGLFreeTypeTextMapper.cxx.o"
   "CMakeFiles/vtkRenderingFreeTypeOpenGL.dir/vtkRenderingFreeTypeOpenGLObjectFactory.cxx.o"
+  "../../lib/libvtkRenderingFreeTypeOpenGL-6.2.pdb"
+  "../../lib/libvtkRenderingFreeTypeOpenGL-6.2.so.1"
+  "../../lib/libvtkRenderingFreeTypeOpenGL-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

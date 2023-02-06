@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkRenderingVolume-6.2.pdb"
-  "../../lib/libvtkRenderingVolume-6.2.so"
-  "../../lib/libvtkRenderingVolume-6.2.so.1"
   "CMakeFiles/vtkRenderingVolume.dir/vtkDirectionEncoder.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkEncodedGradientEstimator.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkEncodedGradientShader.cxx.o"
@@ -15,8 +12,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkRenderingVolume.dir/vtkFixedPointVolumeRayCastMIPHelper.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkFixedPointVolumeRayCastMapper.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkGPUVolumeRayCastMapper.cxx.o"
-  "CMakeFiles/vtkRenderingVolume.dir/vtkHAVSVolumeMapper.cxx.o"
-  "CMakeFiles/vtkRenderingVolume.dir/vtkProjectedAAHexahedraMapper.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkProjectedTetrahedraMapper.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkRayCastImageDisplayHelper.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkRecursiveSphereDirectionEncoder.cxx.o"
@@ -41,9 +36,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkRenderingVolume.dir/vtkVolumeRayCastMIPFunction.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkVolumeRayCastMapper.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkVolumeRayCastSpaceLeapingImageFilter.cxx.o"
-  "CMakeFiles/vtkRenderingVolume.dir/vtkVolumeTextureMapper.cxx.o"
+  "CMakeFiles/vtkRenderingVolume.dir/vtkHAVSVolumeMapper.cxx.o"
+  "CMakeFiles/vtkRenderingVolume.dir/vtkProjectedAAHexahedraMapper.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkVolumeTextureMapper2D.cxx.o"
   "CMakeFiles/vtkRenderingVolume.dir/vtkVolumeTextureMapper3D.cxx.o"
+  "CMakeFiles/vtkRenderingVolume.dir/vtkVolumeTextureMapper.cxx.o"
+  "../../lib/libvtkRenderingVolume-6.2.pdb"
+  "../../lib/libvtkRenderingVolume-6.2.so.1"
+  "../../lib/libvtkRenderingVolume-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

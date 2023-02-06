@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "../../lib/libvtkIOParallel-6.2.pdb"
-  "../../lib/libvtkIOParallel-6.2.so"
-  "../../lib/libvtkIOParallel-6.2.so.1"
   "CMakeFiles/vtkIOParallel.dir/vtkEnSightWriter.cxx.o"
   "CMakeFiles/vtkIOParallel.dir/vtkPChacoReader.cxx.o"
   "CMakeFiles/vtkIOParallel.dir/vtkPDataSetReader.cxx.o"
@@ -9,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkIOParallel.dir/vtkPImageWriter.cxx.o"
   "CMakeFiles/vtkIOParallel.dir/vtkPOpenFOAMReader.cxx.o"
   "CMakeFiles/vtkIOParallel.dir/vtkPSLACReader.cxx.o"
+  "../../lib/libvtkIOParallel-6.2.pdb"
+  "../../lib/libvtkIOParallel-6.2.so.1"
+  "../../lib/libvtkIOParallel-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

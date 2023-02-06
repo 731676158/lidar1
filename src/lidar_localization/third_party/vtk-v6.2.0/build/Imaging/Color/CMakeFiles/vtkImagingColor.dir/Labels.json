@@ -2,55 +2,55 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageHSIToRGB.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageHSIToRGB.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageHSVToRGB.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageHSVToRGB.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageLuminance.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageLuminance.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageMapToRGBA.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageMapToRGBA.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageMapToWindowLevelColors.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageMapToWindowLevelColors.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageQuantizeRGBToIndex.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageQuantizeRGBToIndex.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSI.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSI.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSV.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSV.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageHSIToRGB.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageHSIToRGB.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageHSVToRGB.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageHSVToRGB.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageLuminance.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageLuminance.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageMapToRGBA.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageMapToRGBA.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageMapToWindowLevelColors.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageMapToWindowLevelColors.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageQuantizeRGBToIndex.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageQuantizeRGBToIndex.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSI.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSI.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSV.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Imaging/Color/vtkImageRGBToHSV.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Imaging/Color/vtkImagingColorModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Imaging/Color/vtkImagingColorModule.h"
 		}
 	],
 	"target" : 

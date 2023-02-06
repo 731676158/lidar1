@@ -2,85 +2,85 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkClipHyperOctree.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkClipHyperOctree.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridAxisCut.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridAxisCut.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridGeometry.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridGeometry.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridToUnstructuredGrid.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridToUnstructuredGrid.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeClipCutPointsGrabber.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeClipCutPointsGrabber.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeContourFilter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeContourFilter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeCutter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeCutter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDepth.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDepth.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDualGridContourFilter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDualGridContourFilter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeLimiter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeLimiter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSampleFunction.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSampleFunction.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSurfaceFilter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSurfaceFilter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeToUniformGridFilter.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeToUniformGridFilter.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkClipHyperOctree.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkClipHyperOctree.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridAxisCut.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridAxisCut.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridGeometry.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridGeometry.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridToUnstructuredGrid.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperTreeGridToUnstructuredGrid.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeClipCutPointsGrabber.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeClipCutPointsGrabber.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeContourFilter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeContourFilter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeCutter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeCutter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDepth.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDepth.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDualGridContourFilter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeDualGridContourFilter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeLimiter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeLimiter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSampleFunction.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSampleFunction.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSurfaceFilter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeSurfaceFilter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeToUniformGridFilter.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/HyperTree/vtkHyperOctreeToUniformGridFilter.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Filters/HyperTree/vtkFiltersHyperTreeModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Filters/HyperTree/vtkFiltersHyperTreeModule.h"
 		}
 	],
 	"target" : 

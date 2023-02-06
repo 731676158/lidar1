@@ -1,9 +1,6 @@
 file(REMOVE_RECURSE
-  "../../../lib/libvtkoggtheora-6.2.pdb"
-  "../../../lib/libvtkoggtheora-6.2.so"
-  "../../../lib/libvtkoggtheora-6.2.so.1"
-  "CMakeFiles/vtkoggtheora.dir/libogg-1.1.4/src/bitwise.c.o"
   "CMakeFiles/vtkoggtheora.dir/libogg-1.1.4/src/framing.c.o"
+  "CMakeFiles/vtkoggtheora.dir/libogg-1.1.4/src/bitwise.c.o"
   "CMakeFiles/vtkoggtheora.dir/libtheora-1.1.1/lib/analyze.c.o"
   "CMakeFiles/vtkoggtheora.dir/libtheora-1.1.1/lib/apiwrapper.c.o"
   "CMakeFiles/vtkoggtheora.dir/libtheora-1.1.1/lib/bitpack.c.o"
@@ -36,6 +33,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/vtkoggtheora.dir/libtheora-1.1.1/lib/x86/mmxstate.c.o"
   "CMakeFiles/vtkoggtheora.dir/libtheora-1.1.1/lib/x86/x86enc.c.o"
   "CMakeFiles/vtkoggtheora.dir/libtheora-1.1.1/lib/x86/x86state.c.o"
+  "../../../lib/libvtkoggtheora-6.2.pdb"
+  "../../../lib/libvtkoggtheora-6.2.so.1"
+  "../../../lib/libvtkoggtheora-6.2.so"
 )
 
 # Per-language clean rules from dependency scanning.

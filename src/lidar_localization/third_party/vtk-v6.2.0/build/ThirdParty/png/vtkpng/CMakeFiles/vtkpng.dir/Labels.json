@@ -2,55 +2,55 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngget.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngget.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngrio.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngrio.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwrite.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwrite.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/png.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/png.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngmem.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngmem.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngrtran.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngrtran.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngtrans.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngtrans.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwtran.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwtran.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngerror.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngerror.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngpread.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngpread.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngrutil.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngrutil.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngvcrd.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngvcrd.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwutil.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwutil.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pnggccrd.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pnggccrd.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngread.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngread.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngset.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngset.c"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwio.c"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/ThirdParty/png/vtkpng/pngwio.c"
 		}
 	],
 	"target" : 

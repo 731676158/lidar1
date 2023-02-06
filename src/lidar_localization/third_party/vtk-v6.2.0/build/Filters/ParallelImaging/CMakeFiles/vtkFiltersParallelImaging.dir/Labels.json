@@ -2,43 +2,43 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkPComputeHistogram2DOutliers.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkPComputeHistogram2DOutliers.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkPExtractHistogram2D.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkPExtractHistogram2D.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkPPairwiseExtractHistogram2D.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkPPairwiseExtractHistogram2D.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkExtractPiece.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkExtractPiece.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkMemoryLimitImageDataStreamer.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkMemoryLimitImageDataStreamer.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkTransmitImageDataPiece.cxx"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkTransmitImageDataPiece.cxx"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkPComputeHistogram2DOutliers.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkPComputeHistogram2DOutliers.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkPExtractHistogram2D.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkPExtractHistogram2D.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkPPairwiseExtractHistogram2D.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkPPairwiseExtractHistogram2D.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkExtractPiece.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkExtractPiece.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkMemoryLimitImageDataStreamer.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkMemoryLimitImageDataStreamer.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/Filters/ParallelImaging/vtkTransmitImageDataPiece.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/Filters/ParallelImaging/vtkTransmitImageDataPiece.h"
 		},
 		{
-			"file" : "/home/jeff/codes/vtk-v6.2.0/build/Filters/ParallelImaging/vtkFiltersParallelImagingModule.h"
+			"file" : "/home/jeff/code/lidar1/src/lidar_localization/third_party/vtk-v6.2.0/build/Filters/ParallelImaging/vtkFiltersParallelImagingModule.h"
 		}
 	],
 	"target" : 
